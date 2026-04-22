@@ -14,9 +14,9 @@
 
 ## Informe del Trabajo Final
 
-### Startup:
+### Startup: AgroCare
 
-### Producto:
+### Producto: Bovix
 
 ### Integrantes:
 
@@ -117,3 +117,11 @@ EAC - Student Outcome 7.
 | Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  |                       |              |
 
 # Objetivos SMART
+
+| Integrantes | Objetivos SMART                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Flores Manrique, Sebastian Enrique | - Desarrollar una especialización técnica en un área relevante de la ingeniería de software, como desarrollo backend, frontend o ingeniería de datos, en un periodo de cuatro meses posteriores a la graduación, mediante la culminación de al menos dos cursos certificados y la implementación de un mínimo de dos proyectos aplicados que evidencien el uso de buenas prácticas de desarrollo, patrones de diseño y estándares de calidad.<br><br> -Al finalizar la carrera de Ingeniería de Software, lograr la inserción en el mercado laboral como desarrollador de software junior en un plazo máximo de seis meses, mediante la postulación constante a un promedio de diez ofertas laborales mensuales, el fortalecimiento de un portafolio profesional con al menos tres proyectos completos y documentados, y la preparación sistemática para procesos de selección a través de la práctica regular de entrevistas técnicas y resolución de problemas. |
+|De las Casas Latour, Sebastián | |
+|Esquirva León, Miguel Juan Diego | |
+|Inga Hernández, Ayrton Damian| |
+|Meza Tataje, David | | 
