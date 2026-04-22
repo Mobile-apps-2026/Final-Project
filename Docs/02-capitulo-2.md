@@ -1,7 +1,166 @@
 # Capítulo II: Requirements Development and Software Solution Design
 ## 2.1. Competidores
 ### 2.1.1. Análisis Competitivo 
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
+  <thead>
+    <tr>
+      <th colspan="6" scope="col" style="background:#f2f2f2;"><strong>Competitive Analysis Landscape</strong></th>
+    </tr>
+    <tr>
+      <th colspan="2" rowspan="2" scope="row">¿Por qué realizar este análisis?</th>
+      <td colspan="4" style="">
+        <strong>Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis.</strong>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" style="">
+        El objetivo del análisis es obtener una perspectiva clara sobre qué brechas estratégicas existen en el mercado que otras soluciones no estén abarcando, obteniendo así un factor diferenciador de nicho que permita posicionar nuestro producto como idóneo para MYPES centradas en el sector agrario.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">(En la cabecera colocar por cada competidor nombre y logo)</th>
+      <th scope="column" style="width:20%; text-align:center;">
+        Agrocare<br>
+        <img src="" alt="Agrocare logo" style="max-width:100px; display:block; margin:6px auto;">
+      </th>
+      <th scope="column" style="width:20%; text-align:center;">
+        CattleMax<br>
+        <img src="" alt="competidor 1 logo" style="max-width:100px; display:block; margin:6px auto;">
+      </th>
+      <th scope="column" style="width:20%; text-align:center;">
+        Herdwatch<br>
+        <img src="" alt="competidor 2 logo" style="max-width:100px; display:block; margin:6px auto;">
+      </th>
+      <th scope="column" style="width:20%; text-align:center;">
+        AgriWebb<br>
+        <img src="" alt="competidor 3 logo" style="max-width:100px; display:block; margin:6px auto;">
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" rowspan="2">Perfil</th>
+      <th scope="row">Overview</th>
+      <td>Startup peruana de tecnología agropecuaria enfocada en digitalizar la gestión ganadera mediante una plataforma móvil y web.</td>
+      <td>Software especializado en gestión ganadera con más de 20 años en el mercado, enfocado en registro detallado de datos productivos y reproductivos.</td>
+      <td>Aplicación móvil enfocada en facilidad de uso y operación en campo, con fuerte enfoque “mobile-first”.</td>
+      <td>Plataforma empresarial para gestión ganadera a gran escala, con enfoque en trazabilidad, cumplimiento y operaciones multi-finca.</td>
+    </tr>
+    <tr>
+      <th scope="row">Ventaja competitiva</th>
+      <td>Accesible, simple y adaptada a la realidad rural peruana, combinando bajo costo, funcionamiento en baja conectividad y enfoque local.</td>
+      <td>Profundidad y precisión en la gestión de datos ganaderos, especialmente en aspectos reproductivos y genéticos.</td>
+      <td>Facilidad de uso en dispositivos móviles, diseñada para registrar información directamente en campo.</td>
+      <td>Escalabilidad empresarial y trazabilidad integral, ideal para operaciones ganaderas grandes o multi-finca.</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="2">Perfil de Marketing</th>
+      <th scope="row">Mercado Objetivo</th>
+      <td>Ganaderos pequeños y medianos en Perú y Latinoamérica; Empresas ganaderas en crecimiento (no enterprise)</td>
+      <td>Ganaderos medianos y grandes; Operaciones especializadas (genética, reproducción, pedigree)</td>
+      <td>Pequeños y medianos ganaderos; Usuarios que priorizan simplicidad y uso en campo</td>
+      <td>Empresas ganaderas grandes; Operaciones multi-propiedad; Mercados internacionales</td>
+    </tr>
+    <tr>
+      <th scope="row">Estrategias de Marketing</th>
+      <td>Marketing digital móvil-first (Facebook, WhatsApp, TikTok rural); Estrategia freemium para captar usuarios</td>
+      <td>Enfoque en precisión técnica y datos avanzados; Marketing dirigido a productores profesionales; Reputación basada en experiencia y confiabilidad (legacy software)</td>
+      <td>Diferenciación por facilidad de uso; Enfoque en productividad diaria; Freemium (entrada gratuita para captar usuarios)</td>
+      <td>Posicionamiento como solución enterprise; Inversión en expansión global y financiamiento; Enfoque en cumplimiento normativo y escalabilidad </td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="3">Perfil de Productos</th>
+      <th scope="row">Productos y servicios</th>
+      <td>Registro de ganado (identificación individual); Historial de salud y tratamientos
+Control reproductivo; Gestión de alimentación</td>
+      <td>Registro completo del ganado (salud, reproducción, genética); Reportes avanzados y análisis de datos; Gestión de inventario y productividad</td>
+      <td>Perfiles individuales de animales; Seguimiento de salud y reproducción; Alertas y recordatorios; Registros financieros básicos</td>
+      <td>Gestión integral del ganado; Trazabilidad completa; Reportes avanzados; Integraciones con otros sistemas</td>
+    </tr>
+    <tr>
+      <th scope="row">Precios y costos</th>
+      <td>Freemium (versión básica gratuita); Suscripción mensual o anual de bajo costo(menos de 100$)</td>
+      <td>Suscripción: $199 – $399/año; Prueba gratuita</td>
+      <td>Plan gratuito (limitado); Planes pagados: $119 – $299/año</td>
+      <td>Desde $500 hasta $5,000+/año</td>
+    </tr>
+    <tr>
+      <th scope="row">Canales de distribución</th>
+      <td>App móvil (Android principalmente); Plataforma web</td>
+      <td>Plataforma web (cloud); Venta directa online (SaaS)</td>
+      <td>App móvil (Android/iOS); Plataforma web sincronizada (cloud)</td>
+      <td>Plataforma web + app móvil; Ventas B2B directas; Implementaciones empresariales</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="5">Análisis SWOT</th>
+      <th scope="col" colspan="5" style=" text-align:left;">
+        Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">Fortalezas</th>
+      <td>Mobile-first con funcionamiento offline; Bajo costo y accesibilidad; Adaptación al contexto rural latinoamericano; UX simple (rápida adopción)</td>
+      <td>Alta precisión y profundidad técnica; Reputación consolidada</td>
+      <td>Facilidad de uso (mobile-first); Rápida adopción por pequeños productores</td>
+      <td>Escalabilidad y trazabilidad empresarial; Solución robusta para grandes operaciones</td>
+    </tr>
+    <tr>
+      <th scope="row">Debilidades</th>
+      <td>Marca nueva y baja confianza inicial; Menor capacidad técnica (analítica avanzada); Recursos limitados (startup)</td>
+      <td>Complejidad de uso; Poco adaptado a mercados emergentes</td>
+      <td>Funcionalidad limitada; Poca adaptación local en LATAM</td>
+      <td>Alto costo; Complejidad de implementación</td>
+    </tr>
+    <tr>
+      <th scope="row">Oportunidades</th>
+      <td>Baja digitalización del sector ganadero en Perú/LATAM; Crecimiento de conectividad móvil rural; Necesidad de soluciones accesibles para pequeños productores</td>
+      <td>Demanda de análisis avanzado en ganadería especializada</td>
+      <td>Crecimiento del uso de apps en campo</td>
+      <td>Digitalización de empresas ganaderas grandes</td>
+    </tr>
+    <tr>
+      <th scope="row">Amenazas</th>
+      <td>Entrada de soluciones globales al mercado LATAM; Resistencia al cambio tecnológico; Limitaciones económicas del usuario rural</td>
+      <td>Soluciones más simples y accesibles</td>
+      <td>Apps más completas o adaptadas al contexto</td>
+      <td>Soluciones más económicas y simples</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+**1. Estrategia de Cercanía y Confianza**
+Generar confianza inicial mostrando acompañamiento directo y humano, reduciendo la ansiedad tecnológica.
+
+**Tácticas:**
+- Ofrecer sesiones 1:1 gratuitas de inducción para cada nuevo cliente.  
+- Crear un servicio de soporte vía WhatsApp/Telegram con tiempos de respuesta cortos y lenguaje claro.  
+
+**2. Estrategia de Transparencia y Justicia en Costos**
+Posicionar a AgroCare como una marca honesta, justa y alineada a la realidad económica de las PYMES.  
+
+**Tácticas:**
+- Diseñar un esquema de precios simple y comunicativo (ej. “lo que ves es lo que pagas”).  
+- Publicar comparativas abiertas con competidores, destacando dónde AgroCare ofrece más valor.  
+- Elaborar campañas de comunicación que destaquen el compromiso con la transparencia y el desarrollo local.  
+
+**3. Estrategia de Comunidad y Educación Tecnológica**
+Transformar a clientes temerosos en promotores de la digitalización mediante una comunidad activa y educativa.  
+
+**Tácticas:**
+- Crear la **Comunidad AgroCare PYME Digital** con foros, webinars y espacios de networking.  
+- Publicar guías prácticas y casos de éxito de clientes peruanos que usen la plataforma.  
+- Organizar eventos híbridos (presenciales + online) para compartir aprendizajes y fomentar la innovación colaborativa.
+
+**4. Estrategia de Adaptación a la Cultura Peruana**
+Diferenciar a AgroCare al construir una experiencia profundamente conectada con la cultura, idioma y prácticas de negocio locales.  
+
+**Tácticas:**
+- Desarrollar contenidos de capacitación con ejemplos y casos de uso de sectores típicos peruanos.  
+- Usar un lenguaje cercano en la interfaz y la comunicación (ej. mensajes amigables, expresiones familiares al emprendedor peruano).   
+- Generar alianzas con instituciones peruanas (SUNAT, PRODUCE, municipalidades) para reforzar el cumplimiento normativo y la identidad local.  
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
@@ -13,6 +172,14 @@
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
+En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
+
+- segmento1
+<img src="">
+
+- segmento2
+<img src="">
+
 ### 2.3.5. Big Picture EventStorming
 ### 2.3.6. Ubiquitous Language
 
