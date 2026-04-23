@@ -85,6 +85,8 @@ Aplicando la técnica de las 5W's y 2H's, se identificaron los siguientes aspect
 
 ### 1.2.2.4. Lean UX Canvas
 
+![LeanUXCanvas](../Assets/Lean%20UX%20Canvas.jpg)
+
 ## 1.3. Segmentos objetivo
 
 Bovix ha sido diseñada considerando la diversidad del ecosistema ganadero peruano. A partir del análisis del dominio del problema se identificaron dos segmentos objetivos con necesidades, motivaciones y características diferenciadas.
@@ -121,4 +123,3 @@ Este segmento comprende a profesionales de la medicina veterinaria con especiali
 * Según el Colegio Médico Veterinario del Perú, el país cuenta con miles de veterinarios colegiados, de los cuales una parte significativa se orienta a la medicina de grandes animales y producción pecuaria.
 * La escasa presencia de veterinarios en zonas rurales es uno de los principales factores que explica el 15% de mortalidad animal evitable identificado en el sector, evidenciando la necesidad de plataformas que conecten a estos profesionales con los productores de manera ágil y organizada.
 * La digitalización de historiales clínicos veterinarios es aún incipiente en el Perú, lo que representa una oportunidad directa para que VacApp se posicione como la herramienta de referencia para este segmento.
-* 
