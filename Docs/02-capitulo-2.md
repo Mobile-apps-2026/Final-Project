@@ -172,12 +172,12 @@ Diferenciar a Bovix al construir una experiencia profundamente conectada con la 
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
 - Productores Ganaderos
-<img src=" ">
+<img src="..\Assets\User Persona 1.png">
 
 <div style="page-break-after: always;">
 
 - Veterinarios Especializados
-<img src=" ">
+<img src="..\Assets\User Persona 2.png">
 
 ### 2.3.2. User Task Matrix
 
@@ -290,26 +290,36 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
 
 ### Productores Ganaderos:
 - Gestionar alimentación	
-    - Explicación: .
+    - Explicación: La alimentación es la tarea sobre la que más control tienen los productores ganaderos.
 - Tomar decisiones operativas	
-    - Explicación: .
+    - Explicación: La toma de decisiones en muy importante ya que estas afectan al desenvolvimiento del negocio.
 ### Veterinarios Especializados:
 - Monitorear salud de los animales
-    - Explicación:
+    - Explicación: Resulta una prioridad para los veterinarios tener un seguimiento del estado de los animales que atienden.
 - Administrar tratamientos
-    - Explicación: 
+    - Explicación: La administración adecuade de los tratamientos es vital paara asegurar el bienestar del animal.
 
 ### 2.3.3. User Journey Mapping
+En esta sección se presentan los User Journey Mapping de los segmentos objetivos, que realizamos con el fin de dar a entender cómo se siente nuestro usuario en este momento, detallando cada paso que realiza y las emociones que experimenta.
+
+- Productores Ganaderos
+<img src="..\Assets\Customer journey map 1.png">
+
+- Veterinarios Especializados
+<img src="..\Assets\Customer journey map 2.png">
+
 ### 2.3.4. Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
 - Productores Ganaderos
-<img src="">
+<img src="..\Assets\Empathy map 1.png">
 
 - Veterinarios Especializados
-<img src="">
+<img src="..\Assets\Empathy map 2.png">
 
 ### 2.3.5. Big Picture EventStorming
+
+<img src="..\Assets\Big Picture Eventstorming.jpg">
 
 ### 2.3.6. Ubiquitous Language
 
