@@ -21,8 +21,8 @@
     <tr>
       <th colspan="2" scope="row">(En la cabecera colocar por cada competidor nombre y logo)</th>
       <th scope="column" style="width:20%; text-align:center;">
-        Agrocare<br>
-        <img src="" alt="Agrocare logo" style="max-width:100px; display:block; margin:6px auto;">
+        Bovix<br>
+        <img src="" alt="Bovix logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         CattleMax<br>
@@ -139,23 +139,23 @@ Generar confianza inicial mostrando acompañamiento directo y humano, reduciendo
 - Crear un servicio de soporte vía WhatsApp/Telegram con tiempos de respuesta cortos y lenguaje claro.  
 
 **2. Estrategia de Transparencia y Justicia en Costos**
-Posicionar a AgroCare como una marca honesta, justa y alineada a la realidad económica de las PYMES.  
+Posicionar a Bovix como una marca honesta, justa y alineada a la realidad económica de las PYMES.  
 
 **Tácticas:**
 - Diseñar un esquema de precios simple y comunicativo (ej. “lo que ves es lo que pagas”).  
-- Publicar comparativas abiertas con competidores, destacando dónde AgroCare ofrece más valor.  
+- Publicar comparativas abiertas con competidores, destacando dónde Bovix ofrece más valor.  
 - Elaborar campañas de comunicación que destaquen el compromiso con la transparencia y el desarrollo local.  
 
 **3. Estrategia de Comunidad y Educación Tecnológica**
 Transformar a clientes temerosos en promotores de la digitalización mediante una comunidad activa y educativa.  
 
 **Tácticas:**
-- Crear la **Comunidad AgroCare PYME Digital** con foros, webinars y espacios de networking.  
+- Crear la **Comunidad Bovix PYME Digital** con foros, webinars y espacios de networking.  
 - Publicar guías prácticas y casos de éxito de clientes peruanos que usen la plataforma.  
 - Organizar eventos híbridos (presenciales + online) para compartir aprendizajes y fomentar la innovación colaborativa.
 
 **4. Estrategia de Adaptación a la Cultura Peruana**
-Diferenciar a AgroCare al construir una experiencia profundamente conectada con la cultura, idioma y prácticas de negocio locales.  
+Diferenciar a Bovix al construir una experiencia profundamente conectada con la cultura, idioma y prácticas de negocio locales.  
 
 **Tácticas:**
 - Desarrollar contenidos de capacitación con ejemplos y casos de uso de sectores típicos peruanos.  
@@ -169,19 +169,183 @@ Diferenciar a AgroCare al construir una experiencia profundamente conectada con 
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas 
+Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
+
+- Productores Ganaderos
+<img src=" ">
+
+<div style="page-break-after: always;">
+
+- Veterinarios Especializados
+<img src=" ">
+
 ### 2.3.2. User Task Matrix
+
+En esta sección se presenta el user task matrix de los segmentos objetivos, con el fin de indentificar la frecuencia de las actividades realizadas por los usuarios, y de esta manera se refleja la importancia de determinadas tareas.
+
+<table>
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th colspan="2">Productores Ganaderos</th>
+            <th colspan="2">Veterinarios Especializados</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Frecuencia</th>
+            <th>Importancia</th>
+            <th>Frecuencia</th>
+            <th>Importancia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Registrar información del ganado</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Media</td>
+            <td>Media</td>
+        </tr>
+        <tr>
+            <td>Monitorear salud de los animales</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Detectar enfermedades o anomalías</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Coordinar atención veterinaria</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Administrar tratamientos médicos</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Gestionar alimentación del ganado</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Baja</td>
+            <td>Media</td>
+        </tr>
+        <tr>
+            <td>Controlar reproducción (monta, parto)</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Evaluar productividad (leche/carne)</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Media</td>
+            <td>Media</td>
+        </tr>
+        <tr>
+            <td>Organizar registros e historial</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Tomar decisiones operativas</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Coordinar personal o actividades</td>
+            <td>Baja</td>
+            <td>Media</td>
+            <td>Baja</td>
+            <td>Media</td>
+        </tr>
+        <tr>
+            <td>Gestionar múltiples clientes/animales</td>
+            <td>Baja</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+    </tbody>
+</table>
+
+En base al User Task Matrix presentado, podemos destacar las siguientes tareas con mayor frecuencia e importancia para cada segmento de usuarios:
+
+### Productores Ganaderos:
+- Gestionar alimentación	
+    - Explicación: .
+- Tomar decisiones operativas	
+    - Explicación: .
+### Veterinarios Especializados:
+- Monitorear salud de los animales
+    - Explicación:
+- Administrar tratamientos
+    - Explicación: 
+
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
-- segmento1
+- Productores Ganaderos
 <img src="">
 
-- segmento2
+- Veterinarios Especializados
 <img src="">
 
 ### 2.3.5. Big Picture EventStorming
+
 ### 2.3.6. Ubiquitous Language
+
+-**Animal Health (Salud animal):** Estado físico y fisiológico del ganado, que incluye la prevención, diagnóstico y tratamiento de enfermedades para asegurar su bienestar y productividad.
+
+-**Breeding (Reproducción):** Proceso de cría de animales con el objetivo de mejorar características genéticas, aumentar la productividad y mantener la sostenibilidad del hato.
+
+-**Calving (Parto bovino)** Proceso mediante el cual una vaca da a luz a un ternero, evento clave para el ciclo productivo del ganado.
+
+-**Cattle (Ganado bovino)** Conjunto de animales de la especie bovina criados para la producción de carne, leche u otros productos derivados.
+
+-**Disease Prevention (Prevención de enfermedades)** Conjunto de prácticas orientadas a evitar la aparición de enfermedades en el ganado, incluyendo vacunación, control sanitario y manejo adecuado.
+
+-**Feed Management (Gestión de alimentación)** Planificación, control y suministro de alimentos al ganado para asegurar su nutrición adecuada y maximizar su rendimiento productivo.
+
+-**Herd (Hato / Rebaño)** Grupo de animales de una misma especie que son gestionados como una unidad dentro de una explotación ganadera.
+
+-**Herd Management (Gestión del hato)** Conjunto de actividades relacionadas con el control, monitoreo y optimización del ganado, incluyendo salud, reproducción, alimentación y productividad.
+
+-**Livestock (Ganado)** Término general que engloba a los animales criados para fines productivos, como bovinos, ovinos, caprinos, entre otros.
+
+-**Productivity (Productividad)** Medida del rendimiento del ganado en términos de producción de carne, leche u otros productos, en relación con los recursos utilizados.
+
+-**Traceability (Trazabilidad)** Capacidad de rastrear la historia, ubicación y estado de un animal a lo largo de su vida productiva.
+
+-**Vaccination (Vacunación)** Administración de vacunas para prevenir enfermedades y fortalecer el sistema inmunológico del ganado.
+
+-**Veterinary Care (Atención veterinaria)** Servicios profesionales destinados al diagnóstico, tratamiento y prevención de enfermedades en animales.
+
+-**Animal Welfare (Bienestar animal)** Condición en la que el animal se encuentra sano, cómodo, bien alimentado y libre de sufrimiento innecesario.
+
+-**Farm (Explotación ganadera)** Unidad productiva donde se cría y gestiona el ganado para fines comerciales o de subsistencia.
+
+-**Livestock Monitoring (Monitoreo del ganado)** Seguimiento continuo del estado de los animales, incluyendo salud, ubicación, comportamiento y productividad.
+
+-**Weight Gain (Ganancia de peso)** Incremento del peso corporal del animal en un periodo determinado, indicador clave de su crecimiento y alimentación.
 
 ## 2.4. Requirements specification
 ### 2.4.1. User Stories
