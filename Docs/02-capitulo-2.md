@@ -294,6 +294,10 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 
 ### 2.2.3. Análisis de entrevistas
 
+Basándonos en las entrevistas, hemos llevado a cabo un análisis en el que destacamos los puntos compartidos y tendencias comunes entre los usuarios.
+
+Hallazgos:
+
 ## 2.3. Needfinding
 ### 2.3.1. User Personas 
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
@@ -491,6 +495,34 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
+Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio y definir las interacciones principales entre los actores, comandos y políticas del sistema.
+
+Pasos del proceso:
+
+1. Eventos de Dominio (Tormenta de ideas): Identificar qué ha sucedido en el negocio, usando notas adhesivas naranjas escritas en pasado
+
+![Event1](../Assets/Event1.png)
+
+2. Ordenar Eventos: Organizar los eventos cronológicamente de izquierda a derecha, eliminando duplicados.
+
+![Event2](../Assets/Event2.png)
+
+3. Identificar Comandos (Acciones): Añadir notas azules que representan acciones que provocan los eventos.
+
+![Event3](../Assets/Event3.png)
+
+4. Actores y Sistemas: Determinar quién realiza la acción (persona) o qué sistema externo (API, pago) participa.
+
+![Event4](../Assets/Event4.png)
+
+5. Políticas (Reglas de Negocio): Identificar reacciones automáticas o reglas que siguen a un evento, usando notas moradas
+
+![Event5](../Assets/Event5.png)
+
+ 6. Agregados y Contextos Delimitados: Agrupar comandos y eventos relacionados para definir límites lógicos o microservicios.
+
+ ![EventF](../Assets/EventStormFinal.png)
+
 ### 2.5.1.1. Candidate Context Discovery
 
 Para poder identificar los bounded contexts se tuvo que modificar la línea de tiempo del modelado del dominio que se hizo a partir del EventStorming, se organizaron los conceptos que tenían relación.
@@ -547,6 +579,10 @@ En esta sección se muestran los principales flujos identificados donde existe c
 **Programacion de visita por parte de un ganadero y su gestion de pago**
 
 ![Flow2](../Assets/Flow2.png)
+
+**Actualizacion de plan alimentario luego de un diagnostico**
+
+![ Flow3](../Assets/Flow3.png)
 
 ### 2.5.1.3. Bounded Context Canvases
 
