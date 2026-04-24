@@ -380,17 +380,118 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ### 2.5.3.3. Software Architecture Deployment Diagrams
 
 ## 2.6. Tactical-Level Domain-Driven Design
-### 2.6.1. Bounded Context: <Bounded Context Name>
+## 2.6.1. Bounded Context: Identity and Access Management
 ### 2.6.1.1. Domain Layer
+Este bounded context gestiona el ciclo de vida de la identidad del usuario: registro, verificación, autenticación y cierre de sesión. Los actores son Ganadero y Veterinario.
+
+**Entities:**
+- **User:**
+  - Propósito: Representa a cualquier usuario del sistema, independiemente de su rol.
+  - Atributos: id: UUID, email: Email (VO), passwordHash: String, role: UserRole (Enum), isVerified: Boolean, createdAt: DateTime, lastLogin: DateTime
+  - Métodos: verifyEmail(), login(password), logout(), changePassword(newPassword)
+- **OAuthProvider:**
+  - Propósito: Representa un proveedor externo de autenticación (Google, Facebook, etc.).
+  - Atributos: providerId: String, providerName: String, accessToken: String
+  - Métodos: authenticate(), refreshToken()
+  
+**ValueObjects:**
+  - **Email:**
+    - Propósito: Encapsula y valida el formato del correo electrónico.
+    - Atributos: value: String
+    - Métodos: validate(), equals(other: Email)
+  - **Password:**
+    - Propósito: Encapsula las reglas de validación y hashing de contraseñas.
+    - Atributos: hashedValue: String
+    - Métodos: hash(rawPassword), matches(rawPassword)
+    
+**Enumeraciones:**
+  - **UserRole:** GANADERO, VETERINARIO
+
+**Aggregates:**
+  - **UserAggregate(raíz:User)**
+    - Agrupa User con su Email y Password, gestionando el ciclo completo de autenticación.
+
+**Domain Services:**
+  - **AuthenticationService:**
+    - **Propósito:** Orquesta la lógica de autenticación y verificación.
+    - **Métodos:** authenticate(email, password): User, sendVerificationEmail(user: User), verifyToken(token: String): Boolean
+
+**Repository Interfaces:**
+  - **IUserRepository:**
+    - findById(id: UUID): User
+    - findByEmail(email: String): User
+    - save(user: User): void
+    - delete(id: UUID): void
+
 ### 2.6.1.2. Interface Layer
+
+**AuthController:**
+  - Propósito: Expone los endpoints REST para registro, login, verificación y cierre de sesión.
+  - Métodos:
+    - POST /auth/register → registerUser(RegisterUserCommand)
+    - POST /auth/verify-email → verifyEmail(token: String)
+    - POST /auth/login → login(LoginCommand)
+    - POST /auth/logout → logout(userId: UUID)
+    - POST /auth/recover-password → recoverPassword(email: String
+
+**OAuthController:**
+  - Propósito: Maneja la autenticación mediante proveedores OAuth externos.
+  - Métodos:
+    - GET /auth/oauth/{provider} → redirectToProvider(provider: String)
+    - GET /auth/oauth/callback → handleOAuthCallback(code: String)
+
 ### 2.6.1.3. Application Layer
+
+  - **RegisterUserCommandHandler**
+    - Propósito: Maneja el comando de registro de nuevo usuario.
+    - Método: handle(RegisterUserCommand): void
+    - Lógica: Crea el usuario, hashea la contraseña, persiste y dispara el evento UserRegistered.
+
+  - **VerifyEmailCommandHandler**
+    - Propósito: Maneja la verificación del correo electrónico.
+    - Método: handle(VerifyEmailCommand): void
+    - Lógica: Valida el token y marca al usuario como verificado.
+
+  - **LoginCommandHandler**
+    - Propósito: Maneja el inicio de sesión.
+    - Método: handle(LoginCommand): AuthToken
+    - Lógica: Valida credenciales y genera JWT.
+
+  - **RecoverPasswordCommandHandler**
+    - Propósito: Inicia el flujo de recuperación de contraseña.
+    - Método: handle(RecoverPasswordCommand): void
+
+**Event Handlers:**
+  - **UserRegisteredEventHandler**
+    - Propósito: Reacciona al evento UserRegistered enviando el correo de verificación.
+
+  - **LoginFailedEventHandler**
+    - Propósito: Reacciona al evento LoginFailed registrando el intento fallido y bloqueando si supera el límite.
+
 ### 2.6.1.4 Infrastructure Layer
+
+**UserRepository (implementa IUserRepository)**
+  - Propósito: Accede a la base de datos relacional para persistir y consultar usuarios.
+  - Tecnología: JPA/Hibernate o Entity Framework.
+
+**EmailService**
+  - Propósito: Envía correos de verificación y recuperación de contraseña.
+  - Tecnología: SMTP / SendGrid API.
+
+**JwtTokenProvider**
+  - Propósito: Genera y valida tokens JWT para sesiones activas.
+  - Métodos: generateToken(user: User): String, validateToken(token: String): Boolean
+
+**OAuthAdapterService**
+  - Propósito: Conecta con proveedores OAuth externos para autenticación federada.
+
 ### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 ### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-### 2.6.2. Bounded Context: <Bounded Context Name>
+
+## 2.6.2. Bounded Context: <Bounded Context Name>
 ### 2.6.2.1. Domain Layer
 ### 2.6.2.2. Interface Layer
 ### 2.6.2.3. Application Layer
@@ -400,7 +501,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-### 2.6.3. Bounded Context: <Bounded Context Name>
+
+## 2.6.3. Bounded Context: <Bounded Context Name>
 ### 2.6.3.1. Domain Layer
 ### 2.6.3.2. Interface Layer
 ### 2.6.3.3. Application Layer
@@ -410,7 +512,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-### 2.6.4. Bounded Context: <Bounded Context Name>
+
+## 2.6.4. Bounded Context: <Bounded Context Name>
 ### 2.6.4.1. Domain Layer
 ### 2.6.4.2. Interface Layer
 ### 2.6.4.3. Application Layer
@@ -420,7 +523,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-### 2.6.5. Bounded Context: <Bounded Context Name>
+
+## 2.6.5. Bounded Context: <Bounded Context Name>
 ### 2.6.5.1. Domain Layer
 ### 2.6.5.2. Interface Layer
 ### 2.6.5.3. Application Layer
@@ -430,7 +534,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-### 2.6.6. Bounded Context: <Bounded Context Name>
+
+## 2.6.6. Bounded Context: <Bounded Context Name>
 ### 2.6.6.1. Domain Layer
 ### 2.6.6.2. Interface Layer
 ### 2.6.6.3. Application Layer
