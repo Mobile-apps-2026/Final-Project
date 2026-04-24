@@ -254,17 +254,18 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 ### Segmento #2: Veterinarios Especializados
 
 ### Entrevista 1
-**Entrevistado:**
+**Entrevistado:** Johan Bottger
 
-**Edad:**
+**Edad:** 21
 
-**Distrito:**
+**Distrito:** San Borja
 
-<!-- Aqui colocan un screeshot de la entrevista -->
+<img src="..\Assets\Captura de pantalla de entrevista 1 vet.png" alt="entrevista-veterinario1" width="50%">
 
-**Minuto de inicio:**
+**Minuto de inicio:** 00.0
 
-**Link de la entrevista:**
+**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQA9khWgWmCLSJ91EoFFyW1wATE59FhS_p39VrA7dyI75l0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mmw8Vb)
+
 
 ### Entrevista 2
 **Entrevistado:**
