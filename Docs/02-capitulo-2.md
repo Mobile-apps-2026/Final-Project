@@ -204,17 +204,21 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 ### Segmento #1: Productores Ganaderos (Independientes y Empresariales)
 
 ### Entrevista 1
-**Entrevistado:**
+**Entrevistado:** Ximena Flores Manrique
 
-**Edad:**
+**Edad:** 22
 
-**Distrito:**
+**Distrito:** Villa María del Triunfo
 
-<!-- Aqui colocan un screeshot de la entrevista -->
+![Entrevista-1](../Assets/entrevista-ganadero1.png)
 
-**Minuto de inicio:**
+**Minuto de inicio:** 00:01
 
 **Link de la entrevista:** 
+
+**Resumen de la entrevista:**
+
+La entrevista revela que Ximena, de 22 años y residente de Villa María, gestiona su granja con un enfoque metódico, pragmático y orientado a resultados, apoyándose fuertemente en el criterio de veterinarios para establecer planes de bioseguridad, vacunación y alimentación que prevengan pérdidas económicas por enfermedades. Actualmente, lleva sus registros de forma manual o en hojas de cálculo, pero busca dar el salto a una aplicación multiplataforma que pueda consultar tanto en campo desde su iPhone como en su laptop Windows a través de Google Chrome. Ella espera que esta herramienta tecnológica le permita automatizar cronogramas, sugerir el uso de medicamentos, controlar el balance financiero y crear fichas individuales para cada animal desde su nacimiento, facilitando así la dosificación exacta de alimento según su etapa de crecimiento y permitiéndole tomar decisiones rápidas y precisas para optimizar su negocio.
 
 ### Entrevista 2
 **Entrevistado:**
