@@ -164,6 +164,41 @@ Diferenciar a Bovix al construir una experiencia profundamente conectada con la 
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+### Segmento #1: Productores Ganaderos (Independientes y Empresariales)
+
+Bovix ha desarrollado preguntas específicas para conocer las necesidades, experiencias y expectativas de los productores ganaderos, tanto independientes como empresariales. Buscamos ayudarlos a gestionar mejor sus operaciones, optimizar el cuidado de sus animales y evaluar su impacto productivo y comercial. A través de una plataforma intuitiva, Bovix ofrece herramientas que mejoran la eficiencia, el control sanitario y la toma de decisiones, simplificando los procesos diarios del productor y mejorando la calidad de su ganadería.
+
+**Preguntas para las entrevistas:**
+
+1. ¿Cuántos animales maneja actualmente su empresa y cómo varía esa cantidad durante el año?
+2. Si su empresa tuviera acceso a una plataforma digital para gestión ganadera, ¿qué funciones considera imprescindibles para mejorar la eficiencia?
+3. ¿Cuáles son los mayores retos que enfrentan en la gestión ganadera a gran escala y cómo los abordan hoy en día?
+4. ¿Qué tipo de información o datos son clave para la toma de decisiones en su operación ganadera?
+5. ¿Qué funcionalidades le gustaría tener para facilitar la gestión del personal y la planificación de tareas?
+6. ¿Qué tipo de informes o análisis considera importantes para evaluar el desempeño de su empresa?
+7. ¿Cómo le gustaría interactuar con proveedores y socios comerciales a través de una plataforma como VacApp?
+8. ¿Qué tan importante es que una aplicación como VacApp se adapte a los procesos actuales de su empresa?
+9. ¿Qué aspectos considera que deberían ser completamente personalizables dentro de la plataforma?
+10. ¿Qué mejoras espera obtener al integrar una solución como VacApp en su operación ganadera?
+
+### Segmento #2: Veterinarios Especializados
+
+Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos de trabajo, los desafíos de campo y las necesidades técnicas de los veterinarios especializados. Nuestro propósito es facilitarles la gestión del historial clínico, el seguimiento reproductivo y el control de tratamientos en los diferentes rebaños que atienden. Mediante una herramienta digital integrada, Bovix busca agilizar el registro de diagnósticos y optimizar la comunicación directa con los productores, permitiendo a los profesionales brindar un servicio médico más eficiente, preciso y organizado.
+
+**Preguntas para las entrevistas:**
+
+1. ¿Cómo registra y gestiona los historiales clínicos de los animales que atiende? (Perfil y tareas)
+2. ¿Qué información le suele faltar al llegar a una ganadería para dar un diagnóstico? (Puntos de dolor)
+3. ¿Cómo se comunica y coordina habitualmente con los productores ganaderos? (Hábitos)
+4. ¿Qué datos previos del animal considera obligatorios antes de su evaluación? (Necesidades)
+5. ¿Cómo lleva el control de las vacunas y desparasitaciones de sus clientes? (Tareas y herramientas actuales)
+6. ¿Qué problemas enfrenta para anotar datos durante el trabajo de campo o sin internet? (Frustraciones técnicas)
+7. ¿En qué le ayudaría compartir información médica en tiempo real con el productor? (Expectativas)
+8. ¿Qué tres funciones serían indispensables para usted en una app veterinaria? (Necesidades funcionales)
+9. ¿Cómo le resultaría más fácil entregar y controlar las recetas médicas o indicaciones? (Usabilidad)
+10. ¿Cuál sería el mayor beneficio para su trabajo al usar una plataforma como Bovix? (Metas/Objetivos)
+
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 
