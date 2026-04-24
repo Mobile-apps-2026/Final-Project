@@ -200,6 +200,90 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 10. ¿Cuál sería el mayor beneficio para su trabajo al usar una plataforma como Bovix? (Metas/Objetivos)
 
 ### 2.2.2. Registro de entrevistas
+
+### Segmento #1: Productores Ganaderos (Independientes y Empresariales)
+
+### Entrevista 1
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:** 
+
+### Entrevista 2
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:**
+
+### Entrevista 3
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:**
+
+
+### Segmento #2: Veterinarios Especializados
+
+### Entrevista 1
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:**
+
+### Entrevista 2
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:**
+
+### Entrevista 3
+**Entrevistado:**
+
+**Edad:**
+
+**Distrito:**
+
+<!-- Aqui colocan un screeshot de la entrevista -->
+
+**Minuto de inicio:**
+
+**Link de la entrevista:**
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
