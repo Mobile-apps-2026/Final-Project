@@ -1659,7 +1659,6 @@ Gestiona la programación, envío y seguimiento de notificaciones push generadas
 
 ### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
-### 2.6.6.6.2. Bounded Context Database Design Diagram
 
 <img width="371" height="547" alt="image" src="https://github.com/user-attachments/assets/75524a1c-e8d6-4349-9b6f-7c4e376a86e3" />
 
