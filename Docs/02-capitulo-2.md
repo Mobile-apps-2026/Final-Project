@@ -491,11 +491,86 @@ Este bounded context gestiona el ciclo de vida de la identidad del usuario: regi
 ### 2.6.1.6.2. Bounded Context Database Design Diagram
 
 
-## 2.6.2. Bounded Context: <Bounded Context Name>
+## 2.6.2. Bounded Context: Profile Management
 ### 2.6.2.1. Domain Layer
+
+Gestiona la información del perfil de los usuarios (Ganadero y Veterinario), incluyendo foto, preferencias e idioma.
+
+**Entities:**
+  - **UserProfile:**
+    - Propósito: Representa el perfil completo de un usuario en el sistema.
+    - Atributos: id: UUID, userId: UUID, firstName: String, lastName: String, photoUrl: String, language: String, theme: ThemePreference (Enum), updatedAt: DateTime
+    - Métodos: updatePhoto(url: String), updatePreferences(language, theme), modifyObject(data: ProfileData)
+
+  - **VeterinarianProfile(extiende UserProfile):**
+    - Atributos adicionales: licenseNumber: String, specialization: String, yearsOfExperience: Int
+  
+  - **FarmerProfile (extiende UserProfile)**
+    - Atributos adicionales: farmName: String, farmLocation: String, livestockTypes: List<String>
+
+**ValueObjects:**
+  - **ProfileData:**
+    - Propósito: Encapsula los datos modificables del perfil.
+    - Atributos: firstName: String, lastName: String, language: String
+    
+  - **PhotoUrl:**
+    - Propósito: Valida y encapsula la URL de la foto de perfil.
+    - Atributos: value: String
+    - Métodos: validate(): Boolean
+
+**Enumeraciones:**
+  - ThemePreference: LIGHT, DARK, SYSTEM
+
+**DomainServices:**
+  - **ProfileValidationService**
+    - Propósito: Valida la coherencia de los datos del perfil antes de persistirlos.
+    - Métodos: validateProfileData(data: ProfileData): Boolean
+
+**Repository Intefaces:**
+  - **IUserProfileRepository**
+    - findByUserId(userId: UUID): UserProfile
+    - save(profile: UserProfile): void
+    - update(profile: UserProfile): void
+  
 ### 2.6.2.2. Interface Layer
+
+**ProfileController**
+  - Propósito: Expone los endpoints REST para gestión del perfil.
+  - Métodos:
+    - GET /profile/{userId} → getProfile(userId: UUID)
+    - PUT /profile/{userId} → updateProfile(UpdateProfileCommand)
+    - POST /profile/{userId}/photo → uploadPhoto(file: MultipartFile)
+    - PATCH /profile/{userId}/preferences → updatePreferences(PreferencesCommand)
+
 ### 2.6.2.3. Application Layer
+  - **UpdateProfileCommandHandler**
+    - Propósito: Maneja la actualización de datos del perfil.
+    - Método: handle(UpdateProfileCommand): void
+    - Lógica: Valida coherencia de datos y persiste cambios, dispara ProfileUpdated.
+
+  - **UploadPhotoCommandHandler**
+    - Propósito: Maneja la subida y cambio de foto de perfil.
+    - Método: handle(UploadPhotoCommand): String
+    - Lógica: Sube la imagen al storage y actualiza photoUrl.
+
+  - **UpdatePreferencesCommandHandler**
+    - Propósito: Maneja el cambio de idioma y tema.
+    - Método: handle(UpdatePreferencesCommand): void
+
+**Event Handlers:**
+  - ProfileUpdatedEventHandler 
+    - Propósito: Reacciona al evento ProfileUpdated para sincronizar datos con otros bounded contexts si es necesario.
+
+
 ### 2.6.2.4 Infrastructure Layer
+**UserProfileRepository (implementa IUserProfileRepository)**
+  - Tecnología: JPA/Hibernate.
+
+**FileStorageService**
+  - Propósito: Gestiona la subida y almacenamiento de fotos de perfil.
+  - Tecnología: AWS S3 / Azure Blob Storage.
+  - Métodos: upload(file): String, delete(url: String): void
+
 ### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 ### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
