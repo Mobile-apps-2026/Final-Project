@@ -210,11 +210,11 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 
 **Distrito:** Villa María del Triunfo
 
-![Entrevista-1](../Assets/entrevista-ganadero1.png)
+<img src="../Assets/entrevista-ganadero1.png" alt="entrevista-ganadero1" width="50%">
 
 **Minuto de inicio:** 00:01
 
-**Link de la entrevista:** 
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201611430_upc_edu_pe/IQC45k_tuIw-S4SQytMfoJLZAYbUFICw5w4G_0AKRxhUnG4?e=jlKZHb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Resumen de la entrevista:**
 
