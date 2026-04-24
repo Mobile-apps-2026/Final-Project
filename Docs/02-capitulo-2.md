@@ -591,10 +591,23 @@ Este bounded context gestiona el ciclo de vida de la identidad del usuario: regi
   - Propósito: Conecta con proveedores OAuth externos para autenticación federada.
 
 ### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El siguiente diagrama detalla la arquitectura interna para el Bounded Context de gestión de accesos. Ilustra el flujo de peticiones desde los actores principales a través de la capa de interfaz (controladores REST), la delegación de intenciones hacia los manejadores de comandos en la capa de aplicación, y finalmente, la ejecución de la lógica de dominio y persistencia, incluyendo la integración con proveedores OAuth externos.
+
+![Diagrama C4 IAM](../Assets/C4-IAM.png)
+
 ### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+La siguiente imagen presenta el diagrama de clases modelado bajo los principios de Domain-Driven Design (DDD) para la seguridad del sistema. Se detallan el Aggregate Root (User), las Entidades secundarias (OAuthProvider), los Value Objects encargados de encapsular validaciones (Email, Password), y los contratos de las interfaces de repositorios.
+
+![Diagrama UML IAM](../Assets/UML-IAM.png)
+
 ### 2.6.1.6.2. Bounded Context Database Design Diagram
 
+El siguiente modelo físico de datos (ERD) define la estructura a nivel de base de datos relacional para el contexto de accesos. Representa el esquema de las tablas users y oauth_providers, especificando los tipos de datos, llaves primarias (UUIDs), llaves foráneas y las restricciones (constraints) necesarias para garantizar la integridad referencial.
+
+![Diagrama BaseDatos IAM](../Assets/BaseDatos-IAM.png)
 
 ## 2.6.2. Bounded Context: Profile Management
 ### 2.6.2.1. Domain Layer
@@ -677,10 +690,20 @@ Gestiona la información del perfil de los usuarios (Ganadero y Veterinario), in
   - Métodos: upload(file): String, delete(url: String): void
 
 ### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+El presente diagrama representa la estructura interna del contexto de gestión de perfiles. Se visualiza cómo los controladores delegan las operaciones de actualización de datos, configuración de preferencias y carga de fotografías hacia la capa de aplicación. Asimismo, se evidencia la conexión con la infraestructura para el almacenamiento físico en base de datos y la gestión de archivos en la nube
+
+![Diagrama C4 PROFILE](../Assets/C4-Profile.png)
+
 ### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+La figura a continuación modela la estructura orientada a objetos para los perfiles de los usuarios. Destaca la aplicación del polimorfismo mediante herencia, donde FarmerProfile y VeterinarianProfile extienden de la entidad base UserProfile, incorporando sus propios atributos específicos y delegando información a Value Objects asociados.
+![Diagrama UML PROFILE](../Assets/UML-Profile.png)
+
 ### 2.6.2.6.2. Bounded Context Database Design Diagram
 
+![Diagrama BaseDatos PROFILE](../Assets/BaseDatos-Profile.png)
 
 ## 2.6.3. Bounded Context: Livestock Management
 ### 2.6.3.1. Domain Layer
@@ -807,9 +830,21 @@ Gestiona la creación de lotes de ganado, el registro individual de animales, su
   - Tecnología: Log en base de datos o sistema de eventos.
 
 ### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+El siguiente diagrama expone los componentes del contexto core del sistema: la gestión ganadera. Muestra la orquestación técnica entre la creación de lotes, el registro y traslado de animales, y la asignación de planes alimentarios; evidenciando la interacción directa con los servicios de dominio y el registro histórico de eventos en la infraestructura.
+
+![Diagrama C4 LIFESTOCK](../Assets/C4-Livestock.png)
+
 ### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+Este diagrama ilustra el modelo de clases que soporta la lógica central del negocio ganadero. Destaca el Aggregate Root LivestockBatch y su relación transaccional con entidades dependientes como Animal y FeedingPlan, mostrando claramente la cardinalidad, las enumeraciones de estados y las operaciones de dominio encapsuladas.
+
+![Diagrama UML LIFESTOCK](../Assets/UML-Livestock.png)
+
 ### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+![Diagrama BaseDatos LIFESTOCK](../Assets/BaseDatos-Livestock.png)
 
 
 ## 2.6.4. Bounded Context: <Bounded Context Name>
