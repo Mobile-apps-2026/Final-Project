@@ -365,19 +365,124 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
 ### 2.5.1.1. Candidate Context Discovery
+
+Para poder identificar los bounded contexts se tuvo que modificar la línea de tiempo del modelado del dominio que se hizo a partir del EventStorming, se organizaron los conceptos que tenían relación.
+
+**Bounded Context Identity and Access Management**
+
+Se encarga de la seguridad y el control de acceso. Gestiona el registro de nuevos usuarios, la verificación de correos, el inicio de sesión (incluyendo integraciones con proveedores de OAuth) y el mantenimiento de sesiones activas tanto para ganaderos como para veterinarios
+
 ![Iam Context](<../Assets/Iam Management.png>)
+
+**Bounded Context Profile Management**
+
+Su objetivo es la personalización de la experiencia del usuario. Permite actualizar el perfil, subir fotos, modificar preferencias y asegurar que los datos del usuario estén validados para mostrar una vista de perfil completo
+.
+
 ![Profile Context](<../Assets/Profile Context.png>)
+
+**Bounded Context Livestock Management**
+
+Se centra en el control del inventario animal. Permite formar lotes de ganado, registrar animales individualmente y gestionar sus traslados. Además, es responsable de asignar y actualizar planes alimentarios para generar la ración diaria recomendada
+.
+
 ![Livestock Context](<../Assets/Livestock Context.png>)
+
+**Bounded Context Veterinary and Health**
+
+Es el núcleo clínico de la aplicación. Gestiona todo el proceso de salud animal, desde generar citas y programar visitas técnicas, hasta la emisión de diagnósticos, tratamientos y vacunas, culminando en la generación de certificados de trazabilidad
+.
+
 ![Veterinary Context](<../Assets/Veterinary Context.png>)
+
+**Bounded Context Payments**
+
+Administra la parte financiera de los servicios. Maneja el flujo de inicio y confirmación de pagos a través de pasarelas, gestiona el historial de transacciones, valida suscripciones y permite la descarga de comprobantes y reportes mensuales
+.
+
 ![Payment Context](<../Assets/Payments Context.png>)
+
+**Bounded Context Notifications**
+
+Actúa como el canal de comunicación directa con el usuario. Su función es programar y enviar notificaciones push basadas en eventos del sistema, como citas programadas o cambios en el estado de las mismas, manteniendo un historial para consulta del usuario
+.
+
 ![Notification Context](<../Assets/Notification Context.png>)
+
 ### 2.5.1.2. Domain Message Flows Modeling
+
+En esta sección se muestran los principales flujos identificados donde existe colaboración entre los diferentes bounded context identificador. Para una mayor comprensión se utiliza la técnica de visualización Domain Storytelling.
+
+**Nuevo registro de usuario y configuracion inicial del perfil**
+
+![Flow1](../Assets/Flow1.png)
+
+**Programacion de visita por parte de un ganadero y su gestion de pago**
+
+![Flow2](../Assets/Flow2.png)
+
 ### 2.5.1.3. Bounded Context Canvases
+
+Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo versión 5 propuesto por el Domain Driven Design Group. En cada uno de los canvases registramos las secciones específicas como el Context Overview Definition, Business Rules Distillation y el Ubiquitous Language, identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos.
+
+**Bounded Context Identity and Access Management**
+
+![IamCanvas](<../Assets/IAM canvas.png>)
+
+**Bounded Context Profile Management**
+
+![ProfileCanvas](<../Assets/Profile canvas.png>)
+
+**Bounded Context Livestock Management**
+
+![LiveCanvas](<../Assets/Livestock canvas.png>)
+
+**Bounded Context Veterinary and Health**
+
+![VetCanvas](<../Assets/Veterinary Canvas.png>)
+
+**Bounded Context Payments**
+
+![PayCanvas](<../Assets/Payments canvas.png>)
+
+**Bounded Context Notifications**
+
+![NotiCanvas](<../Assets/Notification canvas.png>)
+
 ### 2.5.2. Context Mapping
+
+En el context mapping podemos definir las relaciones entre los bounded context.
+
+![ContextMap](<../Assets/Context Map.png>)
+
+El mapa de contexto se articula mediante IAM Management
+, que actúa como Upstream al emitir el evento de registro necesario para que Profile Management
+ inicialice la identidad del usuario, sirviendo este último como Open Host Service para proveer datos biográficos a toda la plataforma. Los dominios principales, Veterinary and Health
+ y Livestock Management
+, están integrados mediante un Shared Kernel, lo que permite que los diagnósticos clínicos emitidos por el veterinario coordinen directamente la actualización de los planes alimentarios y la ración diaria recomendada para el ganado. Finalmente, Payments
+ mantiene una relación de Customer-Supplier con el área veterinaria para procesar transacciones tras la programación de citas, mientras que Notifications
+ funciona de manera transversal como un consumidor Downstream que reacciona a los eventos de éxito de todos los contextos para mantener informados a ganaderos y veterinarios.
+
 ### 2.5.3. Software Architecture
 ### 2.5.3.1. Software Architecture Context Level Diagrams
+
+En el software architecture context diagram se puede apreciar los componentes mas importantes que componen el sistema,asi como los usuarios y las principales funciones.
+
+![ContextDiagram](<../Assets/Context Diagram.png>)
+
+
+
 ### 2.5.3.2. Software Architecture Container Level Diagrams
+
+En el software architecture container diagram se puede apreciar la forma de más alto nivel de la arquitectura del software y como se distribuyen las responsabilidades en ella.También muestra las principales opciones tecnológicas y cómo los contenedores se comunican entre sí.
+
+![ContainerDiagram](<../Assets/Container Diagram.png>)
+
 ### 2.5.3.3. Software Architecture Deployment Diagrams
+
+Este diagrama sirve para mapear la arquitectura física del sistema, visualizando cómo se distribuyen los artefactos de software en los nodos de hardware y sus rutas de comunicación.
+
+![Deployment](<../Assets/Deployment Diagram.png>)
 
 ## 2.6. Tactical-Level Domain-Driven Design
 ## 2.6.1. Bounded Context: Identity and Access Management
