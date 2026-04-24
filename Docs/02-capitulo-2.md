@@ -26,15 +26,15 @@
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         CattleMax<br>
-        <img src="" alt="competidor 1 logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="..\Assets\cattlemaxlogo.png" alt="competidor 1 logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         Herdwatch<br>
-        <img src="" alt="competidor 2 logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="..\Assets\herdwatchlogo.png" alt="competidor 2 logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         AgriWebb<br>
-        <img src="" alt="competidor 3 logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="..\Assets\AgriWebblogo.jpg" alt="competidor 3 logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
     </tr>
   </thead>
