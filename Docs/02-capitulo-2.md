@@ -486,8 +486,339 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 
 ## 2.4. Requirements specification
 ### 2.4.1. User Stories
+Los User Stories representan una herramienta fundamental dentro de las metodologías ágiles para capturar los
+requerimientos funcionales desde la perspectiva del usuario. Cada historia describe una necesidad concreta, quién la
+necesita y con qué propósito, facilitando la planificación, priorización y desarrollo iterativo del sistema. Esta técnica
+garantiza que cada funcionalidad responda a una necesidad real, fomentando un desarrollo orientado al valor y
+alineado con las expectativas del usuario final.
+
+<h3>EP-01</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td>EP-01</td>
+    <td>Autenticación de usuarios</td>
+    <td>
+      Como usuario, deseo registrarme e iniciar sesión en la aplicación
+      para acceder a funcionalidades personalizadas.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h3>US01</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>US01</td>
+    <td>Visitante</td>
+    <td>Alta</td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">Registro de usuario</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como visitante, deseo registrarme en la aplicación para crear una cuenta.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Registro exitoso</b><br>
+    Dado que el usuario ingresa datos válidos.<br>
+    Cuando envía el formulario.<br>
+    Entonces el sistema crea la cuenta.<br><br>
+    <b>E02: Campos incompletos</b><br>
+    Dado que faltan datos obligatorios.<br>
+    Cuando intenta registrarse.<br>
+    Entonces el sistema solicita completar la información.<br><br>
+    <b>E03: Datos inválidos</b><br>
+    Dado que los datos no cumplen el formato.<br>
+    Cuando intenta registrarse.<br>
+    Entonces el sistema muestra error.
+  </td></tr>
+</table>
+
+<br>
+
+<h3>US02</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>US02</td>
+    <td>Usuario</td>
+    <td>Alta</td>
+    <td>EP-01</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">Inicio de sesión</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como usuario, deseo iniciar sesión para acceder al sistema.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Login exitoso</b><br>
+    Dado que el usuario tiene credenciales válidas.<br>
+    Cuando inicia sesión.<br>
+    Entonces accede al sistema.<br><br>
+    <b>E02: Credenciales incorrectas</b><br>
+    Dado que los datos son incorrectos.<br>
+    Cuando intenta iniciar sesión.<br>
+    Entonces el sistema rechaza el acceso.<br><br>
+    <b>E03: Campos vacíos</b><br>
+    Dado que no completa los campos.<br>
+    Cuando intenta iniciar sesión.<br>
+    Entonces el sistema solicita completar los datos.
+  </td></tr>
+</table>
+
+<h3>EP-02</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td>EP-02</td>
+    <td>Gestión de vacunas</td>
+    <td>
+      Como ganadero, deseo registrar y consultar vacunas para mantener el control de la salud del ganado.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h3>US03</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>US03</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">Registrar vacuna</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como ganadero, deseo registrar vacunas para llevar control sanitario.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Registro exitoso</b><br>
+    Dado que el usuario ingresa datos válidos.<br>
+    Cuando registra la vacuna.<br>
+    Entonces el sistema guarda la información.<br><br>
+    <b>E02: Error de datos</b><br>
+    Dado que los datos son incorrectos.<br>
+    Cuando intenta registrar.<br>
+    Entonces el sistema muestra error.
+  </td></tr>
+</table>
+
+<h3>TS01</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>TS01</td>
+    <td>Developer</td>
+    <td>Media</td>
+    <td>EP-02</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">API para registro de vacunas</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como developer, deseo implementar un endpoint para registrar vacunas,
+    permitiendo la integración de la aplicación móvil con el backend.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Registro exitoso</b><br>
+    Dado que el endpoint está disponible.<br>
+    Cuando se envía una solicitud POST con datos válidos.<br>
+    Entonces se recibe respuesta 201 (Created).<br><br>
+    <b>E02: Datos inválidos</b><br>
+    Dado que faltan campos obligatorios.<br>
+    Cuando se envía la solicitud.<br>
+    Entonces se recibe respuesta 400 (Bad Request).<br><br>
+    <b>E03: Formato incorrecto</b><br>
+    Dado que los datos tienen formato inválido.<br>
+    Cuando se envía la solicitud.<br>
+    Entonces el sistema responde con error.
+  </td></tr>
+</table>
+
+<h3>EP-03</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td>EP-03</td>
+    <td>Landing Page</td>
+    <td>
+      Como visitante, deseo conocer el producto mediante la landing page para evaluar su utilidad.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h3>US04</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>US04</td>
+    <td>Visitante</td>
+    <td>Alta</td>
+    <td>EP-03</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">Explorar landing page</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como visitante, deseo explorar la landing page para conocer el sistema.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Visualización</b><br>
+    Dado que el usuario accede.<br>
+    Cuando se carga la página.<br>
+    Entonces visualiza información.<br><br>
+    <b>E02: Navegación</b><br>
+    Dado que existen secciones.<br>
+    Cuando navega.<br>
+    Entonces accede al contenido.
+  </td></tr>
+</table>
+
+
+
+<h3>SP01</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>SP01</td>
+    <td>Developer</td>
+    <td>Media</td>
+    <td>EP-00</td>
+  </tr>
+
+  <tr><th colspan="4">Title</th></tr>
+  <tr><td colspan="4">Investigación de arquitectura móvil</td></tr>
+
+  <tr><th colspan="4">Description</th></tr>
+  <tr><td colspan="4">
+    Como developer, deseo investigar la arquitectura adecuada para la aplicación móvil
+    para asegurar una implementación eficiente y escalable.
+  </td></tr>
+
+  <tr><th colspan="4">Acceptance Criteria</th></tr>
+  <tr><td colspan="4">
+    <b>E01: Análisis de alternativas</b><br>
+    Dado que existen múltiples opciones tecnológicas.<br>
+    Cuando se realiza la investigación.<br>
+    Entonces se identifican ventajas y desventajas.<br><br>
+    <b>E02: Documentación</b><br>
+    Dado que se completa el análisis.<br>
+    Cuando se finaliza la investigación.<br>
+    Entonces se documentan los resultados.<br><br>
+    <b>E03: Resultado final</b><br>
+    Dado que se comparan alternativas.<br>
+    Cuando se toma una decisión.<br>
+    Entonces se obtiene una recomendación técnica.
+  </td></tr>
+</table>
+
+
 ### 2.4.2. Impact Mapping
+
+A continuación presentaremos 2 Business Goals que consideramos importantes en nuestro proyecto:
+
+#### Impact Map 1
+![Impact Map 1](/Assets/impact-map-1.png)
+
+#### Impact Map 2
+![Impact Map 2](/Assets/Impact-map-2.png)
+
+
 ### 2.4.3. Product Backlog
+El Product Backlog es un elemento esencial en la gestión ágil de proyectos, ya que representa una lista priorizada de
+funcionalidades, mejoras y tareas necesarias para el desarrollo del producto. Este backlog fue construido a partir de las
+necesidades identificadas en las entrevistas, el To-Be Scenario Mapping y las User Stories, permitiendo organizar y
+planificar el trabajo del equipo de forma estructurada y alineada con los objetivos del proyecto. Cada ítem del backlog
+está enfocado en generar valor para el usuario final y facilitar una entrega incremental y efectiva de la solución.
+
+| Orden | User Story ID | Título | Descripción | Story Points |
+|-------|--------------|--------|-------------|--------------|
+| 1 | US04 | Explorar landing page | Como visitante, quiero explorar la landing page para conocer el sistema. | 2 |
+| 2 | US01 | Registro de usuario | Como visitante, quiero registrarme en la aplicación para crear una cuenta. | 3 |
+| 3 | US02 | Inicio de sesión | Como usuario, quiero iniciar sesión para acceder al sistema. | 3 |
+| 4 | US03 | Registrar vacuna | Como ganadero, quiero registrar vacunas para llevar control sanitario. | 5 |
+| 5 | TS01 | API para registro de vacunas | Como developer, quiero implementar un endpoint para registrar vacunas. | 5 |
+| 6 | SP01 | Investigación arquitectura móvil | Como developer, quiero investigar la arquitectura adecuada para definir una base técnica sólida para la aplicación móvil. | 2 |
+
+Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c2876f1a867d9e4232056eedadE5E6036F/product-backlog
 
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
@@ -974,327 +1305,34 @@ Este diagrama ilustra el modelo de clases que soporta la lógica central del neg
 ![Diagrama BaseDatos LIFESTOCK](../Assets/BaseDatos-Livestock.png)
 
 
-## 2.6.4. Bounded Context: Veterinary and Health
+## 2.6.4. Bounded Context: <Bounded Context Name>
 ### 2.6.4.1. Domain Layer
-Gestiona integralmente el ciclo de atención veterinaria del ganado, abarcando la programación de citas, ejecución de visitas técnicas, registro de diagnósticos y tratamientos, así como la emisión de certificados sanitarios y de trazabilidad.
-
-**Entities:**
-- **VeterinaryVisit (Visita técnica)**
-  - Propósito: Representa una visita veterinaria programada o ejecutada para evaluar el estado de salud del ganado.
-  - Atributos: id: UUID, farmerId: UUID, veterinarianId: UUID, scheduledDate: DateTime, startedAt: DateTime, finishedAt: DateTime, status: VisitStatus (Enum)
-  - Métodos: schedule(date: DateTime), start(), finish(), cancel()
-
-- **Diagnosis (Diagnóstico)**
-  - Propósito: Representa el diagnóstico médico emitido durante una visita veterinaria.
-  - Atributos: id: UUID, visitId: UUID, description: String, severity: DiagnosisSeverity (Enum), createdAt: DateTime, veterinarianId: UUID
-  - Métodos: edit(description, severity)
-
-- **Treatment (Tratamiento)**
-  - Propósito: Representa un tratamiento aplicado como resultado de un diagnóstico.
-  - Atributos: id: UUID, diagnosisId: UUID, treatmentType: String, dosage: String, durationDays: Int, appliedAt: DateTime
-  - Métodos: apply()
-
-- **HealthCertificate (Certificado sanitario)**
-  - Propósito: Documento oficial que certifica el estado de salud y trazabilidad del ganado tras una visita técnica finalizada.
-  - Atributos: id: UUID, visitId: UUID, certificateNumber: String, issuedAt: DateTime, status: CertificateStatus (Enum)
-  - Métodos: generate(), invalidate()
-
-**Value Objects:**
-- **MedicalRecord**
-  - Propósito: Encapsula el historial médico del ganado.
-  - Atributos: diagnoses: List<Diagnosis>, treatments: List<Treatment>
-
-- **VisitDate**
-  - Propósito: Representa una fecha válida para una visita veterinaria.
-  - Atributos: date: DateTime
-
-**Enumeraciones:**
-- VisitStatus: SCHEDULED, IN_PROGRESS, COMPLETED, CANCELED
-- DiagnosisSeverity: LOW, MEDIUM, HIGH, CRITICAL
-- CertificateStatus: ISSUED, INVALIDATED
-
-**Domain Services:**
-- **VisitSchedulingService**
-  - Propósito: Valida la disponibilidad del veterinario y las fechas de atención.
-  - Métodos: validateAvailability(veterinarianId: UUID, date: DateTime): Boolean
-
-- **CertificationService**
-  - Propósito: Orquesta la emisión de certificados sanitarios asegurando que la visita haya sido completada.
-  - Métodos: issueCertificate(visit: VeterinaryVisit): HealthCertificate
-
-**Repository Interfaces:**
-- **IVeterinaryVisitRepository**
-  - findById(id: UUID): VeterinaryVisit
-  - findByFarmerId(farmerId: UUID): List<VeterinaryVisit>
-  - save(visit: VeterinaryVisit): void
-  - update(visit: VeterinaryVisit): void
-
-- **IDiagnosisRepository**
-  - findByVisitId(visitId: UUID): List<Diagnosis>
-  - save(diagnosis: Diagnosis): void
-
-- **IHealthCertificateRepository**
-  - findByVisitId(visitId: UUID): HealthCertificate
-  - save(certificate: HealthCertificate): void
-
 ### 2.6.4.2. Interface Layer
-- **VeterinaryVisitController**
-  - POST /visits → scheduleVisit(ScheduleVisitCommand)
-  - PATCH /visits/{id}/start → startVisit(id: UUID)
-  - PATCH /visits/{id}/finish → finishVisit(id: UUID)
-  - DELETE /visits/{id} → cancelVisit(id: UUID)
-
-- **DiagnosisController**
-  - POST /visits/{visitId}/diagnosis → emitDiagnosis(EmitDiagnosisCommand)
-
-- **CertificateController**
-  - POST /visits/{visitId}/certificate → generateCertificate(GenerateCertificateCommand)
-
 ### 2.6.4.3. Application Layer
-- **ScheduleVisitCommandHandler**
-  - Método: handle(ScheduleVisitCommand): void
-  - Lógica: Valida disponibilidad, agenda la visita y persiste la información. Dispara VisitScheduled.
-
-- **StartVisitCommandHandler**
-  - Método: handle(StartVisitCommand): void
-
-- **FinishVisitCommandHandler**
-  - Método: handle(FinishVisitCommand): void
-  - Lógica: Marca la visita como completada y habilita la emisión de certificados.
-
-- **EmitDiagnosisCommandHandler**
-  - Método: handle(EmitDiagnosisCommand): void
-  - Lógica: Registra el diagnóstico y actualiza el historial médico.
-
-- **GenerateCertificateCommandHandler**
-  - Método: handle(GenerateCertificateCommand): void
-  - Lógica: Invoca CertificationService y genera el certificado sanitario.
-
-**Event Handlers:**
-- VisitCompletedEventHandler: Habilita la generación de certificados sanitarios.
-- DiagnosisEmittedEventHandler: Actualiza el historial médico del ganado.
-
-### 2.6.4.4. Infrastructure Layer
-- **VeterinaryVisitRepository (implementa IVeterinaryVisitRepository)**
-- **DiagnosisRepository (implementa IDiagnosisRepository)**
-- **HealthCertificateRepository (implementa IHealthCertificateRepository)**
-- Tecnología: JPA/Hibernate con base de datos relacional.
-
+### 2.6.4.4 Infrastructure Layer
 ### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
-El siguiente diagrama expone los componentes del contexto de salud veterinaria, mostrando la interacción entre la programación de visitas, el registro de diagnósticos, la aplicación de tratamientos y la emisión de certificados sanitarios.
-<img width="1288" height="489" alt="image" src="https://github.com/user-attachments/assets/5d57b53e-d71e-4cf8-b59a-acaa630ccf30" />
-
-
 ### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
-Este diagrama ilustra el modelo de clases que soporta la lógica central del contexto veterinario.
-<img width="725" height="618" alt="image" src="https://github.com/user-attachments/assets/4cf858bb-2fb0-4780-ab88-fcd0bfa3eb27" />
-
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
-<img width="420" height="520" alt="image" src="https://github.com/user-attachments/assets/cc0a0c2a-5c5d-4756-b16e-cc30c876433b" />
 
-## 2.6.6. Bounded Context: Payments 
+
+## 2.6.5. Bounded Context: <Bounded Context Name>
 ### 2.6.5.1. Domain Layer
-Gestiona el procesamiento de pagos asociados a los servicios del sistema, incluyendo la generación de transacciones, validación de pagos, control de estados y emisión de comprobantes de pago.
-
-**Entities:**
-- **Payment**
-  - Propósito: Representa un pago realizado por un usuario.
-  - Atributos: id: UUID, farmerId: UUID, amount: Double, currency: String, status: PaymentStatus (Enum), createdAt: DateTime
-  - Métodos: authorize(), complete(), fail()
-
-- **Transaction**
-  - Propósito: Representa una transacción financiera asociada a un pago.
-  - Atributos: id: UUID, paymentId: UUID, provider: String, referenceCode: String, processedAt: DateTime
-  - Métodos: register()
-
-- **Invoice (Comprobante de pago)**
-  - Propósito: Documento que certifica un pago exitoso.
-  - Atributos: id: UUID, paymentId: UUID, invoiceNumber: String, issuedAt: DateTime
-  - Métodos: generate()
-
-**Value Objects:**
-- **Money**
-  - Propósito: Encapsula el valor monetario del pago.
-  - Atributos: amount: Double, currency: String
-
-**Enumeraciones:**
-- PaymentStatus: PENDING, AUTHORIZED, COMPLETED, FAILED
-
-**Domain Services:**
-- **PaymentProcessingService**
-  - Propósito: Orquesta la validación y ejecución del pago.
-  - Métodos: process(payment: Payment): void
-
-**Repository Interfaces:**
-- **IPaymentRepository**
-  - findById(id: UUID): Payment
-  - findByFarmerId(farmerId: UUID): List<Payment>
-  - save(payment: Payment): void
-  - update(payment: Payment): void
-
-- **IInvoiceRepository**
-  - findByPaymentId(paymentId: UUID): Invoice
-  - save(invoice: Invoice): void
-
----
-
 ### 2.6.5.2. Interface Layer
-- **PaymentController**
-  - POST /payments → createPayment(CreatePaymentCommand)
-  - PATCH /payments/:id/process → processPayment(id: UUID)
-  - GET /payments/:farmerId → getPaymentsByFarmer(farmerId: UUID)
-
-- **InvoiceController**
-  - GET /payments/:id/invoice → getInvoiceByPayment(id: UUID)
-
----
-
 ### 2.6.5.3. Application Layer
-- **CreatePaymentCommandHandler**
-  - Método: handle(CreatePaymentCommand): void
-  - Lógica: Registra el pago y lo deja en estado PENDING.
-
-- **ProcessPaymentCommandHandler**
-  - Método: handle(ProcessPaymentCommand): void
-  - Lógica: Invoca PaymentProcessingService y actualiza el estado del pago.
-
-- **GenerateInvoiceCommandHandler**
-  - Método: handle(GenerateInvoiceCommand): void
-  - Lógica: Genera el comprobante si el pago fue exitoso.
-
-**Event Handlers:**
-- PaymentCompletedEventHandler: Dispara la generación del comprobante.
-- PaymentFailedEventHandler: Registra el fallo del pago.
-
----
-
-### 2.6.5.4. Infrastructure Layer
-- **PaymentRepository (implementa IPaymentRepository)**
-- **InvoiceRepository (implementa IInvoiceRepository)**
-- **TransactionRepository**
-- Tecnología: JPA/Hibernate con base de datos relacional.
-
----
-
+### 2.6.5.4 Infrastructure Layer
 ### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
-El siguiente diagrama muestra el flujo de las APIs de pago, desde la creación del pago hasta la emisión del comprobante.
-<img width="936" height="582" alt="image" src="https://github.com/user-attachments/assets/5d54d5ba-7766-40f2-b029-a8929372402a" />
-
 ### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
-<img width="463" height="348" alt="image" src="https://github.com/user-attachments/assets/4b8290ac-c921-4cd9-98ea-0d1cc49932a7" />
-
 ### 2.6.5.6.2. Bounded Context Database Design Diagram
-<img width="425" height="348" alt="image" src="https://github.com/user-attachments/assets/6125020e-7a4f-47a3-80d3-c67ffaa13d39" />
 
 
-## 2.6.6. Bounded Context: Notifications
+## 2.6.6. Bounded Context: <Bounded Context Name>
 ### 2.6.6.1. Domain Layer
-
-Gestiona la programación, envío y seguimiento de notificaciones push generadas por eventos del sistema, como citas programadas o cambios en su estado, manteniendo un historial consultable por el usuario.
-
-**Entities:**
-
-- **Notification**
-  - Propósito: Representa una notificación enviada o programada para un usuario.
-  - Atributos:  
-    id: UUID  
-    userId: UUID  
-    title: String  
-    message: String  
-    status: NotificationStatus (Enum)  
-    scheduledAt: DateTime  
-    sentAt: DateTime  
-    readAt: DateTime
-  - Métodos:  
-    markAsSent()  
-    markAsRead()
-
-- **NotificationSchedule**
-  - Propósito: Representa la programación de una notificación futura.
-  - Atributos:  
-    id: UUID  
-    notificationId: UUID  
-    scheduledTime: DateTime
-  - Métodos:  
-    reschedule(newTime: DateTime)
-
-**Value Objects:**
-
-- **NotificationContent**
-  - Propósito: Encapsula el contenido del mensaje.
-  - Atributos: title: String, body: String
-
-**Enumerations:**
-
-- NotificationStatus: PENDING, SENT, READ, FAILED
-
-**Domain Services:**
-
-- **NotificationDispatchService**
-  - Propósito: Orquesta el envío de notificaciones push.
-  - Métodos: send(notification: Notification): void
-
-**Repository Interfaces:**
-
-- **INotificationRepository**
-  - findById(id: UUID): Notification
-  - findByUserId(userId: UUID): List<Notification>
-  - save(notification: Notification): void
-  - update(notification: Notification): void
-
----
-
 ### 2.6.6.2. Interface Layer
-
-- **NotificationController**
-  - POST /notifications/schedule → scheduleNotification(ScheduleNotificationCommand)
-  - GET /notifications/{userId} → getUserNotifications(userId: UUID)
-  - PATCH /notifications/{id}/read → markAsRead(id: UUID)
-
----
-
 ### 2.6.6.3. Application Layer
-
-- **ScheduleNotificationCommandHandler**
-  - Método: handle(ScheduleNotificationCommand): void
-  - Lógica: Programa la notificación y la persiste.
-
-- **SendNotificationCommandHandler**
-  - Método: handle(SendNotificationCommand): void
-  - Lógica: Invoca NotificationDispatchService y actualiza el estado.
-
-- **MarkNotificationReadCommandHandler**
-  - Método: handle(MarkNotificationReadCommand): void
-
-**Event Handlers:**
-
-- AppointmentScheduledEventHandler: Genera notificación por cita programada.
-- AppointmentStatusChangedEventHandler: Notifica cambios en el estado de la cita.
-
----
-
-### 2.6.6.4. Infrastructure Layer
-
-- **NotificationRepository (implementa INotificationRepository)**
-- **PushNotificationProvider**
-  - Tecnología: Firebase Cloud Messaging / OneSignal
-- **NotificationScheduler**
-  - Tecnología: Jobs programados / cola de eventos
-
----
-
-### 2.6.6.5. Bounded Context Software Architecture Component Level Diagram
-
-<img width="640" height="580" alt="image" src="https://github.com/user-attachments/assets/3d13b581-6f3b-4f22-aedc-fed12400c824" />
-
+### 2.6.6.4 Infrastructure Layer
+### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 ### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
-
-<img width="371" height="547" alt="image" src="https://github.com/user-attachments/assets/75524a1c-e8d6-4349-9b6f-7c4e376a86e3" />
-
 ### 2.6.6.6.2. Bounded Context Database Design Diagram
-
-<img width="212" height="513" alt="image" src="https://github.com/user-attachments/assets/c83d89c9-ed2b-4e8d-93e1-b534003500e5" />
-
