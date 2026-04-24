@@ -206,7 +206,7 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 ### Entrevista 1
 **Entrevistado:** Ximena Flores Manrique
 
-**Edad:** 22
+**Edad:** 22 años
 
 **Distrito:** Villa María del Triunfo
 
@@ -221,30 +221,34 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 La entrevista revela que Ximena, de 22 años y residente de Villa María, gestiona su granja con un enfoque metódico, pragmático y orientado a resultados, apoyándose fuertemente en el criterio de veterinarios para establecer planes de bioseguridad, vacunación y alimentación que prevengan pérdidas económicas por enfermedades. Actualmente, lleva sus registros de forma manual o en hojas de cálculo, pero busca dar el salto a una aplicación multiplataforma que pueda consultar tanto en campo desde su iPhone como en su laptop Windows a través de Google Chrome. Ella espera que esta herramienta tecnológica le permita automatizar cronogramas, sugerir el uso de medicamentos, controlar el balance financiero y crear fichas individuales para cada animal desde su nacimiento, facilitando así la dosificación exacta de alimento según su etapa de crecimiento y permitiéndole tomar decisiones rápidas y precisas para optimizar su negocio.
 
 ### Entrevista 2
-**Entrevistado:**
+**Entrevistado:** Sandro Dincla
 
-**Edad:**
+**Edad:** 18 años
 
 **Distrito:**
 
-<!-- Aqui colocan un screeshot de la entrevista -->
+<img src="../Assets/entrevista-ganadero2.png" alt="entrevista-ganadero1" width="50%">
 
-**Minuto de inicio:**
+**Minuto de inicio:** 03:25
 
-**Link de la entrevista:**
+**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201611430_upc_edu_pe/IQC45k_tuIw-S4SQytMfoJLZAYbUFICw5w4G_0AKRxhUnG4?e=jlKZHb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+**Resumen de la entrevista:**
+
+La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la gestión de la granja familiar de aves y cerdos con un enfoque práctico y flexible. Aunque se apoya en veterinarios externos para el cuidado de la salud animal y en mercados locales para la compra de alimentos diferenciados por especie, Sandro lleva actualmente un registro netamente manual en cuadernos sobre las fechas de vacunación y pesaje. Él considera que este método tradicional es su mayor desafío operativo, ya que le genera una importante pérdida de tiempo al realizar el conteo de los animales y buscar información específica en papel. Al realizar la entrevista de forma remota a través de una plataforma de videollamada —lo que demuestra su familiaridad con canales de interacción digitales utilizando una computadora o laptop con cámara, micrófono y navegador web—, expresa su deseo de optimizar sus procesos mediante una aplicación móvil que destaque por su usabilidad y falta de complejidad. Para él, la solución tecnológica ideal debe incluir recordatorios automatizados para vacunas y pesajes, un directorio con números de especialistas (veterinarios y proveedores) siempre disponible para emergencias, y un módulo de alimentación que, si bien le sugiera raciones por animal, le otorgue el control manual para ajustar las cantidades basándose en su propio criterio.
 
 ### Entrevista 3
-**Entrevistado:**
+**Entrevistado:** 
 
-**Edad:**
+**Edad:** 18 años
 
 **Distrito:**
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:**
+**Minuto de inicio:** 
 
-**Link de la entrevista:**
+**Link de la entrevista:** 
 
 
 ### Segmento #2: Veterinarios Especializados
