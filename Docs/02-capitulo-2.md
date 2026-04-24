@@ -577,11 +577,130 @@ Gestiona la información del perfil de los usuarios (Ganadero y Veterinario), in
 ### 2.6.2.6.2. Bounded Context Database Design Diagram
 
 
-## 2.6.3. Bounded Context: <Bounded Context Name>
+## 2.6.3. Bounded Context: Livestock Management
 ### 2.6.3.1. Domain Layer
+
+Gestiona la creación de lotes de ganado, el registro individual de animales, su edición, traslado entre lotes y la asignación de planes alimentarios.
+
+**Entities:**
+  - **LivestockBatch (Lote de ganado)**
+    - Propósito: Representa un grupo de animales manejados como unidad.
+    - Atributos: id: UUID, name: String, farmerId: UUID, location: String, createdAt: DateTime
+    - Métodos: edit(name, location), addAnimal(animal: Animal), removeAnimal(animalId: UUID)
+
+  - **Animal**
+    - Propósito: Representa un animal individual dentro de un lote.
+    - Atributos: id: UUID, batchId: UUID, name: String, species: String, breed: String, birthDate: Date, gender: AnimalGender (Enum), weight: Double, status: AnimalStatus (Enum), registeredAt: DateTime
+    - Métodos: edit(data: AnimalData), transferToBatch(newBatchId: UUID), updateWeight(weight: Double)
+
+  - **FeedingPlan (Plan alimentario)**
+    - Propósito: Representa el plan de alimentación asignado a un lote.
+    - Atributos: id: UUID, batchId: UUID, dailyRation: Double, foodType: String, updatedAt: DateTime, updatedBy: UUID
+    - Métodos: update(dailyRation, foodType), getRecommendedRation(): Double
+
+**Value Objects:**
+
+  - **AnimalData**
+    - Propósito: Encapsula los datos modificables de un animal.
+    - Atributos: name: String, breed: String, weight: Double
+
+  - **Location**
+    - Propósito: Representa la ubicación física de un lote.
+    - Atributos: description: String
+
+**Enumeraciones:**
+  - AnimalGender: MALE, FEMALE
+  - AnimalStatus: HEALTHY, SICK, QUARANTINE, DECEASED
+
+**Domain Services:**
+  - **LivestockTransferService**
+    - Propósito: Orquesta el traslado de animales entre lotes validando las reglas de negocio.
+    - Métodos: transfer(animalId: UUID, targetBatchId: UUID): void
+
+  - **FeedingPlanService**
+    - Propósito: Calcula y valida las raciones diarias recomendadas según especie y peso.
+    - Métodos: calculateRecommendedRation(animal: Animal): Double
+
+**Repository Interfaces:**
+  - **ILivestockBatchRepository**
+    - findById(id: UUID): LivestockBatch
+    - findByFarmerId(farmerId: UUID): List<LivestockBatch>
+    - save(batch: LivestockBatch): void
+    - update(batch: LivestockBatch): void
+
+  - **IAnimalRepository**
+    - findById(id: UUID): Animal
+    - findByBatchId(batchId: UUID): List<Animal>
+    - save(animal: Animal): void
+    - update(animal: Animal): void
+
+  - **IFeedingPlanRepository**
+    - findByBatchId(batchId: UUID): FeedingPlan
+    - save(plan: FeedingPlan): void
+    - update(plan: FeedingPlan): void
+
 ### 2.6.3.2. Interface Layer
+
+  - **LivestockBatchController**
+    - POST /batches → createBatch(CreateBatchCommand)
+    - PUT /batches/{id} → editBatch(EditBatchCommand)
+    - GET /batches/{farmerId} → getBatchesByFarmer(farmerId: UUID)
+
+  - **AnimalController**
+    - POST /batches/{batchId}/animals → registerAnimal(RegisterAnimalCommand)
+    - PUT /animals/{id} → editAnimal(EditAnimalCommand)
+    - PATCH /animals/{id}/transfer → transferAnimal(TransferAnimalCommand)
+    - GET /animals/{id}/history → getAnimalHistory(id: UUID)
+
+  - **FeedingPlanController**
+    - POST /batches/{batchId}/feeding-plan → assignFeedingPlan(AssignFeedingPlanCommand)
+    - PUT /batches/{batchId}/feeding-plan → updateFeedingPlan(UpdateFeedingPlanCommand)
+    - GET /batches/{batchId}/feeding-plan → getDailyRation(batchId: UUID)
+
 ### 2.6.3.3. Application Layer
+
+  - **CreateBatchCommandHandler**
+    - Método: handle(CreateBatchCommand): void
+    - Lógica: Crea el lote, valida datos y persiste. Dispara BatchCreated.
+
+  - **EditBatchCommandHandler**
+    - Método: handle(EditBatchCommand): void
+
+  - **RegisterAnimalCommandHandler**
+    - Método: handle(RegisterAnimalCommand): void
+    - Lógica: Valida coherencia del animal, lo asocia al lote y persiste. Dispara AnimalRegistered.
+
+  - **EditAnimalCommandHandler**
+    - Método: handle(EditAnimalCommand): void
+
+  - **TransferAnimalCommandHandler**
+    - Método: handle(TransferAnimalCommand): void
+    - Lógica: Invoca LivestockTransferService y dispara AnimalTransferred.
+
+  - **AssignFeedingPlanCommandHandler**
+    - Método: handle(AssignFeedingPlanCommand): void
+    - Lógica: Crea o asigna plan alimentario al lote usando FeedingPlanService.
+
+  - **UpdateFeedingPlanCommandHandler**
+    - Método: handle(UpdateFeedingPlanCommand): void
+
+**Event Handlers:**
+  - AnimalRegisteredEventHandler: Registra el evento en el historial del animal.
+  - AnimalTransferredEventHandler: Actualiza los registros de ambos lotes involucrados.
+
 ### 2.6.3.4 Infrastructure Layer
+
+- **LivestockBatchRepository (implementa ILivestockBatchRepository)**
+
+- **AnimalRepository (implementa IAnimalRepository)**
+
+- **FeedingPlanRepository (implementa IFeedingPlanRepository)**
+  - Tecnología: JPA/Hibernate con base de datos relacional.
+
+- **AnimalHistoryLogger**
+  - Propósito: Registra eventos del historial de cada animal (traslados, ediciones, cambios de estado).
+  - Tecnología: Log en base de datos o sistema de eventos.
+
 ### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 ### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
