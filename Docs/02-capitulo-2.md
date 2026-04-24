@@ -254,17 +254,20 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 ### Segmento #2: Veterinarios Especializados
 
 ### Entrevista 1
-**Entrevistado:**
+**Entrevistado:** Johan Bottger
 
-**Edad:**
+**Edad:** 21
 
-**Distrito:**
+**Distrito:** San Borja
 
-<!-- Aqui colocan un screeshot de la entrevista -->
+<img src="..\Assets\Captura de pantalla de entrevista 1 vet.png" alt="entrevista-veterinario1" width="50%">
 
-**Minuto de inicio:**
+**Minuto de inicio:** 0.01
 
-**Link de la entrevista:**
+**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQA9khWgWmCLSJ91EoFFyW1wATE59FhS_p39VrA7dyI75l0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mmw8Vb)
+
+**Resumen de la entrevista:**
+En la entrevista se muestra como Johan, practicante en una veterianria especializada en el campo, explica cómo lleva a cabo su trabajo. Las dificultades que más suele encontrar son la falta de información clave al momento del diagnóstico, como antecedentes médicos, vacunaciones o cambios en la alimentación. A esto se suma una comunicación poco estructurada con los ganaderos, generalmente a través de aplicaciones de mensajería, donde la información puede perderse o no quedar registrada adecuadamente. El trabajo en zonas rurales presenta además limitaciones técnicas, como la falta de conexión a internet y condiciones adversas que dificultan el registro de datos en tiempo real. Esto impacta directamente en la eficiencia y precisión del servicio. Frente a este contexto, el veterinario valora altamente una solución digital que permita registrar información de manera offline, centralizar historiales clínicos, automatizar el control de tratamientos y mejorar la comunicación con los productores. También considera clave poder compartir indicaciones médicas de forma clara y accesible.
 
 ### Entrevista 2
 **Entrevistado:**
@@ -822,6 +825,35 @@ Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c
 
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
+
+Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio y definir las interacciones principales entre los actores, comandos y políticas del sistema.
+
+Pasos del proceso:
+
+1. Eventos de Dominio (Tormenta de ideas): Identificar qué ha sucedido en el negocio, usando notas adhesivas naranjas escritas en pasado
+
+![Event1](../Assets/Event1.png)
+
+2. Ordenar Eventos: Organizar los eventos cronológicamente de izquierda a derecha, eliminando duplicados.
+
+![Event2](../Assets/Event2.png)
+
+3. Identificar Comandos (Acciones): Añadir notas azules que representan acciones que provocan los eventos.
+
+![Event3](../Assets/Event3.png)
+
+4. Actores y Sistemas: Determinar quién realiza la acción (persona) o qué sistema externo (API, pago) participa.
+
+![Event4](../Assets/Event4.png)
+
+5. Políticas (Reglas de Negocio): Identificar reacciones automáticas o reglas que siguen a un evento, usando notas moradas
+
+![Event5](../Assets/Event5.png)
+
+ 6. Agregados y Contextos Delimitados: Agrupar comandos y eventos relacionados para definir límites lógicos o microservicios.
+
+ ![EventF](../Assets/EventStormFinal.png)
+
 ### 2.5.1.1. Candidate Context Discovery
 
 Para poder identificar los bounded contexts se tuvo que modificar la línea de tiempo del modelado del dominio que se hizo a partir del EventStorming, se organizaron los conceptos que tenían relación.
@@ -878,6 +910,10 @@ En esta sección se muestran los principales flujos identificados donde existe c
 **Programacion de visita por parte de un ganadero y su gestion de pago**
 
 ![Flow2](../Assets/Flow2.png)
+
+**Actualizacion de plan alimentario luego de un diagnostico**
+
+![ Flow3](../Assets/Flow3.png)
 
 ### 2.5.1.3. Bounded Context Canvases
 
@@ -1305,34 +1341,330 @@ Este diagrama ilustra el modelo de clases que soporta la lógica central del neg
 ![Diagrama BaseDatos LIFESTOCK](../Assets/BaseDatos-Livestock.png)
 
 
-## 2.6.4. Bounded Context: <Bounded Context Name>
+## 2.6.4. Bounded Context: Veterinary and Health
 ### 2.6.4.1. Domain Layer
+Gestiona integralmente el ciclo de atención veterinaria del ganado, abarcando la programación de citas, ejecución de visitas técnicas, registro de diagnósticos y tratamientos, así como la emisión de certificados sanitarios y de trazabilidad.
+
+**Entities:**
+- **VeterinaryVisit (Visita técnica)**
+  - Propósito: Representa una visita veterinaria programada o ejecutada para evaluar el estado de salud del ganado.
+  - Atributos: id: UUID, farmerId: UUID, veterinarianId: UUID, scheduledDate: DateTime, startedAt: DateTime, finishedAt: DateTime, status: VisitStatus (Enum)
+  - Métodos: schedule(date: DateTime), start(), finish(), cancel()
+
+- **Diagnosis (Diagnóstico)**
+  - Propósito: Representa el diagnóstico médico emitido durante una visita veterinaria.
+  - Atributos: id: UUID, visitId: UUID, description: String, severity: DiagnosisSeverity (Enum), createdAt: DateTime, veterinarianId: UUID
+  - Métodos: edit(description, severity)
+
+- **Treatment (Tratamiento)**
+  - Propósito: Representa un tratamiento aplicado como resultado de un diagnóstico.
+  - Atributos: id: UUID, diagnosisId: UUID, treatmentType: String, dosage: String, durationDays: Int, appliedAt: DateTime
+  - Métodos: apply()
+
+- **HealthCertificate (Certificado sanitario)**
+  - Propósito: Documento oficial que certifica el estado de salud y trazabilidad del ganado tras una visita técnica finalizada.
+  - Atributos: id: UUID, visitId: UUID, certificateNumber: String, issuedAt: DateTime, status: CertificateStatus (Enum)
+  - Métodos: generate(), invalidate()
+
+**Value Objects:**
+- **MedicalRecord**
+  - Propósito: Encapsula el historial médico del ganado.
+  - Atributos: diagnoses: List<Diagnosis>, treatments: List<Treatment>
+
+- **VisitDate**
+  - Propósito: Representa una fecha válida para una visita veterinaria.
+  - Atributos: date: DateTime
+
+**Enumeraciones:**
+- VisitStatus: SCHEDULED, IN_PROGRESS, COMPLETED, CANCELED
+- DiagnosisSeverity: LOW, MEDIUM, HIGH, CRITICAL
+- CertificateStatus: ISSUED, INVALIDATED
+
+**Domain Services:**
+- **VisitSchedulingService**
+  - Propósito: Valida la disponibilidad del veterinario y las fechas de atención.
+  - Métodos: validateAvailability(veterinarianId: UUID, date: DateTime): Boolean
+
+- **CertificationService**
+  - Propósito: Orquesta la emisión de certificados sanitarios asegurando que la visita haya sido completada.
+  - Métodos: issueCertificate(visit: VeterinaryVisit): HealthCertificate
+
+**Repository Interfaces:**
+- **IVeterinaryVisitRepository**
+  - findById(id: UUID): VeterinaryVisit
+  - findByFarmerId(farmerId: UUID): List<VeterinaryVisit>
+  - save(visit: VeterinaryVisit): void
+  - update(visit: VeterinaryVisit): void
+
+- **IDiagnosisRepository**
+  - findByVisitId(visitId: UUID): List<Diagnosis>
+  - save(diagnosis: Diagnosis): void
+
+- **IHealthCertificateRepository**
+  - findByVisitId(visitId: UUID): HealthCertificate
+  - save(certificate: HealthCertificate): void
+
 ### 2.6.4.2. Interface Layer
+- **VeterinaryVisitController**
+  - POST /visits → scheduleVisit(ScheduleVisitCommand)
+  - PATCH /visits/{id}/start → startVisit(id: UUID)
+  - PATCH /visits/{id}/finish → finishVisit(id: UUID)
+  - DELETE /visits/{id} → cancelVisit(id: UUID)
+
+- **DiagnosisController**
+  - POST /visits/{visitId}/diagnosis → emitDiagnosis(EmitDiagnosisCommand)
+
+- **CertificateController**
+  - POST /visits/{visitId}/certificate → generateCertificate(GenerateCertificateCommand)
+
 ### 2.6.4.3. Application Layer
-### 2.6.4.4 Infrastructure Layer
+
+- **ScheduleVisitCommandHandler**
+  - Método: handle(ScheduleVisitCommand): void
+  - Lógica: Valida disponibilidad, agenda la visita y persiste la información. Dispara VisitScheduled.
+
+- **StartVisitCommandHandler**
+  - Método: handle(StartVisitCommand): void
+
+- **FinishVisitCommandHandler**
+  - Método: handle(FinishVisitCommand): void
+  - Lógica: Marca la visita como completada y habilita la emisión de certificados.
+
+- **EmitDiagnosisCommandHandler**
+  - Método: handle(EmitDiagnosisCommand): void
+  - Lógica: Registra el diagnóstico y actualiza el historial médico.
+
+- **GenerateCertificateCommandHandler**
+  - Método: handle(GenerateCertificateCommand): void
+  - Lógica: Invoca CertificationService y genera el certificado sanitario.
+
+**Event Handlers:**
+- VisitCompletedEventHandler: Habilita la generación de certificados sanitarios.
+- DiagnosisEmittedEventHandler: Actualiza el historial médico del ganado.
+
+### 2.6.4.4. Infrastructure Layer
+- **VeterinaryVisitRepository (implementa IVeterinaryVisitRepository)**
+- **DiagnosisRepository (implementa IDiagnosisRepository)**
+- **HealthCertificateRepository (implementa IHealthCertificateRepository)**
+- Tecnología: JPA/Hibernate con base de datos relacional.
+
 ### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+El siguiente diagrama expone los componentes del contexto de salud veterinaria, mostrando la interacción entre la programación de visitas, el registro de diagnósticos, la aplicación de tratamientos y la emisión de certificados sanitarios.
+<img width="1288" height="489" alt="image" src="https://github.com/user-attachments/assets/5d57b53e-d71e-4cf8-b59a-acaa630ccf30" />
+
+
 ### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
+Este diagrama ilustra el modelo de clases que soporta la lógica central del contexto veterinario.
+<img width="725" height="618" alt="image" src="https://github.com/user-attachments/assets/4cf858bb-2fb0-4780-ab88-fcd0bfa3eb27" />
+
+### 2.6.4.6.2. Bounded Context Database Design Diagram
+<img width="420" height="520" alt="image" src="https://github.com/user-attachments/assets/cc0a0c2a-5c5d-4756-b16e-cc30c876433b" />
 
 
-## 2.6.5. Bounded Context: <Bounded Context Name>
+## 2.6.5. Bounded Context: Payments 
 ### 2.6.5.1. Domain Layer
+Gestiona el procesamiento de pagos asociados a los servicios del sistema, incluyendo la generación de transacciones, validación de pagos, control de estados y emisión de comprobantes de pago.
+
+**Entities:**
+- **Payment**
+  - Propósito: Representa un pago realizado por un usuario.
+  - Atributos: id: UUID, farmerId: UUID, amount: Double, currency: String, status: PaymentStatus (Enum), createdAt: DateTime
+  - Métodos: authorize(), complete(), fail()
+
+- **Transaction**
+  - Propósito: Representa una transacción financiera asociada a un pago.
+  - Atributos: id: UUID, paymentId: UUID, provider: String, referenceCode: String, processedAt: DateTime
+  - Métodos: register()
+
+- **Invoice (Comprobante de pago)**
+  - Propósito: Documento que certifica un pago exitoso.
+  - Atributos: id: UUID, paymentId: UUID, invoiceNumber: String, issuedAt: DateTime
+  - Métodos: generate()
+
+**Value Objects:**
+- **Money**
+  - Propósito: Encapsula el valor monetario del pago.
+  - Atributos: amount: Double, currency: String
+
+**Enumeraciones:**
+- PaymentStatus: PENDING, AUTHORIZED, COMPLETED, FAILED
+
+**Domain Services:**
+- **PaymentProcessingService**
+  - Propósito: Orquesta la validación y ejecución del pago.
+  - Métodos: process(payment: Payment): void
+
+**Repository Interfaces:**
+- **IPaymentRepository**
+  - findById(id: UUID): Payment
+  - findByFarmerId(farmerId: UUID): List<Payment>
+  - save(payment: Payment): void
+  - update(payment: Payment): void
+
+- **IInvoiceRepository**
+  - findByPaymentId(paymentId: UUID): Invoice
+  - save(invoice: Invoice): void
+
+---
+
 ### 2.6.5.2. Interface Layer
+- **PaymentController**
+  - POST /payments → createPayment(CreatePaymentCommand)
+  - PATCH /payments/:id/process → processPayment(id: UUID)
+  - GET /payments/:farmerId → getPaymentsByFarmer(farmerId: UUID)
+
+- **InvoiceController**
+  - GET /payments/:id/invoice → getInvoiceByPayment(id: UUID)
+
+---
+
 ### 2.6.5.3. Application Layer
-### 2.6.5.4 Infrastructure Layer
+- **CreatePaymentCommandHandler**
+  - Método: handle(CreatePaymentCommand): void
+  - Lógica: Registra el pago y lo deja en estado PENDING.
+
+- **ProcessPaymentCommandHandler**
+  - Método: handle(ProcessPaymentCommand): void
+  - Lógica: Invoca PaymentProcessingService y actualiza el estado del pago.
+
+- **GenerateInvoiceCommandHandler**
+  - Método: handle(GenerateInvoiceCommand): void
+  - Lógica: Genera el comprobante si el pago fue exitoso.
+
+**Event Handlers:**
+- PaymentCompletedEventHandler: Dispara la generación del comprobante.
+- PaymentFailedEventHandler: Registra el fallo del pago.
+
+---
+
+### 2.6.5.4. Infrastructure Layer
+- **PaymentRepository (implementa IPaymentRepository)**
+- **InvoiceRepository (implementa IInvoiceRepository)**
+- **TransactionRepository**
+- Tecnología: JPA/Hibernate con base de datos relacional.
+
+---
+
 ### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+El siguiente diagrama muestra el flujo de las APIs de pago, desde la creación del pago hasta la emisión del comprobante.
+<img width="936" height="582" alt="image" src="https://github.com/user-attachments/assets/5d54d5ba-7766-40f2-b029-a8929372402a" />
+
 ### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+<img width="463" height="348" alt="image" src="https://github.com/user-attachments/assets/4b8290ac-c921-4cd9-98ea-0d1cc49932a7" />
+
 ### 2.6.5.6.2. Bounded Context Database Design Diagram
+<img width="425" height="348" alt="image" src="https://github.com/user-attachments/assets/6125020e-7a4f-47a3-80d3-c67ffaa13d39" />
 
 
-## 2.6.6. Bounded Context: <Bounded Context Name>
+
+## 2.6.6. Bounded Context: Notifications
 ### 2.6.6.1. Domain Layer
+
+Gestiona la programación, envío y seguimiento de notificaciones push generadas por eventos del sistema, como citas programadas o cambios en su estado, manteniendo un historial consultable por el usuario.
+
+**Entities:**
+
+- **Notification**
+  - Propósito: Representa una notificación enviada o programada para un usuario.
+  - Atributos:  
+    id: UUID  
+    userId: UUID  
+    title: String  
+    message: String  
+    status: NotificationStatus (Enum)  
+    scheduledAt: DateTime  
+    sentAt: DateTime  
+    readAt: DateTime
+  - Métodos:  
+    markAsSent()  
+    markAsRead()
+
+- **NotificationSchedule**
+  - Propósito: Representa la programación de una notificación futura.
+  - Atributos:  
+    id: UUID  
+    notificationId: UUID  
+    scheduledTime: DateTime
+  - Métodos:  
+    reschedule(newTime: DateTime)
+
+**Value Objects:**
+
+- **NotificationContent**
+  - Propósito: Encapsula el contenido del mensaje.
+  - Atributos: title: String, body: String
+
+**Enumerations:**
+
+- NotificationStatus: PENDING, SENT, READ, FAILED
+
+**Domain Services:**
+
+- **NotificationDispatchService**
+  - Propósito: Orquesta el envío de notificaciones push.
+  - Métodos: send(notification: Notification): void
+
+**Repository Interfaces:**
+
+- **INotificationRepository**
+  - findById(id: UUID): Notification
+  - findByUserId(userId: UUID): List<Notification>
+  - save(notification: Notification): void
+  - update(notification: Notification): void
+
+---
+
 ### 2.6.6.2. Interface Layer
+
+- **NotificationController**
+  - POST /notifications/schedule → scheduleNotification(ScheduleNotificationCommand)
+  - GET /notifications/{userId} → getUserNotifications(userId: UUID)
+  - PATCH /notifications/{id}/read → markAsRead(id: UUID)
+
+---
+
 ### 2.6.6.3. Application Layer
-### 2.6.6.4 Infrastructure Layer
-### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+- **ScheduleNotificationCommandHandler**
+  - Método: handle(ScheduleNotificationCommand): void
+  - Lógica: Programa la notificación y la persiste.
+
+- **SendNotificationCommandHandler**
+  - Método: handle(SendNotificationCommand): void
+  - Lógica: Invoca NotificationDispatchService y actualiza el estado.
+
+- **MarkNotificationReadCommandHandler**
+  - Método: handle(MarkNotificationReadCommand): void
+
+**Event Handlers:**
+
+- AppointmentScheduledEventHandler: Genera notificación por cita programada.
+- AppointmentStatusChangedEventHandler: Notifica cambios en el estado de la cita.
+
+---
+
+### 2.6.6.4. Infrastructure Layer
+
+- **NotificationRepository (implementa INotificationRepository)**
+- **PushNotificationProvider**
+  - Tecnología: Firebase Cloud Messaging / OneSignal
+- **NotificationScheduler**
+  - Tecnología: Jobs programados / cola de eventos
+
+---
+
+### 2.6.6.5. Bounded Context Software Architecture Component Level Diagram
+
+<img width="640" height="580" alt="image" src="https://github.com/user-attachments/assets/3d13b581-6f3b-4f22-aedc-fed12400c824" />
+
 ### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img width="371" height="547" alt="image" src="https://github.com/user-attachments/assets/75524a1c-e8d6-4349-9b6f-7c4e376a86e3" />
+
 ### 2.6.6.6.2. Bounded Context Database Design Diagram
+
+<img width="212" height="513" alt="image" src="https://github.com/user-attachments/assets/c83d89c9-ed2b-4e8d-93e1-b534003500e5" />
