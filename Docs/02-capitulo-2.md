@@ -270,7 +270,7 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 En la entrevista se muestra como Johan, practicante en una veterianria especializada en el campo, explica cómo lleva a cabo su trabajo. Las dificultades que más suele encontrar son la falta de información clave al momento del diagnóstico, como antecedentes médicos, vacunaciones o cambios en la alimentación. A esto se suma una comunicación poco estructurada con los ganaderos, generalmente a través de aplicaciones de mensajería, donde la información puede perderse o no quedar registrada adecuadamente. El trabajo en zonas rurales presenta además limitaciones técnicas, como la falta de conexión a internet y condiciones adversas que dificultan el registro de datos en tiempo real. Esto impacta directamente en la eficiencia y precisión del servicio. Frente a este contexto, el veterinario valora altamente una solución digital que permita registrar información de manera offline, centralizar historiales clínicos, automatizar el control de tratamientos y mejorar la comunicación con los productores. También considera clave poder compartir indicaciones médicas de forma clara y accesible.
 
 ### Entrevista 2
-**Entrevistado:**
+**Entrevistado:** Ricardo Salazar
 
 **Edad:** 25
 
