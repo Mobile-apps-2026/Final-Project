@@ -272,15 +272,21 @@ En la entrevista se muestra como Johan, practicante en una veterianria especiali
 ### Entrevista 2
 **Entrevistado:**
 
-**Edad:**
+**Edad:** 25
 
-**Distrito:**
+**Distrito:** Jesus Maria
+
+<img src="..\Assets\entrevista_miniatura_entrevista-2.png" alt="-" width="50%">
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:**
+**Minuto de inicio:** 00:23
 
-**Link de la entrevista:**
+**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQBanJJimAODQZ7Bf54s97aHAWPNfN7xjsoScvUE6T_-4Ls?e=rSSFa3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+**Resumen de la entrevista:**
+En la entrevista, Ricardo Salazar, veterinario con 5 años de experiencia, describe cómo realiza su trabajo en el campo. Utiliza cuadernos para anotar en campo y luego traslada la información a Excel para mantener un registro ordenado. También guarda fotos y notas en su celular. Las dificultades principales que enfrenta incluyen la falta de historial clínico completo en las ganaderías, especialmente en datos sobre vacunas y tratamientos previos, lo que dificulta un control efectivo y diagnóstico preciso. La comunicación con los ganaderos se realiza principalmente por llamadas y WhatsApp, con poca frecuencia por correo electrónico, y las visitas se coordinan según la urgencia. En las zonas rurales, la falta de señal y la necesidad de atender solo a los animales complican el registro rápido de datos. Ricardo valora mucho una aplicación veterinaria que permita registrar el historial clínico, controlar vacunas y operar sin conexión a internet para facilitar su trabajo. Prefiere enviar recetas e indicaciones médicas de forma digital, aunque en algunos casos se requieren formatos físicos por la edad de algunos usuarios. Finalmente, destaca que el uso de una plataforma como Bobix ahorra tiempo, organiza mejor la información y permite ofrecer un servicio más preciso a los productores.  
+
 
 ### Entrevista 3
 **Entrevistado:**
