@@ -14,6 +14,35 @@
 
 ### 3.1.3. Landing Page UI Design
 ### 3.1.3.1. Landing Page Wireframe
+
+Los wireframes de la landing page priorizan la experiencia del usuario y la facilidad de uso. Gracias a una estructura intuitiva y una jerarquía visual bien definida, garantizamos que la navegación sea fluida, permitiendo que los visitantes localicen información clave y realicen conversiones sin fricciones.
+
+- Es la interfaz principal de nuestra landing page
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-home.png" alt="wireframe-home" width="60%"></p></td>
+  
+- La sección "About Us" contará con la siguiente interfaz donde se describe quienes somos, que hacemos, y nuestra visión y misión
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-aboutus.png" alt="wireframe-aboutus" width="60%"></p></td>
+
+- La sección "Product" contará con las siguientes interface donde se describe hacia quienes va dirigido nuestro producto y las funcionalidades que ofrece
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-1.png" alt="wireframe-product1" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-2.png" alt="wireframe-product2" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-3.png" alt="wireframe-product3" width="60%"></p></td>
+
+- La sección "Our App" contará con la siguiente interfaz donde muestra el prototipo de nuestra aplicación móvil y las plataformas disponibles
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-ourapp.png" alt="wireframe-ourapp" width="60%"></p></td>
+
+- La sección "About the team" contará con la siguiente interfaz donde muestra la información de quienes conforman el equipo de Bovix
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-aboutteam.png" alt="wireframe-aboutteam" width="60%"></p></td>
+
+- La sección "Contact" contará con la siguiente interfaz donde muestra la información de los canales de contacto disponibles
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-contact.png" alt="wireframe-contact" width="60%"></p></td>
+ 
 ### 3.1.3.2. Landing Page Mock-up
 
 ### 3.1.4. Mobile Applications UX/UI Design
