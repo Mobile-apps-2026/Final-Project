@@ -98,4 +98,12 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
+
 ### 3.1.4.5. Mobile Applications Prototyping
+**SPRINT 1**
+
+En este primer sprint, se desarrollaron principalmente las funcionalidades core de la aplicación front end para el segmento objetivo de productores ganaderos, con pestaña de inicio, ganado, salud y alimento.
+
+Video de exploración de prototipo (Bovix): [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQC2QdkXJEGNSL6H7jghXVn6AadAKKmw_m0uIaCp-wSiA58?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lDl8Bq)
+
+<img src="/Assets/Images-mockups/prototype.png">
