@@ -4,9 +4,154 @@
 
 ##  4.1. Software Configuration Management
 ### 4.1.1. Software Development Environment Configuration
+
+#### Gestión del Proyecto
+
+Para la coordinación del proyecto se emplearon diversas plataformas de comunicación y gestión de versiones. Se estableció una organización en GitHub para concentrar el manejo del código fuente y su control de versiones. Respecto a la comunicación interna y reuniones del equipo, se empleó Discord como plataforma principal.
+
+- **Coordinación del trabajo:** Github
+- **Reuniones virtuales:** Discord
+- **Comunicación diaria:** Whatsapp
+- **Organización y seguimiento de tareas:** Trello
+
+**Enlaces de referencia:**
+- Github: https://github.com/
+- Discord: https://discord.com/
+- Trello: https://trello.com/
+
+#### Gestión de Requerimientos
+
+Durante esta etapa, se adoptaron estrategias específicas que permitieron la captura, estructuración y jerarquización de los requerimientos del proyecto. Se empleó Trello como plataforma visual para administrar actividades a través de tableros configurables. Se recurrió a UXPressia para elaborar user personas, mapas de empatía, journey maps y el lean UX canvas. Se utilizó Miro para construir los escenarios As-Is y To-Be.
+
+**Enlaces de referencia:**
+- Trello: https://trello.com/
+- UXPressia: https://uxpressia.com/
+- Miro: https://miro.com/es/
+
+#### Diseño de Experiencia e Interfaz del Producto
+
+En la fase de diseño de la experiencia e interfaz de usuario, el equipo empleó Figma para elaborar wireframes, maquetas y prototipos interactivos, lo cual facilitó la validación de la propuesta de diseño previo a su desarrollo.
+
+**Enlaces de referencia:**
+- Figma: https://www.figma.com/
+
+#### Desarrollo de Software
+
+Para la construcción de la aplicación móvil se utilizaron tecnologías como Kotlin para Android en Android Studio. La documentación del informe se desarrolló en archivos .md empleando IDEs como IntelliJ IDEA y Rider (cada integrante del equipo trabajó con alguna de estas herramientas). Para facilitar la descarga, instalación y actualización de estos IDEs se utilizó la herramienta de gestión JetBrains ToolBox.
+
+**Enlaces de referencia:**
+- JetBrains ToolBox: https://www.jetbrains.com/toolbox-app/
+- Android Studio: https://developer.android.com/studio
+
+#### Documentación de Software
+
+Para el manejo de versiones y la colaboración en el desarrollo del informe, se empleó GitHub implementando la metodología GitHub Flow. Esta estrategia facilitó una administración organizada y eficaz del proyecto a través del uso de ramas específicas para cada característica o corrección, lo que optimizó el trabajo en equipo. Todo el material del proyecto fue consolidado y guardado en un repositorio dentro de una organización establecida en GitHub. Para la documentación técnica del proyecto se seleccionó el uso de archivos en formato Markdown, por su sencillez, claridad y perfecta integración con GitHub.
+
+**Enlaces de referencia:**
+- GitHub: https://github.com/
+
+#### Despliegue de Software
+
+Para la distribución de la aplicación móvil se utilizarán plataformas como Google Play Store para Android, las cuales son ideales para la publicación y distribución de aplicaciones móviles.
+
+**Enlaces de referencia:**
+- Google Play Console: https://play.google.com/console/
+
 ### 4.1.2. Source Code Management
+
+#### Estructura de ramas Git Flow
+
+- **main:** rama primaria donde siempre se mantiene el código estable y preparado para producción.
+- **develop:** rama de desarrollo donde se consolidan todas las nuevas características antes de ser transferidas a producción.
+- **feature/:** ramas destinadas a desarrollar nuevas funcionalidades.
+- **release/:** ramas temporales para preparar una nueva versión estable.
+- **hotfix/:** ramas para solucionar errores críticos en producción.
+
+#### Versionado Semántico (Semantic Versioning)
+
+Se implementará el sistema de versionado semántico (Semantic Versioning 2.0.0), aplicando el formato: **MAJOR.MINOR.PATCH**.
+
+- 1.0.0 → versión estable inicial
+- 1.1.0 → inclusión de nuevas características
+- 1.1.1 → corrección de errores
+
+#### Estándar de mensajes de commits
+
+El equipo adoptará el estándar de mensajes de commits establecido en "Conventional Commits".
+
+**Ejemplos de mensajes:**
+
+- `feat: implementar nuevo sistema de autenticación`
+- `fix: resolver validación en formulario de registro`
+- `docs: actualizar README con guías de implementación`
+
+#### Nomenclatura para numeración de versiones:
+
+- **Cambios Mayores:** Cuando el código o versión nueva del proyecto implementado presenta modificaciones sustanciales respecto a la versión anterior, estos cambios resultan incompatibles con la versión previa.
+- **Cambios Menores:** Cuando el código o versión nueva del proyecto implementado presenta modificaciones respecto a alguna característica específica.
+- **Patch:** Cuando se resuelven errores menores.
+
+#### Repositorio de Github:
+
+- Enlace para acceder al repositorio de la landing page: 
+- Enlace para acceder al repositorio de la aplicación móvil: 
+- Enlace para acceder al repositorio del Informe: 
+
+#### Metodología de trabajo GitFlow
+La metodología de trabajo se fundamentará en un modelo de ramas Git Flow, el cual se basa en la generación de ramas específicas para cada funcionalidad o corrección de errores. El modelo de "A successful Git branching model"
+
+#### Organización de branches (Ramas):
+
+1. **Master branch (Rama primaria):** Es la rama fundamental del proyecto, donde se conserva el código estable y preparado para producción. Únicamente se incorporarán modificaciones que hayan sido probadas y validadas previamente en las ramas de desarrollo y funcionalidad.
+
+2. **Develop Branch (Rama de Desarrollo):** Esta rama funciona como un espacio de consolidación para el trabajo colaborativo, facilitando pruebas y ajustes de las nuevas funcionalidades antes de fusionarlas con la rama primaria. Asegura que el código sea operativo y estable.
+
+3. **Feature branch (Ramas de funcionalidad):** Cada nueva característica o tarea específica se construirá en su propia rama. Una vez finalizada y probada, se consolidará en la rama de desarrollo. Las ramas de funcionalidad seguirán un esquema de nombres descriptivos, como por ejemplo: `feature/user-authentication`.
+
 ### 4.1.3. Source Code Style Guide & Conventions
+
+El equipo establecerá nomenclatura en inglés para todas las variables, funciones, clases y archivos del proyecto, con el propósito de preservar flexibilidad, escalabilidad y consistencia en el desarrollo.
+
+#### Desarrollo Android (Kotlin)
+Se implementa el estilo de código oficial de Android y las convenciones de Kotlin.
+
+- Los nombres de clases seguirán PascalCase (`MainActivity`, `UserRepository`).
+- Las funciones y variables utilizarán camelCase (`getCurrentUser`, `isLoggedIn`).
+- Los recursos seguirán snake_case (`activity_main`, `btn_login`).
+- Identificadores descriptivos y claros para accesibilidad y mantenimiento.
+
+Se emplearon diferentes componentes para estructurar la aplicación móvil:
+
+- **Activity:** Define las pantallas principales de la aplicación móvil.
+- **Fragment:** Establece las secciones modulares que conforman las diferentes vistas de la aplicación.
+- **View:** Permite la organización de diferentes elementos visuales dentro de la aplicación, facilitando la aplicación de estilos específicos para cada componente.
+- **ImageView:** Facilita la integración de imágenes en la aplicación móvil, utilizado frecuentemente a lo largo de la aplicación.
+- **RecyclerView:** Sirve para mostrar listas dinámicas de elementos, principalmente empleado para la visualización de datos y menús interactivos.
+- **Button:** Establece botones interactivos personalizables que permiten a los usuarios ejecutar acciones específicas.
+- **TextView:** Define los textos y etiquetas, diferenciándolos del resto del contenido visual.
+
 ### 4.1.4. Software Deployment Configuration
+
+#### Despliegue de aplicación móvil:
+
+Para publicar la aplicación móvil, es fundamental cumplir con ciertos requisitos previos, como disponer de una cuenta de desarrollador, configurar el proyecto y preparar los archivos de distribución. Una vez satisfechos estos requisitos, se pueden ejecutar los pasos detallados a continuación para realizar la publicación:
+
+1. Verificar que el proyecto esté configurado correctamente con las dependencias necesarias.
+2. Asegurarse de que la aplicación cumpla con las convenciones de nomenclatura: archivos de configuración como "build.gradle", "AndroidManifest.xml", estructura de carpetas "res/" para recursos, y "src/" para código fuente.
+3. Generar el archivo APK o AAB (Android App Bundle) para distribución.
+4. Acceder a Google Play Console y crear una nueva aplicación o versión.
+5. Configurar la información de la aplicación, capturas de pantalla y descripción.
+6. Subir el archivo de la aplicación y esperar la revisión de Google Play Store.
+
+
+#### Google Play Store:
+
+El enlace de la aplicación en Google Play Store será proporcionado una vez completado el proceso de publicación y aprobación.
+
+#### Despliegue de Landing Page:
+
+
+
 
 ## 4.2. Landing Page & Mobile Application Implementation
 ### 4.2.1. Sprint n
