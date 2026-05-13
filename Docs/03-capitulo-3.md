@@ -72,6 +72,8 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ### 3.1.4.3. Mobile Applications Mock-ups
 
+Sprint 1
+
 Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo productores ganaderos
 
 - Sección de "Sign In"
