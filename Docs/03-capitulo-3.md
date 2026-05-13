@@ -45,6 +45,28 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
  
 ### 3.1.3.2. Landing Page Mock-up
 
+- Sección de "Home"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-home.png" alt="mockup-home" width="60%"></p></td>
+
+- Sección de "About Us"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-aboutus.png" alt="mockup-aboutus" width="60%"></p></td>
+
+- Sección de "Product"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-1.png" alt="mockup-product-1" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-2.png" alt="mockup-product-2" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-3.png" alt="mockup-product-3" width="60%"></p></td>
+
+- Sección de "About the team"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-aboutteam.png" alt="about-team" width="60%"></p></td>
+
+- Sección de "Contact"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-contact.png" alt="contact" width="60%"></p></td>
+
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
