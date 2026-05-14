@@ -5,6 +5,61 @@
 ### 3.1.1. Style Guidelines
 ### 3.1.1.1. General Style Guidelines
 
+#### **Branding**
+El branding de **Bovix** está orientado a transmitir confianza, innovación y compromiso con la gestión ganadera moderna. La identidad visual busca representar la conexión entre la tecnología y el sector agropecuario mediante una propuesta limpia, profesional y accesible para ganaderos y veterinarios.
+
+La marca utiliza tonalidades verdes como elemento principal para reforzar conceptos relacionados con naturaleza, salud animal, sostenibilidad y productividad. Además, el diseño visual está enfocado en ofrecer una experiencia intuitiva y organizada tanto en la aplicación web como en dispositivos móviles.
+
+El objetivo principal de la identidad de **Bovix** es proyectar una plataforma confiable y moderna que facilite el monitoreo sanitario, la gestión del ganado y la toma de decisiones dentro del entorno ganadero.
+
+#### **Typography**
+La tipografía de **Bovix** prioriza la legibilidad y claridad visual para facilitar la lectura en pantallas web y móviles.
+
+Para los títulos y encabezados se utilizará la fuente **Poppins**, debido a su estilo moderno, geométrico y profesional, permitiendo generar una jerarquía visual clara dentro de la interfaz.
+
+Para el contenido y textos descriptivos se utilizará la fuente **Inter**, ya que ofrece una lectura cómoda en diferentes tamaños de pantalla y mejora la accesibilidad durante el uso prolongado de la plataforma.
+
+El uso combinado de ambas fuentes permite mantener una apariencia moderna y profesional sin perder simplicidad ni accesibilidad para los usuarios.
+
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-style-guidelines/Typography-image.png" alt="primary-colors" width="60%"></p></td>
+
+#### **Colors**
+La paleta de colores de **Bovix** fue diseñada para representar sostenibilidad, naturaleza, salud y tecnología aplicada al sector ganadero.
+
+Los colores primarios están compuestos por distintas tonalidades de verde que transmiten estabilidad, crecimiento y confianza. Los colores semánticos permiten representar acciones informativas, alertas y estados del sistema dentro de la aplicación.
+
+##### **Colores Primarios**
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-style-guidelines/primary-Colors.png" alt="primary-colors" width="60%"></p></td>
+
+##### **Colores Semánticos**
+
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-style-guidelines/semantic-colors.png" alt="semantic-colors" width="60%"></p></td>
+
+
+Estos colores serán utilizados estratégicamente para generar una interfaz visualmente equilibrada, moderna y accesible para los usuarios de **Bovix**.
+
+#### **Spacing**
+La interfaz de **Bovix** utilizará espacios consistentes entre componentes para mantener una estructura visual ordenada y mejorar la experiencia del usuario.
+
+Se aplicarán márgenes y separaciones adecuadas entre secciones, formularios y elementos interactivos con el fin de evitar la sobrecarga visual y facilitar la navegación dentro de la plataforma.
+
+El sistema de espaciado busca garantizar claridad visual tanto en dispositivos móviles como en aplicaciones web responsivas.
+
+#### **Tono de Comunicación y Lenguaje Aplicado**
+El tono de comunicación de **Bovix** será:
+*   **Profesional**
+*   **Cercano**
+*   **Informativo**
+*   **Respetuoso**
+*   **Claro y directo**
+
+La plataforma utilizará un lenguaje sencillo y comprensible para facilitar la interacción de ganaderos, veterinarios y usuarios con distintos niveles de experiencia tecnológica.
+
+**Bovix** busca transmitir confianza y seguridad en cada interacción, evitando términos técnicos complejos y priorizando mensajes claros, organizados y orientados a la productividad y bienestar animal.
+
 ### 3.1.2 Information Architecture
 ### 3.1.2.1. Organization Systems
 ### 3.1.2.2. Labelling Systems
