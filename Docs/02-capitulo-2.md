@@ -501,303 +501,1496 @@ necesita y con qué propósito, facilitando la planificación, priorización y d
 garantiza que cada funcionalidad responda a una necesidad real, fomentando un desarrollo orientado al valor y
 alineado con las expectativas del usuario final.
 
-<h3>EP-01</h3>
+<!-- ======================= EP001 ======================= -->
 
-<table border="1" cellpadding="6" cellspacing="0">
+<h2>EP001 — Informarse sobre el Producto</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Epic ID</th>
     <th>Título</th>
     <th>Descripción</th>
   </tr>
   <tr>
-    <td>EP-01</td>
-    <td>Autenticación de usuarios</td>
+    <td>EP001</td>
+    <td>Informarse sobre el Producto</td>
     <td>
-      Como usuario, deseo registrarme e iniciar sesión en la aplicación
-      para acceder a funcionalidades personalizadas.
+      Como visitante, deseo explorar la landing page de Bovix para conocer sus funcionalidades,
+      beneficios y servicios dirigidos al sector ganadero.
     </td>
   </tr>
 </table>
 
 <br>
 
-<h3>US01</h3>
-<table border="1" cellpadding="6" cellspacing="0">
+<!-- US001 -->
+
+<h3>US001</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Story ID</th>
     <th>User</th>
     <th>Priority</th>
     <th>Epic</th>
   </tr>
+
   <tr>
-    <td>US01</td>
+    <td>US001</td>
     <td>Visitante</td>
     <td>Alta</td>
-    <td>EP-01</td>
+    <td>EP001</td>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">Registro de usuario</td></tr>
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
 
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como visitante, deseo registrarme en la aplicación para crear una cuenta.
-  </td></tr>
+  <tr>
+    <td colspan="4">Explorar Landing Page</td>
+  </tr>
 
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Registro exitoso</b><br>
-    Dado que el usuario ingresa datos válidos.<br>
-    Cuando envía el formulario.<br>
-    Entonces el sistema crea la cuenta.<br><br>
-    <b>E02: Campos incompletos</b><br>
-    Dado que faltan datos obligatorios.<br>
-    Cuando intenta registrarse.<br>
-    Entonces el sistema solicita completar la información.<br><br>
-    <b>E03: Datos inválidos</b><br>
-    Dado que los datos no cumplen el formato.<br>
-    Cuando intenta registrarse.<br>
-    Entonces el sistema muestra error.
-  </td></tr>
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como visitante, quiero explorar la landing page para conocer las funcionalidades y beneficios de Bovix.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Visualización de información principal</b><br>
+      Dado que el visitante accede a la landing page.<br>
+      Cuando navega por las secciones principales.<br>
+      Entonces el sistema muestra información clara sobre Bovix y sus funcionalidades.<br><br>
+
+  <b>E02: Navegación entre secciones</b><br>
+      Dado que el visitante se encuentra en la landing page.<br>
+      Cuando accede a diferentes secciones informativas.<br>
+      Entonces el sistema muestra el contenido correspondiente correctamente.
+  </td>
+  </tr>
 </table>
 
 <br>
 
-<h3>US02</h3>
-<table border="1" cellpadding="6" cellspacing="0">
+<!-- US002 -->
+
+<h3>US002</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Story ID</th>
     <th>User</th>
     <th>Priority</th>
     <th>Epic</th>
   </tr>
+
   <tr>
-    <td>US02</td>
-    <td>Usuario</td>
+    <td>US002</td>
+    <td>Visitante</td>
     <td>Alta</td>
-    <td>EP-01</td>
+    <td>EP001</td>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">Inicio de sesión</td></tr>
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
 
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como usuario, deseo iniciar sesión para acceder al sistema.
-  </td></tr>
+  <tr>
+    <td colspan="4">Visualización de Planes y Beneficios</td>
+  </tr>
 
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Login exitoso</b><br>
-    Dado que el usuario tiene credenciales válidas.<br>
-    Cuando inicia sesión.<br>
-    Entonces accede al sistema.<br><br>
-    <b>E02: Credenciales incorrectas</b><br>
-    Dado que los datos son incorrectos.<br>
-    Cuando intenta iniciar sesión.<br>
-    Entonces el sistema rechaza el acceso.<br><br>
-    <b>E03: Campos vacíos</b><br>
-    Dado que no completa los campos.<br>
-    Cuando intenta iniciar sesión.<br>
-    Entonces el sistema solicita completar los datos.
-  </td></tr>
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como visitante, quiero visualizar los planes y beneficios disponibles para evaluar cuál se adapta mejor a mis necesidades.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Consulta de planes</b><br>
+      Dado que el visitante navega por la landing page.<br>
+      Cuando accede a la sección de planes.<br>
+      Entonces el sistema muestra los planes disponibles y sus beneficios.<br><br>
+
+  <b>E02: Comparación de funcionalidades</b><br>
+      Dado que el visitante consulta los planes.<br>
+      Cuando revisa las características de cada uno.<br>
+      Entonces el sistema presenta información comparativa clara y organizada.
+  </td>
+  </tr>
 </table>
 
-<h3>EP-02</h3>
+<br>
 
-<table border="1" cellpadding="6" cellspacing="0">
+<!-- US003 -->
+
+<h3>US003</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US003</td>
+    <td>Visitante</td>
+    <td>Media</td>
+    <td>EP001</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Contacto con Bovix</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como visitante, quiero acceder a información de contacto para comunicarme con el equipo de Bovix.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Visualización de información de contacto</b><br>
+      Dado que el visitante accede a la landing page.<br>
+      Cuando navega a la sección de contacto.<br>
+      Entonces el sistema muestra medios de comunicación disponibles.<br><br>
+
+  <b>E02: Envío de consulta</b><br>
+      Dado que el visitante desea realizar una consulta.<br>
+      Cuando envía información válida mediante el formulario de contacto.<br>
+      Entonces el sistema confirma el envío correctamente.
+    </td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- ======================= EP002 ======================= -->
+
+<h2>EP002 — Gestión de Ganado</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Epic ID</th>
     <th>Título</th>
     <th>Descripción</th>
   </tr>
+
   <tr>
-    <td>EP-02</td>
-    <td>Gestión de vacunas</td>
+    <td>EP002</td>
+    <td>Gestión de Ganado</td>
     <td>
-      Como ganadero, deseo registrar y consultar vacunas para mantener el control de la salud del ganado.
+      Como ganadero, deseo registrar y gestionar la información de mis animales
+      para mantener un control organizado y actualizado del ganado.
     </td>
   </tr>
 </table>
 
 <br>
 
-<h3>US03</h3>
-<table border="1" cellpadding="6" cellspacing="0">
+<!-- US004 -->
+
+<h3>US004</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Story ID</th>
     <th>User</th>
     <th>Priority</th>
     <th>Epic</th>
   </tr>
+
   <tr>
-    <td>US03</td>
+    <td>US004</td>
     <td>Ganadero</td>
     <td>Alta</td>
-    <td>EP-02</td>
+    <td>EP002</td>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">Registrar vacuna</td></tr>
-
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como ganadero, deseo registrar vacunas para llevar control sanitario.
-  </td></tr>
-
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Registro exitoso</b><br>
-    Dado que el usuario ingresa datos válidos.<br>
-    Cuando registra la vacuna.<br>
-    Entonces el sistema guarda la información.<br><br>
-    <b>E02: Error de datos</b><br>
-    Dado que los datos son incorrectos.<br>
-    Cuando intenta registrar.<br>
-    Entonces el sistema muestra error.
-  </td></tr>
-</table>
-
-<h3>TS01</h3>
-
-<table border="1" cellpadding="6" cellspacing="0">
   <tr>
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS01</td>
-    <td>Developer</td>
-    <td>Media</td>
-    <td>EP-02</td>
+    <th colspan="4">Title</th>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">API para registro de vacunas</td></tr>
-
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como developer, deseo implementar un endpoint para registrar vacunas,
-    permitiendo la integración de la aplicación móvil con el backend.
-  </td></tr>
-
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Registro exitoso</b><br>
-    Dado que el endpoint está disponible.<br>
-    Cuando se envía una solicitud POST con datos válidos.<br>
-    Entonces se recibe respuesta 201 (Created).<br><br>
-    <b>E02: Datos inválidos</b><br>
-    Dado que faltan campos obligatorios.<br>
-    Cuando se envía la solicitud.<br>
-    Entonces se recibe respuesta 400 (Bad Request).<br><br>
-    <b>E03: Formato incorrecto</b><br>
-    Dado que los datos tienen formato inválido.<br>
-    Cuando se envía la solicitud.<br>
-    Entonces el sistema responde con error.
-  </td></tr>
-</table>
-
-<h3>EP-03</h3>
-
-<table border="1" cellpadding="6" cellspacing="0">
   <tr>
-    <th>Epic ID</th>
-    <th>Título</th>
-    <th>Descripción</th>
+    <td colspan="4">Registro de Ganado</td>
   </tr>
+
   <tr>
-    <td>EP-03</td>
-    <td>Landing Page</td>
-    <td>
-      Como visitante, deseo conocer el producto mediante la landing page para evaluar su utilidad.
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero registrar nuevos animales para mantener un historial actualizado de mi ganado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso de animal</b><br>
+      Dado que el ganadero se encuentra autenticado.<br>
+      Cuando registra correctamente los datos del animal.<br>
+      Entonces el sistema almacena la información y confirma el registro.<br><br>
+
+  <b>E02: Registro incompleto</b><br>
+      Dado que el ganadero desea registrar un animal.<br>
+      Cuando omite campos obligatorios.<br>
+      Entonces el sistema informa los datos faltantes.<br><br>
+
+  <b>E03: Datos inválidos</b><br>
+      Dado que el ganadero registra información del animal.<br>
+      Cuando ingresa datos inválidos.<br>
+      Entonces el sistema rechaza el registro y muestra un mensaje de error.
     </td>
   </tr>
 </table>
 
 <br>
 
-<h3>US04</h3>
-<table border="1" cellpadding="6" cellspacing="0">
+<!-- US005 -->
+
+<h3>US005</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Story ID</th>
     <th>User</th>
     <th>Priority</th>
     <th>Epic</th>
   </tr>
+
   <tr>
-    <td>US04</td>
-    <td>Visitante</td>
+    <td>US005</td>
+    <td>Ganadero</td>
     <td>Alta</td>
-    <td>EP-03</td>
+    <td>EP002</td>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">Explorar landing page</td></tr>
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
 
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como visitante, deseo explorar la landing page para conocer el sistema.
-  </td></tr>
+  <tr>
+    <td colspan="4">Consulta de Información del Ganado</td>
+  </tr>
 
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Visualización</b><br>
-    Dado que el usuario accede.<br>
-    Cuando se carga la página.<br>
-    Entonces visualiza información.<br><br>
-    <b>E02: Navegación</b><br>
-    Dado que existen secciones.<br>
-    Cuando navega.<br>
-    Entonces accede al contenido.
-  </td></tr>
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero consultar información de mis animales para acceder rápidamente a sus datos sanitarios y productivos.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Consulta exitosa</b><br>
+      Dado que existen animales registrados.<br>
+      Cuando el ganadero realiza una búsqueda válida.<br>
+      Entonces el sistema muestra los animales encontrados.<br><br>
+
+  <b>E02: Sin resultados</b><br>
+      Dado que el ganadero realiza una búsqueda.<br>
+      Cuando no existen coincidencias.<br>
+      Entonces el sistema informa que no se encontraron registros.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US006 -->
+
+<h3>US006</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US006</td>
+    <td>Ganadero</td>
+    <td>Media</td>
+    <td>EP002</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Actualización de Información del Ganado</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero actualizar la información de mis animales para mantener datos precisos y actualizados.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Actualización exitosa</b><br>
+      Dado que el animal existe en el sistema.<br>
+      Cuando el ganadero modifica correctamente la información.<br>
+      Entonces el sistema actualiza los datos y confirma la operación.<br><br>
+
+  <b>E02: Error de validación</b><br>
+      Dado que el ganadero modifica información del animal.<br>
+      Cuando se ingresan datos inválidos.<br>
+      Entonces el sistema rechaza la actualización y muestra un mensaje descriptivo.
+    </td>
+  </tr>
 </table>
 
 
+<!-- ======================= EP003 ======================= -->
 
-<h3>SP01</h3>
+<h2>EP003 — Monitoreo de Salud y Tratamientos</h2>
 
-<table border="1" cellpadding="6" cellspacing="0">
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP003</td>
+    <td>Monitoreo de Salud y Tratamientos</td>
+    <td>
+      Como ganadero y veterinario, deseo monitorear la salud del ganado
+      para prevenir enfermedades y mejorar la atención médica de los animales.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US007 -->
+
+<h3>US007</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
     <th>Story ID</th>
     <th>User</th>
     <th>Priority</th>
     <th>Epic</th>
   </tr>
+
   <tr>
-    <td>SP01</td>
+    <td>US007</td>
+    <td>Veterinario</td>
+    <td>Alta</td>
+    <td>EP003</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Registro de Tratamientos Médicos</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como veterinario, quiero registrar tratamientos médicos para mantener actualizado el historial clínico del animal.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso</b><br>
+      Dado que el veterinario accede al historial clínico.<br>
+      Cuando registra correctamente el tratamiento.<br>
+      Entonces el sistema almacena la información y actualiza el historial.<br><br>
+
+  <b>E02: Registro incompleto</b><br>
+      Dado que el veterinario registra un tratamiento.<br>
+      Cuando omite datos obligatorios.<br>
+      Entonces el sistema informa la información faltante.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US008 -->
+
+<h3>US008</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US008</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP003</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Monitoreo del Estado de Salud</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero monitorear el estado de salud de mis animales para detectar enfermedades oportunamente.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Consulta sanitaria exitosa</b><br>
+      Dado que existen registros médicos del animal.<br>
+      Cuando el ganadero consulta el historial sanitario.<br>
+      Entonces el sistema muestra el estado de salud actualizado.<br><br>
+
+  <b>E02: Animal sin historial clínico</b><br>
+      Dado que el animal no posee registros médicos.<br>
+      Cuando el ganadero consulta su información sanitaria.<br>
+      Entonces el sistema informa que no existen registros disponibles.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US009 -->
+
+<h3>US009</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US009</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP003</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Generación de Alertas Sanitarias</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero recibir alertas sanitarias para actuar rápidamente ante riesgos de salud o tratamientos pendientes.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Generación automática de alertas</b><br>
+      Dado que existe una condición sanitaria relevante.<br>
+      Cuando el sistema detecta un evento de riesgo.<br>
+      Entonces se genera una alerta sanitaria.<br><br>
+
+  <b>E02: Recordatorio de tratamiento</b><br>
+      Dado que existe un tratamiento programado.<br>
+      Cuando la fecha de aplicación se aproxima.<br>
+      Entonces el sistema notifica al usuario responsable.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US010 -->
+
+<h3>US010</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US010</td>
+    <td>Veterinario</td>
+    <td>Media</td>
+    <td>EP003</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Registro de Diagnósticos Veterinarios</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como veterinario, quiero registrar diagnósticos clínicos para mantener un seguimiento médico detallado del ganado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso de diagnóstico</b><br>
+      Dado que el veterinario selecciona un animal registrado.<br>
+      Cuando ingresa información válida del diagnóstico.<br>
+      Entonces el sistema almacena correctamente el diagnóstico.<br><br>
+
+  <b>E02: Error en el registro</b><br>
+      Dado que el veterinario registra un diagnóstico.<br>
+      Cuando la información es incompleta o inválida.<br>
+      Entonces el sistema rechaza el registro y muestra un mensaje descriptivo.
+    </td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- ======================= EP004 ======================= -->
+
+<h2>EP004 — Gestión de Alimentación y Reproducción</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP004</td>
+    <td>Gestión de Alimentación y Reproducción</td>
+    <td>
+      Como ganadero, deseo gestionar la alimentación y reproducción del ganado
+      para mejorar la productividad y bienestar animal.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US011 -->
+
+<h3>US011</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US011</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP004</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Registro de Alimentación</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero registrar la alimentación del ganado para controlar el consumo y mejorar la productividad.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso de alimentación</b><br>
+      Dado que el ganadero accede al módulo correspondiente.<br>
+      Cuando registra información válida de alimentación.<br>
+      Entonces el sistema almacena correctamente el registro.<br><br>
+
+  <b>E02: Registro inválido</b><br>
+      Dado que el ganadero registra información de alimentación.<br>
+      Cuando los datos ingresados son incorrectos.<br>
+      Entonces el sistema rechaza el registro y muestra un mensaje de error.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US012 -->
+
+<h3>US012</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US012</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP004</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Registro de Eventos Reproductivos</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero registrar eventos reproductivos para realizar seguimiento de la reproducción del ganado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso de evento reproductivo</b><br>
+      Dado que el ganadero selecciona un animal registrado.<br>
+      Cuando registra un evento reproductivo válido.<br>
+      Entonces el sistema almacena correctamente la información.<br><br>
+
+  <b>E02: Registro incompleto</b><br>
+      Dado que el usuario registra un evento reproductivo.<br>
+      Cuando faltan datos obligatorios.<br>
+      Entonces el sistema informa la información faltante.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US013 -->
+
+<h3>US013</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US013</td>
+    <td>Veterinario</td>
+    <td>Media</td>
+    <td>EP004</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Seguimiento Reproductivo</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como veterinario, quiero visualizar el seguimiento reproductivo de los animales para evaluar su estado y evolución.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Visualización de seguimiento</b><br>
+      Dado que existen registros reproductivos.<br>
+      Cuando el veterinario consulta el historial correspondiente.<br>
+      Entonces el sistema muestra información actualizada del animal.
+    </td>
+  </tr>
+</table>
+
+<!-- ======================= EP005 ======================= -->
+
+<h2>EP005 — Atención Veterinaria</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP005</td>
+    <td>Atención Veterinaria</td>
+    <td>
+      Como ganadero y veterinario, deseo coordinar la atención médica de los animales
+      para mejorar el seguimiento sanitario y la comunicación entre usuarios.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US014 -->
+
+<h3>US014</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US014</td>
+    <td>Ganadero</td>
+    <td>Alta</td>
+    <td>EP005</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Solicitud de Atención Veterinaria</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero solicitar atención veterinaria para recibir asistencia médica para mis animales.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Solicitud exitosa</b><br>
+      Dado que el ganadero accede al módulo veterinario.<br>
+      Cuando registra correctamente la solicitud.<br>
+      Entonces el sistema almacena la solicitud y confirma el proceso.<br><br>
+
+  <b>E02: Solicitud inválida</b><br>
+      Dado que el ganadero registra la solicitud.<br>
+      Cuando faltan datos obligatorios.<br>
+      Entonces el sistema informa los campos pendientes.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US015 -->
+
+<h3>US015</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US015</td>
+    <td>Veterinario</td>
+    <td>Media</td>
+    <td>EP005</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Compartir Historial Clínico</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como veterinario, quiero acceder y compartir el historial clínico del ganado para mejorar la atención médica y el seguimiento sanitario.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Consulta de historial clínico</b><br>
+      Dado que el animal posee historial médico registrado.<br>
+      Cuando el veterinario accede a la información.<br>
+      Entonces el sistema muestra el historial clínico actualizado.<br><br>
+
+  <b>E02: Compartir historial médico</b><br>
+      Dado que el veterinario consulta la información clínica.<br>
+      Cuando comparte el historial con el ganadero autorizado.<br>
+      Entonces el sistema permite visualizar la información correctamente.
+    </td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- ======================= EP006 ======================= -->
+
+<h2>EP006 — Reportes y Toma de Decisiones</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP006</td>
+    <td>Reportes y Toma de Decisiones</td>
+    <td>
+      Como ganadero, deseo visualizar reportes y estadísticas para mejorar
+      la toma de decisiones relacionadas con mi operación ganadera.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US016 -->
+
+<h3>US016</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US016</td>
+    <td>Ganadero</td>
+    <td>Media</td>
+    <td>EP006</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Visualización de Reportes Productivos</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero visualizar reportes productivos para evaluar el rendimiento del ganado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Generación de reportes</b><br>
+      Dado que existen registros productivos disponibles.<br>
+      Cuando el ganadero solicita un reporte.<br>
+      Entonces el sistema genera información consolidada del ganado.<br><br>
+
+  <b>E02: Reporte sin datos suficientes</b><br>
+      Dado que el usuario solicita un reporte productivo.<br>
+      Cuando no existen datos registrados suficientes.<br>
+      Entonces el sistema informa que no es posible generar el reporte.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US017 -->
+
+<h3>US017</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US017</td>
+    <td>Ganadero</td>
+    <td>Media</td>
+    <td>EP006</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Consulta de Estadísticas Sanitarias</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como ganadero, quiero consultar estadísticas sanitarias para identificar patrones relacionados con la salud del ganado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Visualización de estadísticas</b><br>
+      Dado que existen datos sanitarios registrados.<br>
+      Cuando el usuario consulta estadísticas.<br>
+      Entonces el sistema muestra información consolidada y actualizada.<br><br>
+
+  <b>E02: Estadísticas sin registros</b><br>
+      Dado que el usuario consulta información sanitaria.<br>
+      Cuando no existen datos registrados.<br>
+      Entonces el sistema informa que no hay estadísticas disponibles.
+    </td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- ======================= EP007 ======================= -->
+
+<h2>EP007 — APIs y Servicios Backend</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP007</td>
+    <td>APIs y Servicios Backend</td>
+    <td>
+      Como developer, deseo implementar servicios backend y APIs REST
+      para soportar las funcionalidades de la plataforma Bovix.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- TS001 -->
+
+<h3>TS001</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>TS001</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">API para Registro de Ganado</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como developer, necesito implementar un endpoint para registrar animales dentro de la plataforma Bovix.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro exitoso</b><br>
+      Dado que el endpoint /ganado está disponible.<br>
+      Cuando se envía una solicitud POST con datos válidos.<br>
+      Entonces se recibe una respuesta 201 (Created).<br><br>
+
+  <b>E02: Datos inválidos</b><br>
+      Dado que el endpoint /ganado está disponible.<br>
+      Cuando se envía información incompleta o incorrecta.<br>
+      Entonces se recibe una respuesta 400 (Bad Request).
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- TS002 -->
+
+<h3>TS002</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>TS002</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">API para Consulta de Ganado</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como developer, necesito implementar endpoints de consulta para obtener información del ganado registrado.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      <b>E01: Consulta exitosa</b><br>
+      Dado que el endpoint /ganado está disponible.<br>
+      Cuando se realiza una solicitud GET válida.<br>
+      Entonces se recibe una respuesta 200 (OK) con los registros encontrados.<br><br>
+
+  <b>E02: Sin resultados</b><br>
+      Dado que el endpoint /ganado está disponible.<br>
+      Cuando no existen coincidencias en la búsqueda.<br>
+      Entonces el sistema devuelve una lista vacía o un mensaje informativo.
+    </td>
+  </tr>
+</table>
+
+<!-- ======================= EP008 ======================= -->
+
+<h2>EP008 — Investigación y Validación Técnica</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th width="20%">Epic ID</th>
+    <th width="30%">Título</th>
+    <th width="50%">Descripción</th>
+  </tr>
+  <tr>
+    <td>EP008</td>
+    <td>Investigación y Validación Técnica</td>
+    <td>
+      Como developer, deseo investigar soluciones tecnológicas que permitan garantizar
+      el funcionamiento eficiente de Bovix en entornos rurales y de baja conectividad.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ======================= SP001 ======================= -->
+
+<h3>SP001</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>SP001</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP008</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Investigación sobre Arquitectura Offline
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como developer, necesito investigar tecnologías offline para garantizar el
+      funcionamiento de la aplicación en zonas rurales con baja conectividad.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>E01: Investigación de tecnologías</b><br>
+      Dado que el equipo requiere operar en entornos rurales.<br>
+      Cuando se analizan tecnologías compatibles con funcionamiento offline.<br>
+      Entonces se documentan las alternativas viables para la aplicación.<br><br>
+
+  <b>E02: Comparación técnica</b><br>
+      Dado que existen múltiples tecnologías disponibles.<br>
+      Cuando se comparan sus ventajas y limitaciones.<br>
+      Entonces el equipo identifica la arquitectura más adecuada para Bovix.<br><br>
+
+  <b>E03: Documentación de resultados</b><br>
+      Dado que finaliza la investigación técnica.<br>
+      Cuando se consolidan las conclusiones obtenidas.<br>
+      Entonces el equipo genera un documento con recomendaciones técnicas.
+
+  </td>
+  </tr>
+
+</table>
+
+<br><br>
+
+<!-- ======================= SP002 ======================= -->
+
+<h3>SP002</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>SP002</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP008</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Investigación sobre Sincronización de Datos
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como developer, necesito analizar mecanismos de sincronización para mantener
+      la consistencia de información entre dispositivos y servidor.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>E01: Evaluación de sincronización</b><br>
+      Dado que la aplicación puede funcionar sin conexión.<br>
+      Cuando se restablece la conectividad.<br>
+      Entonces los datos almacenados localmente deben sincronizarse correctamente.<br><br>
+
+  <b>E02: Análisis de conflictos</b><br>
+      Dado que pueden existir modificaciones simultáneas.<br>
+      Cuando ocurre un conflicto de información.<br>
+      Entonces se identifican mecanismos de resolución adecuados.<br><br>
+
+  <b>E03: Validación técnica</b><br>
+      Dado que concluye el análisis de sincronización.<br>
+      Cuando el equipo revisa los resultados obtenidos.<br>
+      Entonces se documentan conclusiones y recomendaciones técnicas.
+
+  </td>
+  </tr>
+
+</table>
+
+<br><br>
+
+<!-- ======================= SP003 ======================= -->
+
+<h3>SP003</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>SP003</td>
     <td>Developer</td>
     <td>Media</td>
-    <td>EP-00</td>
+    <td>EP008</td>
   </tr>
 
-  <tr><th colspan="4">Title</th></tr>
-  <tr><td colspan="4">Investigación de arquitectura móvil</td></tr>
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
 
-  <tr><th colspan="4">Description</th></tr>
-  <tr><td colspan="4">
-    Como developer, deseo investigar la arquitectura adecuada para la aplicación móvil
-    para asegurar una implementación eficiente y escalable.
-  </td></tr>
+  <tr>
+    <td colspan="4">
+      Evaluación de Notificaciones y Alertas
+    </td>
+  </tr>
 
-  <tr><th colspan="4">Acceptance Criteria</th></tr>
-  <tr><td colspan="4">
-    <b>E01: Análisis de alternativas</b><br>
-    Dado que existen múltiples opciones tecnológicas.<br>
-    Cuando se realiza la investigación.<br>
-    Entonces se identifican ventajas y desventajas.<br><br>
-    <b>E02: Documentación</b><br>
-    Dado que se completa el análisis.<br>
-    Cuando se finaliza la investigación.<br>
-    Entonces se documentan los resultados.<br><br>
-    <b>E03: Resultado final</b><br>
-    Dado que se comparan alternativas.<br>
-    Cuando se toma una decisión.<br>
-    Entonces se obtiene una recomendación técnica.
-  </td></tr>
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como developer, necesito evaluar mecanismos de notificaciones para garantizar
+      la entrega de alertas sanitarias en tiempo real.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>E01: Evaluación de servicios de notificación</b><br>
+      Dado que Bovix requiere enviar alertas sanitarias.<br>
+      Cuando se investigan servicios de notificaciones compatibles.<br>
+      Entonces el equipo identifica soluciones viables para la plataforma.<br><br>
+
+  <b>E02: Validación de alertas</b><br>
+      Dado que se realizan pruebas de notificaciones.<br>
+      Cuando ocurre un evento sanitario importante.<br>
+      Entonces el sistema debe ser capaz de generar alertas oportunas.<br><br>
+
+  <b>E03: Documentación de resultados</b><br>
+      Dado que finaliza la evaluación técnica.<br>
+      Cuando el equipo consolida la información obtenida.<br>
+      Entonces se documentan las conclusiones y recomendaciones de implementación.
+
+  </td>
+  </tr>
+
 </table>
+
+
+
+
 
 
 ### 2.4.2. Impact Mapping
@@ -818,14 +2011,33 @@ necesidades identificadas en las entrevistas, el To-Be Scenario Mapping y las Us
 planificar el trabajo del equipo de forma estructurada y alineada con los objetivos del proyecto. Cada ítem del backlog
 está enfocado en generar valor para el usuario final y facilitar una entrega incremental y efectiva de la solución.
 
-| Orden | User Story ID | Título | Descripción | Story Points |
-|-------|--------------|--------|-------------|--------------|
-| 1 | US04 | Explorar landing page | Como visitante, quiero explorar la landing page para conocer el sistema. | 2 |
-| 2 | US01 | Registro de usuario | Como visitante, quiero registrarme en la aplicación para crear una cuenta. | 3 |
-| 3 | US02 | Inicio de sesión | Como usuario, quiero iniciar sesión para acceder al sistema. | 3 |
-| 4 | US03 | Registrar vacuna | Como ganadero, quiero registrar vacunas para llevar control sanitario. | 5 |
-| 5 | TS01 | API para registro de vacunas | Como developer, quiero implementar un endpoint para registrar vacunas. | 5 |
-| 6 | SP01 | Investigación arquitectura móvil | Como developer, quiero investigar la arquitectura adecuada para definir una base técnica sólida para la aplicación móvil. | 2 |
+| Orden | User Story ID | Título | Story Points |
+|--------|----------------|---------|---------------|
+| 1 | US001 | Explorar Landing Page | 2 |
+| 2 | US002 | Visualización de Planes y Beneficios | 2 |
+| 3 | US003 | Contacto con Bovix | 1 |
+| 4 | US004 | Registro de Ganado | 5 |
+| 5 | US005 | Consulta de Información del Ganado | 3 |
+| 6 | US007 | Historial Individual del Animal | 3 |
+| 7 | US008 | Registro de Tratamientos Médicos | 5 |
+| 8 | US009 | Monitoreo del Estado de Salud | 5 |
+| 9 | US010 | Generación de Alertas Sanitarias | 5 |
+| 10 | US012 | Registro de Alimentación | 3 |
+| 11 | US013 | Registro de Eventos Reproductivos | 3 |
+| 12 | US015 | Solicitud de Atención Veterinaria | 3 |
+| 13 | US016 | Compartir Historial Clínico | 3 |
+| 14 | US017 | Visualización de Reportes Productivos | 2 |
+| 15 | US018 | Consulta de Estadísticas Sanitarias | 2 |
+| 16 | TS001 | API para Registro de Ganado | 5 |
+| 17 | TS002 | API para Consulta de Ganado | 3 |
+| 18 | TS003 | API para Gestión de Tratamientos | 5 |
+| 19 | TS004 | API para Gestión de Alimentación | 3 |
+| 20 | TS005 | API para Gestión Reproductiva | 3 |
+| 21 | TS006 | API para Atención Veterinaria | 3 |
+| 22 | TS007 | API para Reportes y Estadísticas | 2 |
+| 23 | SP001 | Investigación sobre Arquitectura Offline | 2 |
+| 24 | SP002 | Investigación sobre Sincronización de Datos | 2 |
+| 25 | SP003 | Evaluación de Notificaciones y Alertas | 2 |
 
 Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c2876f1a867d9e4232056eedadE5E6036F/product-backlog
 
