@@ -420,7 +420,28 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
 
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
-### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+- Sección de "Inicio de sesión"
+<br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-1.png" alt="wireframe-login" width="40%"></p></td>
+
+- Sección de "Inicio"
+  <br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-2.png" alt="wireframe-home" width="40%"></p></td>
+
+- Sección de "Ganado"
+  <br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-3.png" alt="wireframe-health" width="40%"></p></td>
+
+- Sección de "Salud"
+  <br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-4.png" alt="wireframe-cattle" width="40%"></p></td>
+ 
+- Sección de "Alimento"
+  <br><br>
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-5.png" alt="wireframe-food" width="40%"></p></td>
+
+### 3.1.4.2. Mobile Applications Wireflow Diagrams             
 ### 3.1.4.3. Mobile Applications Mock-ups
 
 **SPRINT 1**
@@ -429,23 +450,23 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 - Sección de "Sign In"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-1.png" alt="mockup-home" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-1.png" alt="mockup-login" width="50%"></p></td>
 
 - Sección de "Inicio"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-2.png" alt="mockup-home" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-2.png" alt="mockup-home" width="50%"></p></td>
 
 - Sección de "Ganado"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-3.png" alt="mockup-aboutus" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-3.png" alt="mockup-health" width="50%"></p></td>
 
 - Sección de "Salud"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-4.png" alt="mockup-aboutus" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-4.png" alt="mockup-cattle" width="50%"></p></td>
 
 - Sección de "Alimento"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-5.png" alt="mockup-aboutus" width="60%"></p></td>
+  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-5.png" alt="mockup-food" width="50%"></p></td>
 
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
