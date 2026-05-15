@@ -298,9 +298,15 @@ Swagger se publicará en el Sprint 2 una vez los endpoints estén desplegados.
 
 **Plataforma de despliegue planificada:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
 
-**Tabla de Endpoints de la API de Bovix:** https://bovix-backend.onrender.com/swagger/index.html
+<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p></td>
 
-> **Enlace a documentación Swagger:** 
+<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p></td>
+
+**Tabla de Endpoints de la API de Bovix:** 
+
+
+
+> **Enlace a documentación Swagger:** [BackEnd](https://bovix-backend.onrender.com/swagger/index.html)
 
 
 ---
@@ -312,6 +318,8 @@ primer entregable público de la plataforma.
 
 **Plataforma utilizada:** Github Pages
 
+<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-landingpage.png" alt="deploy-landing" width="70%"></p></td>
+
 
 **Pasos realizados para el despliegue:** 
 Se desarrolló la landing page en el repositorio del equipo bajo la organización Mobile-apps-2026.
@@ -319,7 +327,7 @@ Se configuró GitHub Pages desde la sección Settings > Pages del repositorio, s
 GitHub Pages generó automáticamente la URL pública del sitio una vez activado el despliegue.
 Se verificó el correcto funcionamiento de la página accediendo a la URL generada.
 
-**URL de la Landing Page:** 
+**URL de la Landing Page:** [Landing page](https://mobile-apps-2026.github.io/Landing-Page-Bovix/)
 
 ---
 
