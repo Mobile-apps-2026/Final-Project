@@ -238,17 +238,17 @@ La entrevista revela que Ximena, de 22 años y residente de Villa María, gestio
 La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la gestión de la granja familiar de aves y cerdos con un enfoque práctico y flexible. Aunque se apoya en veterinarios externos para el cuidado de la salud animal y en mercados locales para la compra de alimentos diferenciados por especie, Sandro lleva actualmente un registro netamente manual en cuadernos sobre las fechas de vacunación y pesaje. Él considera que este método tradicional es su mayor desafío operativo, ya que le genera una importante pérdida de tiempo al realizar el conteo de los animales y buscar información específica en papel. Al realizar la entrevista de forma remota a través de una plataforma de videollamada —lo que demuestra su familiaridad con canales de interacción digitales utilizando una computadora o laptop con cámara, micrófono y navegador web—, expresa su deseo de optimizar sus procesos mediante una aplicación móvil que destaque por su usabilidad y falta de complejidad. Para él, la solución tecnológica ideal debe incluir recordatorios automatizados para vacunas y pesajes, un directorio con números de especialistas (veterinarios y proveedores) siempre disponible para emergencias, y un módulo de alimentación que, si bien le sugiera raciones por animal, le otorgue el control manual para ajustar las cantidades basándose en su propio criterio.
 
 ### Entrevista 3
-**Entrevistado:** 
+**Entrevistado:** Fernando Valencia
 
 **Edad:** 18 años
 
-**Distrito:**
+**Distrito:** Pueblo Libre
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:** 
+**Minuto de inicio:** 00:01
 
-**Link de la entrevista:** 
+**Link de la entrevista:** https://drive.google.com/file/d/1sntruWGf_0BF4YOWmNdaIllzMdUt9SLR/view?usp=sharing
 
 
 ### Segmento #2: Veterinarios Especializados
@@ -289,17 +289,17 @@ En la entrevista, Ricardo Salazar, veterinario con 5 años de experiencia, descr
 
 
 ### Entrevista 3
-**Entrevistado:**
+**Entrevistado:** Alonso Medina
 
-**Edad:**
+**Edad:** 37
 
-**Distrito:**
+**Distrito:** Surco
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:**
+**Minuto de inicio:** 00:01
 
-**Link de la entrevista:**
+**Link de la entrevista:** https://drive.google.com/file/d/1sXrmTtwl4G4sZl1mpc39BBOgMNpXcfvR/view?usp=sharing
 
 ### 2.2.3. Análisis de entrevistas
 
