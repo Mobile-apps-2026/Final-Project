@@ -1963,9 +1963,7 @@ está enfocado en generar valor para el usuario final y facilitar una entrega in
 | 20 | TS005 | API para Gestión Reproductiva | 3 |
 | 21 | TS006 | API para Atención Veterinaria | 3 |
 | 22 | TS007 | API para Reportes y Estadísticas | 2 |
-| 23 | SP001 | Investigación sobre Arquitectura Offline | 2 |
-| 24 | SP002 | Investigación sobre Sincronización de Datos | 2 |
-| 25 | SP003 | Evaluación de Notificaciones y Alertas | 2 |
+| 23 | SP001 | Investigación sobre Arquitectura Offline, Sincronización y Alertas en Bovix | 5 |
 
 Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c2876f1a867d9e4232056eedadE5E6036F/product-backlog
 
