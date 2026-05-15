@@ -1758,34 +1758,36 @@ alineado con las expectativas del usuario final.
   </tr>
 </table>
 
+<br><br>
+
 <!-- ======================= EP008 ======================= -->
+
 
 <h2>EP008 — Investigación y Validación Técnica</h2>
 
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
-    <th width="20%">Epic ID</th>
-    <th width="30%">Título</th>
-    <th width="50%">Descripción</th>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
   </tr>
+
   <tr>
     <td>EP008</td>
     <td>Investigación y Validación Técnica</td>
     <td>
-      Como developer, deseo investigar soluciones tecnológicas que permitan garantizar
-      el funcionamiento eficiente de Bovix en entornos rurales y de baja conectividad.
+      Como developer, deseo investigar soluciones tecnológicas que permitan garantizar el funcionamiento eficiente de Bovix en entornos rurales y de baja conectividad.
     </td>
   </tr>
 </table>
 
 <br>
 
-<!-- ======================= SP001 ======================= -->
+<!-- SP001 -->
 
 <h3>SP001</h3>
 
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
-
   <tr>
     <th>Story ID</th>
     <th>User</th>
@@ -1806,7 +1808,7 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      Investigación sobre Arquitectura Offline
+      Investigación sobre Arquitectura Offline, Sincronización y Alertas en Bovix
     </td>
   </tr>
 
@@ -1816,8 +1818,7 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      Como developer, necesito investigar tecnologías offline para garantizar el
-      funcionamiento de la aplicación en zonas rurales con baja conectividad.
+      Como equipo de desarrollo, queremos investigar y validar arquitecturas offline, mecanismos de sincronización y sistemas de alertas para Bovix, con el fin de comprender las implicancias técnicas, riesgos y esfuerzo requerido para garantizar el funcionamiento de la aplicación en entornos rurales con conectividad limitada.
     </td>
   </tr>
 
@@ -1828,168 +1829,95 @@ alineado con las expectativas del usuario final.
   <tr>
     <td colspan="4">
 
-  <b>E01: Investigación de tecnologías</b><br>
-      Dado que el equipo requiere operar en entornos rurales.<br>
-      Cuando se analizan tecnologías compatibles con funcionamiento offline.<br>
-      Entonces se documentan las alternativas viables para la aplicación.<br><br>
+  <b>E01: Investigación de tecnologías offline</b><br>
+      Dado que Bovix será utilizado en zonas rurales.<br>
+      Cuando el equipo evalúa tecnologías compatibles con funcionamiento offline.<br>
+      Entonces se documentan las alternativas viables para almacenamiento local y persistencia de datos.<br><br>
 
-  <b>E02: Comparación técnica</b><br>
-      Dado que existen múltiples tecnologías disponibles.<br>
-      Cuando se comparan sus ventajas y limitaciones.<br>
-      Entonces el equipo identifica la arquitectura más adecuada para Bovix.<br><br>
-
-  <b>E03: Documentación de resultados</b><br>
-      Dado que finaliza la investigación técnica.<br>
-      Cuando se consolidan las conclusiones obtenidas.<br>
-      Entonces el equipo genera un documento con recomendaciones técnicas.
-
-  </td>
-  </tr>
-
-</table>
-
-<br><br>
-
-<!-- ======================= SP002 ======================= -->
-
-<h3>SP002</h3>
-
-<table border="1" cellpadding="6" cellspacing="0" width="100%">
-
-  <tr>
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-
-  <tr>
-    <td>SP002</td>
-    <td>Developer</td>
-    <td>Alta</td>
-    <td>EP008</td>
-  </tr>
-
-  <tr>
-    <th colspan="4">Title</th>
-  </tr>
-
-  <tr>
-    <td colspan="4">
-      Investigación sobre Sincronización de Datos
-    </td>
-  </tr>
-
-  <tr>
-    <th colspan="4">Description</th>
-  </tr>
-
-  <tr>
-    <td colspan="4">
-      Como developer, necesito analizar mecanismos de sincronización para mantener
-      la consistencia de información entre dispositivos y servidor.
-    </td>
-  </tr>
-
-  <tr>
-    <th colspan="4">Acceptance Criteria</th>
-  </tr>
-
-  <tr>
-    <td colspan="4">
-
-  <b>E01: Evaluación de sincronización</b><br>
-      Dado que la aplicación puede funcionar sin conexión.<br>
+  <b>E02: Evaluación de sincronización de datos</b><br>
+      Dado que la aplicación puede operar sin conexión.<br>
       Cuando se restablece la conectividad.<br>
-      Entonces los datos almacenados localmente deben sincronizarse correctamente.<br><br>
+      Entonces la información almacenada localmente debe sincronizarse correctamente con el servidor.<br><br>
 
-  <b>E02: Análisis de conflictos</b><br>
+  <b>E03: Evaluación de conflictos de información</b><br>
       Dado que pueden existir modificaciones simultáneas.<br>
-      Cuando ocurre un conflicto de información.<br>
-      Entonces se identifican mecanismos de resolución adecuados.<br><br>
+      Cuando ocurre un conflicto entre datos locales y remotos.<br>
+      Entonces se identifican mecanismos adecuados para resolver inconsistencias.<br><br>
 
-  <b>E03: Validación técnica</b><br>
-      Dado que concluye el análisis de sincronización.<br>
-      Cuando el equipo revisa los resultados obtenidos.<br>
-      Entonces se documentan conclusiones y recomendaciones técnicas.
+  <b>E04: Investigación de alertas y notificaciones</b><br>
+      Dado que Bovix requiere comunicar eventos sanitarios importantes.<br>
+      Cuando se analizan servicios de notificaciones compatibles.<br>
+      Entonces el equipo identifica soluciones viables para alertas en tiempo real.<br><br>
+
+  <b>E05: Documentación técnica</b><br>
+      Dado que finaliza la investigación técnica.<br>
+      Cuando el equipo consolida los resultados obtenidos.<br>
+      Entonces se genera documentación con conclusiones y recomendaciones para la implementación futura.
 
   </td>
   </tr>
-
 </table>
 
-<br><br>
+<br>
 
-<!-- ======================= SP003 ======================= -->
+<h3>Contexto</h3>
 
-<h3>SP003</h3>
+<p>
+Bovix es una aplicación móvil orientada a optimizar la gestión ganadera mediante herramientas digitales enfocadas en el monitoreo sanitario, registro del ganado y control de información productiva en zonas rurales.
+</p>
 
-<table border="1" cellpadding="6" cellspacing="0" width="100%">
+<p>
+La solución está desarrollada como una aplicación móvil multiplataforma utilizando tecnologías modernas enfocadas en accesibilidad, rendimiento y facilidad de uso para ganaderos y veterinarios. Asimismo, el sistema contempla el uso de servicios backend, persistencia local y disponibilidad de información y mecanismos de sincronización para garantizar la disponibilidad y consistencia de la información.
+</p>
 
-  <tr>
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
+<p>
+Debido a que gran parte de los usuarios de Bovix operan en entornos rurales con conectividad limitada o intermitente, surge la necesidad de investigar tecnologías y arquitecturas que permitan mantener el funcionamiento de la aplicación incluso sin acceso constante a internet.
+</p>
 
-  <tr>
-    <td>SP003</td>
-    <td>Developer</td>
-    <td>Media</td>
-    <td>EP008</td>
-  </tr>
+<p>
+Este Spike tiene como objetivo investigar y validar soluciones relacionadas con:
+</p>
 
-  <tr>
-    <th colspan="4">Title</th>
-  </tr>
+<ul>
+  <li>Persistencia local de información y mecanismos de sincronización</li>
+  <li>Sincronización de datos entre dispositivo y servidor</li>
+  <li>Resolución de conflictos de información</li>
+  <li>Sistemas de notificaciones y alertas sanitarias en tiempo real</li>
+  <li>Arquitecturas móviles orientadas a conectividad limitada</li>
+</ul>
 
-  <tr>
-    <td colspan="4">
-      Evaluación de Notificaciones y Alertas
-    </td>
-  </tr>
+<p>
+La investigación permitirá identificar tecnologías viables para garantizar una experiencia estable y confiable en Bovix, incluso en condiciones de baja conectividad.
+</p>
 
-  <tr>
-    <th colspan="4">Description</th>
-  </tr>
+<br>
 
-  <tr>
-    <td colspan="4">
-      Como developer, necesito evaluar mecanismos de notificaciones para garantizar
-      la entrega de alertas sanitarias en tiempo real.
-    </td>
-  </tr>
+<h3>Fundamentación Académica</h3>
 
-  <tr>
-    <th colspan="4">Acceptance Criteria</th>
-  </tr>
+<p>
+Diversos estudios destacan la importancia de la persistencia local y los mecanismos de sincronización en aplicaciones móviles utilizadas en zonas rurales o con conectividad limitada.
+</p>
 
-  <tr>
-    <td colspan="4">
+<p>
+Según Satyanarayanan (2017), las estrategias orientadas al almacenamiento local permiten mejorar la disponibilidad y experiencia de usuario al reducir la dependencia de servicios remotos y garantizar acceso continuo a la información.
+</p>
 
-  <b>E01: Evaluación de servicios de notificación</b><br>
-      Dado que Bovix requiere enviar alertas sanitarias.<br>
-      Cuando se investigan servicios de notificaciones compatibles.<br>
-      Entonces el equipo identifica soluciones viables para la plataforma.<br><br>
+<p>
+Asimismo, investigaciones sobre aplicaciones móviles en entornos agrícolas y veterinarios indican que la persistencia local de datos y la sincronización diferida son fundamentales para asegurar la continuidad operativa y evitar pérdida de información en áreas con acceso inestable a internet.
+</p>
 
-  <b>E02: Validación de alertas</b><br>
-      Dado que se realizan pruebas de notificaciones.<br>
-      Cuando ocurre un evento sanitario importante.<br>
-      Entonces el sistema debe ser capaz de generar alertas oportunas.<br><br>
+<p>
+Por otro lado, el uso de sistemas de notificaciones y alertas en tiempo real contribuye significativamente a mejorar la capacidad de respuesta ante eventos sanitarios importantes, permitiendo una toma de decisiones más rápida y eficiente dentro del sector ganadero.
+</p>
 
-  <b>E03: Documentación de resultados</b><br>
-      Dado que finaliza la evaluación técnica.<br>
-      Cuando el equipo consolida la información obtenida.<br>
-      Entonces se documentan las conclusiones y recomendaciones de implementación.
-
-  </td>
-  </tr>
+<p>
+En este contexto, Bovix busca investigar soluciones tecnológicas que permitan integrar mecanismos de almacenamiento local, sincronización eficiente y alertas sanitarias  dentro de una arquitectura móvil moderna y escalable.
+</p>
 
 </table>
 
 
-
+<br>
 
 
 
