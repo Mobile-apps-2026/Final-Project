@@ -441,7 +441,12 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
   <br><br>
   <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-5.png" alt="wireframe-food" width="40%"></p></td>
 
-### 3.1.4.2. Mobile Applications Wireflow Diagrams             
+### 3.1.4.2. Mobile Applications Wireflow Diagrams   
+
+A continuación se mostrará el diagrama de Wireflow
+
+  <td><p align="center"><img src="/Assets/Images-wireframes/wireflow.png" alt="wireflow" width="70%"></p></td>
+
 ### 3.1.4.3. Mobile Applications Mock-ups
 
 **SPRINT 1**
