@@ -296,11 +296,11 @@ Durante el Sprint 1 se documentaron de forma preliminar los servicios de backend
 según la arquitectura definida en el Capítulo II. La documentación completa en
 Swagger se publicará en el Sprint 2 una vez los endpoints estén desplegados.
 
-**Plataforma de despliegue planificada:** 
+**Plataforma de despliegue planificada:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
 
-**Tabla de Endpoints de la API de Bovix:**
+**Tabla de Endpoints de la API de Bovix:** https://bovix-backend.onrender.com/swagger/index.html
 
-> **Enlace a documentación Swagger:**
+> **Enlace a documentación Swagger:** 
 
 
 ---
@@ -310,13 +310,16 @@ Swagger se publicará en el Sprint 2 una vez los endpoints estén desplegados.
 Durante el Sprint 1 se realizó el despliegue de la landing page de Bovix como
 primer entregable público de la plataforma.
 
-**Plataforma utilizada:** 
+**Plataforma utilizada:** Github Pages
 
 
-**Pasos realizados para el despliegue:**
+**Pasos realizados para el despliegue:** 
+Se desarrolló la landing page en el repositorio del equipo bajo la organización Mobile-apps-2026.
+Se configuró GitHub Pages desde la sección Settings > Pages del repositorio, seleccionando la rama main como fuente de publicación.
+GitHub Pages generó automáticamente la URL pública del sitio una vez activado el despliegue.
+Se verificó el correcto funcionamiento de la página accediendo a la URL generada.
 
-
-**URL de la Landing Page:**
+**URL de la Landing Page:** 
 
 ---
 
