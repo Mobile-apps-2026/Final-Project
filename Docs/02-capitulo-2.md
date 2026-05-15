@@ -214,7 +214,7 @@ Bovix ha formulado un conjunto de preguntas orientadas a comprender los métodos
 
 **Minuto de inicio:** 00:01
 
-**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201611430_upc_edu_pe/IQC45k_tuIw-S4SQytMfoJLZAYbUFICw5w4G_0AKRxhUnG4?e=jlKZHb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link de la entrevista:**  [Entrevista](https://acortar.link/LGQIqe)
 
 **Resumen de la entrevista:**
 
@@ -231,7 +231,7 @@ La entrevista revela que Ximena, de 22 años y residente de Villa María, gestio
 
 **Minuto de inicio:** 03:25
 
-**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201611430_upc_edu_pe/IQC45k_tuIw-S4SQytMfoJLZAYbUFICw5w4G_0AKRxhUnG4?e=jlKZHb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link de la entrevista:**  [Entrevista](https://acortar.link/LGQIqe)
 
 **Resumen de la entrevista:**
 
@@ -246,9 +246,9 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:** 00:01
+**Minuto de inicio:** 06:51
 
-**Link de la entrevista:** https://drive.google.com/file/d/1sntruWGf_0BF4YOWmNdaIllzMdUt9SLR/view?usp=sharing
+**Link de la entrevista:** [Entrevista](https://acortar.link/LGQIqe)
 
 
 ### Segmento #2: Veterinarios Especializados
@@ -262,9 +262,9 @@ La entrevista realizada a Sandro Dincla, de 18 años, revela que participa en la
 
 <img src="..\Assets\Captura de pantalla de entrevista 1 vet.png" alt="entrevista-veterinario1" width="50%">
 
-**Minuto de inicio:** 0.01
+**Minuto de inicio:** 14:22
 
-**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQA9khWgWmCLSJ91EoFFyW1wATE59FhS_p39VrA7dyI75l0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mmw8Vb)
+**Link de la entrevista:** [Entrevista](https://acortar.link/LGQIqe)
 
 **Resumen de la entrevista:**
 En la entrevista se muestra como Johan, practicante en una veterianria especializada en el campo, explica cómo lleva a cabo su trabajo. Las dificultades que más suele encontrar son la falta de información clave al momento del diagnóstico, como antecedentes médicos, vacunaciones o cambios en la alimentación. A esto se suma una comunicación poco estructurada con los ganaderos, generalmente a través de aplicaciones de mensajería, donde la información puede perderse o no quedar registrada adecuadamente. El trabajo en zonas rurales presenta además limitaciones técnicas, como la falta de conexión a internet y condiciones adversas que dificultan el registro de datos en tiempo real. Esto impacta directamente en la eficiencia y precisión del servicio. Frente a este contexto, el veterinario valora altamente una solución digital que permita registrar información de manera offline, centralizar historiales clínicos, automatizar el control de tratamientos y mejorar la comunicación con los productores. También considera clave poder compartir indicaciones médicas de forma clara y accesible.
@@ -280,9 +280,9 @@ En la entrevista se muestra como Johan, practicante en una veterianria especiali
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:** 00:23
+**Minuto de inicio:** 21:03
 
-**Link de la entrevista:** [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQBanJJimAODQZ7Bf54s97aHAWPNfN7xjsoScvUE6T_-4Ls?e=rSSFa3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link de la entrevista:** [Entrevista](https://acortar.link/LGQIqe)
 
 **Resumen de la entrevista:**
 En la entrevista, Ricardo Salazar, veterinario con 5 años de experiencia, describe cómo realiza su trabajo en el campo. Utiliza cuadernos para anotar en campo y luego traslada la información a Excel para mantener un registro ordenado. También guarda fotos y notas en su celular. Las dificultades principales que enfrenta incluyen la falta de historial clínico completo en las ganaderías, especialmente en datos sobre vacunas y tratamientos previos, lo que dificulta un control efectivo y diagnóstico preciso. La comunicación con los ganaderos se realiza principalmente por llamadas y WhatsApp, con poca frecuencia por correo electrónico, y las visitas se coordinan según la urgencia. En las zonas rurales, la falta de señal y la necesidad de atender solo a los animales complican el registro rápido de datos. Ricardo valora mucho una aplicación veterinaria que permita registrar el historial clínico, controlar vacunas y operar sin conexión a internet para facilitar su trabajo. Prefiere enviar recetas e indicaciones médicas de forma digital, aunque en algunos casos se requieren formatos físicos por la edad de algunos usuarios. Finalmente, destaca que el uso de una plataforma como Bobix ahorra tiempo, organiza mejor la información y permite ofrecer un servicio más preciso a los productores.  
@@ -297,9 +297,9 @@ En la entrevista, Ricardo Salazar, veterinario con 5 años de experiencia, descr
 
 <!-- Aqui colocan un screeshot de la entrevista -->
 
-**Minuto de inicio:** 00:01
+**Minuto de inicio:** 26:00
 
-**Link de la entrevista:** https://drive.google.com/file/d/1sXrmTtwl4G4sZl1mpc39BBOgMNpXcfvR/view?usp=sharing
+**Link de la entrevista:** [Entrevista](https://acortar.link/LGQIqe)
 
 ### 2.2.3. Análisis de entrevistas
 
