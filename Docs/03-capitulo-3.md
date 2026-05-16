@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo III: Solution UI/UX Design
 
 ## 3.1. Product design
@@ -22,7 +24,7 @@ Para el contenido y textos descriptivos se utilizará la fuente **Inter**, ya qu
 El uso combinado de ambas fuentes permite mantener una apariencia moderna y profesional sin perder simplicidad ni accesibilidad para los usuarios.
 
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-style-guidelines/Typography-image.png" alt="primary-colors" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-style-guidelines/Typography-image.png" alt="primary-colors" width="60%"></p></td>
 
 #### **Colors**
 La paleta de colores de **Bovix** fue diseñada para representar sostenibilidad, naturaleza, salud y tecnología aplicada al sector ganadero.
@@ -31,12 +33,12 @@ Los colores primarios están compuestos por distintas tonalidades de verde que t
 
 ##### **Colores Primarios**
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-style-guidelines/primary-Colors.png" alt="primary-colors" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-style-guidelines/primary-Colors.png" alt="primary-colors" width="60%"></p></td>
 
 ##### **Colores Semánticos**
 
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-style-guidelines/semantic-colors.png" alt="semantic-colors" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-style-guidelines/semantic-colors.png" alt="semantic-colors" width="60%"></p></td>
 
 
 Estos colores serán utilizados estratégicamente para generar una interfaz visualmente equilibrada, moderna y accesible para los usuarios de **Bovix**.
@@ -370,82 +372,82 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
 
 - Es la interfaz principal de nuestra landing page
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-home.png" alt="wireframe-home" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-home.png" alt="wireframe-home" width="60%"></p></td>
   
 - La sección "About Us" contará con la siguiente interfaz donde se describe quienes somos, que hacemos, y nuestra visión y misión
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-aboutus.png" alt="wireframe-aboutus" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-aboutus.png" alt="wireframe-aboutus" width="60%"></p></td>
 
 - La sección "Product" contará con las siguientes interface donde se describe hacia quienes va dirigido nuestro producto y las funcionalidades que ofrece
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-1.png" alt="wireframe-product1" width="60%"></p></td>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-2.png" alt="wireframe-product2" width="60%"></p></td>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-product-3.png" alt="wireframe-product3" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-product-1.png" alt="wireframe-product1" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-product-2.png" alt="wireframe-product2" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-product-3.png" alt="wireframe-product3" width="60%"></p></td>
 
 - La sección "Our App" contará con la siguiente interfaz donde muestra el prototipo de nuestra aplicación móvil y las plataformas disponibles
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-ourapp.png" alt="wireframe-ourapp" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-ourapp.png" alt="wireframe-ourapp" width="60%"></p></td>
 
 - La sección "About the team" contará con la siguiente interfaz donde muestra la información de quienes conforman el equipo de Bovix
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-aboutteam.png" alt="wireframe-aboutteam" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-aboutteam.png" alt="wireframe-aboutteam" width="60%"></p></td>
 
 - La sección "Contact" contará con la siguiente interfaz donde muestra la información de los canales de contacto disponibles
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-landing-contact.png" alt="wireframe-contact" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-landing-contact.png" alt="wireframe-contact" width="60%"></p></td>
  
 ### 3.1.3.2. Landing Page Mock-up
 
 - Sección de "Home"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-home.png" alt="mockup-home" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-home.png" alt="mockup-home" width="60%"></p></td>
 
 - Sección de "About Us"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-aboutus.png" alt="mockup-aboutus" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-aboutus.png" alt="mockup-aboutus" width="60%"></p></td>
 
 - Sección de "Product"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-1.png" alt="mockup-product-1" width="60%"></p></td>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-2.png" alt="mockup-product-2" width="60%"></p></td>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-product-3.png" alt="mockup-product-3" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-product-1.png" alt="mockup-product-1" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-product-2.png" alt="mockup-product-2" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-product-3.png" alt="mockup-product-3" width="60%"></p></td>
 
 - Sección de "About the team"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-aboutteam.png" alt="about-team" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-aboutteam.png" alt="about-team" width="60%"></p></td>
 
 - Sección de "Contact"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-landing-contact.png" alt="contact" width="60%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-landing-contact.png" alt="contact" width="60%"></p></td>
 
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
 
 - Sección de "Inicio de sesión"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-1.png" alt="wireframe-login" width="40%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-mobile-1.png" alt="wireframe-login" width="40%"></p></td>
 
 - Sección de "Inicio"
   <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-2.png" alt="wireframe-home" width="40%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-mobile-2.png" alt="wireframe-home" width="40%"></p></td>
 
 - Sección de "Ganado"
   <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-3.png" alt="wireframe-health" width="40%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-mobile-3.png" alt="wireframe-health" width="40%"></p></td>
 
 - Sección de "Salud"
   <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-4.png" alt="wireframe-cattle" width="40%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-mobile-4.png" alt="wireframe-cattle" width="40%"></p></td>
  
 - Sección de "Alimento"
   <br><br>
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireframe-mobile-5.png" alt="wireframe-food" width="40%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireframe-mobile-5.png" alt="wireframe-food" width="40%"></p></td>
 
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams   
 
 A continuación se presenta el diagrama de Wireflow de la aplicación móvil Bovix, que combina los wireframes de las pantallas con los flujos de navegación entre ellas. Este artefacto permite visualizar de forma integrada tanto la estructura visual de cada pantalla como las rutas que el usuario sigue para completar las principales tareas dentro de la aplicación.
 
-  <td><p align="center"><img src="/Assets/Images-wireframes/wireflow.png" alt="wireflow" width="70%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-wireframes/wireflow.png" alt="wireflow" width="70%"></p></td>
 
 ### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -455,23 +457,23 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 - Sección de "Sign In"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-1.png" alt="mockup-login" width="50%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-mobile-1.png" alt="mockup-login" width="50%"></p></td>
 
 - Sección de "Inicio"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-2.png" alt="mockup-home" width="50%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-mobile-2.png" alt="mockup-home" width="50%"></p></td>
 
 - Sección de "Ganado"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-3.png" alt="mockup-health" width="50%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-mobile-3.png" alt="mockup-health" width="50%"></p></td>
 
 - Sección de "Salud"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-4.png" alt="mockup-cattle" width="50%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-mobile-4.png" alt="mockup-cattle" width="50%"></p></td>
 
 - Sección de "Alimento"
 <br><br>
-  <td><p align="center"><img src="/Assets/Images-mockups/mockup-mobile-5.png" alt="mockup-food" width="50%"></p></td>
+  <td><p align="center"><img src="../Assets/Images-mockups/mockup-mobile-5.png" alt="mockup-food" width="50%"></p></td>
 
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
@@ -479,7 +481,7 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 A continuación se presenta el User Flow Diagram del Sprint 1 de la aplicación móvil Bovix. Este diagrama representa las rutas de navegación que sigue el usuario desde el ingreso a la aplicación hasta la ejecución de las funcionalidades principales implementadas en este sprint, permitiendo identificar los puntos de decisión y los posibles caminos alternativos dentro del flujo de uso. 
 **SPRINT 1**
 
-<img src="/Assets/Images-flow/User Flow.jpg">
+<img src="../Assets/Images-flow/User Flow.jpg">
 
 ### 3.1.4.5. Mobile Applications Prototyping
 **SPRINT 1**
@@ -488,4 +490,4 @@ En este primer sprint, se desarrollaron principalmente las funcionalidades core 
 
 Video de exploración de prototipo (Bovix): [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQC2QdkXJEGNSL6H7jghXVn6AadAKKmw_m0uIaCp-wSiA58?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lDl8Bq)
 
-<img src="/Assets/Images-mockups/prototype.png">
+<img src="../Assets/Images-mockups/prototype.png">
