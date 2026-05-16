@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo IV: Product Implementation & Validation
 
 ## 4. Product Implementation & Validation
@@ -148,16 +150,9 @@ Para publicar la aplicación móvil, es fundamental cumplir con ciertos requisit
 
 El enlace de la aplicación en Google Play Store será proporcionado una vez completado el proceso de publicación y aprobación.
 
-#### Despliegue de Landing Page:
-
-
-
-
 ## 4.2. Landing Page & Mobile Application Implementation
-### 4.2.1. Sprint n
-
-
-### 4.2.1.1. Sprint Planning n
+### 4.2.1. Sprint 1
+### 4.2.1.1. Sprint Planning 1
 ### 4.2.1.2. Sprint Backlog 1
 
 En esta primera iteración, el objetivo planteado fue implementar la landing page de
@@ -298,9 +293,9 @@ Swagger se publicará en el Sprint 2 una vez los endpoints estén desplegados.
 
 **Plataforma de despliegue planificada:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
 
-<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p></td>
+<td><p align="center"><img src="../Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p></td>
 
-<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p></td>
+<td><p align="center"><img src="../Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p></td>
 
 **Tabla de Endpoints de la API de Bovix:** 
 
@@ -318,7 +313,7 @@ primer entregable público de la plataforma.
 
 **Plataforma utilizada:** Github Pages
 
-<td><p align="center"><img src="/Assets/Images-deplyoment/deployment-landingpage.png" alt="deploy-landing" width="70%"></p></td>
+<td><p align="center"><img src="../Assets/Images-deplyoment/deployment-landingpage.png" alt="deploy-landing" width="70%"></p></td>
 
 
 **Pasos realizados para el despliegue:** 
