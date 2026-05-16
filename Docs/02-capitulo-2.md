@@ -3382,7 +3382,8 @@ Gestiona integralmente el ciclo de atención veterinaria del ganado, abarcando l
 
 ### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 El siguiente diagrama expone los componentes del contexto de salud veterinaria, mostrando la interacción entre la programación de visitas, el registro de diagnósticos, la aplicación de tratamientos y la emisión de certificados sanitarios.
-<img width="1288" height="489" alt="image" src="https://github.com/user-attachments/assets/5d57b53e-d71e-4cf8-b59a-acaa630ccf30" />
+
+![Diagram-veterinary](../Assets/Veterinary%20Architecture.png)
 
 
 ### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
@@ -3392,7 +3393,7 @@ Este diagrama ilustra el modelo de clases que soporta la lógica central del con
 <img width="725" height="618" alt="image" src="https://github.com/user-attachments/assets/4cf858bb-2fb0-4780-ab88-fcd0bfa3eb27" />
 
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
-<img width="420" height="520" alt="image" src="https://github.com/user-attachments/assets/cc0a0c2a-5c5d-4756-b16e-cc30c876433b" />
+![Database-veterinary](../Assets/veterinary-database.png)
 
 
 ## 2.6.5. Bounded Context: Payments 
@@ -3481,14 +3482,15 @@ Gestiona el procesamiento de pagos asociados a los servicios del sistema, incluy
 
 ### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 El siguiente diagrama muestra el flujo de las APIs de pago, desde la creación del pago hasta la emisión del comprobante.
-<img width="936" height="582" alt="image" src="https://github.com/user-attachments/assets/5d54d5ba-7766-40f2-b029-a8929372402a" />
+
+![Diagram-payment](../Assets/Payments%20Architecture.png)
 
 ### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 <img width="463" height="348" alt="image" src="https://github.com/user-attachments/assets/4b8290ac-c921-4cd9-98ea-0d1cc49932a7" />
 
 ### 2.6.5.6.2. Bounded Context Database Design Diagram
-<img width="425" height="348" alt="image" src="https://github.com/user-attachments/assets/6125020e-7a4f-47a3-80d3-c67ffaa13d39" />
+![Database-payment](../Assets/payment-database.png)
 
 
 
@@ -3590,7 +3592,7 @@ Gestiona la programación, envío y seguimiento de notificaciones push generadas
 
 ### 2.6.6.5. Bounded Context Software Architecture Component Level Diagram
 
-<img width="640" height="580" alt="image" src="https://github.com/user-attachments/assets/3d13b581-6f3b-4f22-aedc-fed12400c824" />
+![Diagram-notification](../Assets/Notifications%20Architecture.png)
 
 ### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
@@ -3599,4 +3601,4 @@ Gestiona la programación, envío y seguimiento de notificaciones push generadas
 
 ### 2.6.6.6.2. Bounded Context Database Design Diagram
 
-<img width="212" height="513" alt="image" src="https://github.com/user-attachments/assets/c83d89c9-ed2b-4e8d-93e1-b534003500e5" />
+![Database-noitifcations](../Assets/notification-database.png)
