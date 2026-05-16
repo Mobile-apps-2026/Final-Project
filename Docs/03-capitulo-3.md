@@ -443,7 +443,7 @@ Los wireframes de la landing page priorizan la experiencia del usuario y la faci
 
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams   
 
-A continuación se mostrará el diagrama de Wireflow
+A continuación se presenta el diagrama de Wireflow de la aplicación móvil Bovix, que combina los wireframes de las pantallas con los flujos de navegación entre ellas. Este artefacto permite visualizar de forma integrada tanto la estructura visual de cada pantalla como las rutas que el usuario sigue para completar las principales tareas dentro de la aplicación.
 
   <td><p align="center"><img src="/Assets/Images-wireframes/wireflow.png" alt="wireflow" width="70%"></p></td>
 
@@ -475,6 +475,8 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+A continuación se presenta el User Flow Diagram del Sprint 1 de la aplicación móvil Bovix. Este diagrama representa las rutas de navegación que sigue el usuario desde el ingreso a la aplicación hasta la ejecución de las funcionalidades principales implementadas en este sprint, permitiendo identificar los puntos de decisión y los posibles caminos alternativos dentro del flujo de uso. 
 **SPRINT 1**
 
 <img src="/Assets/Images-flow/User Flow.jpg">
