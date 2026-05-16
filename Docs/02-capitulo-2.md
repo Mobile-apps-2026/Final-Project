@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo II: Requirements Development and Software Solution Design
 Este capítulo presenta el proceso de desarrollo de requerimientos y el diseño de la solución de software para Bovix. Se aborda el análisis competitivo del mercado, el proceso de entrevistas con los segmentos objetivo, el needfinding, la especificación de requerimientos mediante User Stories y Product Backlog, y el diseño arquitectónico de la solución a nivel estratégico y táctico bajo el enfoque de Domain-Driven Design (DDD).
 ## 2.1. Competidores
