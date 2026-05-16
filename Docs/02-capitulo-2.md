@@ -1,5 +1,7 @@
 # Capítulo II: Requirements Development and Software Solution Design
+Este capítulo presenta el proceso de desarrollo de requerimientos y el diseño de la solución de software para Bovix. Se aborda el análisis competitivo del mercado, el proceso de entrevistas con los segmentos objetivo, el needfinding, la especificación de requerimientos mediante User Stories y Product Backlog, y el diseño arquitectónico de la solución a nivel estratégico y táctico bajo el enfoque de Domain-Driven Design (DDD).
 ## 2.1. Competidores
+En esta sección se analiza el panorama competitivo del mercado de gestión ganadera digital, identificando las principales soluciones existentes y evaluando sus fortalezas, debilidades, oportunidades y amenazas en relación con Bovix. Este análisis permite definir estrategias y tácticas diferenciadas que posicionen a Bovix de manera efectiva en el mercado.
 ### 2.1.1. Análisis Competitivo 
 
 <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
@@ -163,6 +165,7 @@ Diferenciar a Bovix al construir una experiencia profundamente conectada con la 
 - Generar alianzas con instituciones peruanas (SUNAT, PRODUCE, municipalidades) para reforzar el cumplimiento normativo y la identidad local.  
 
 ## 2.2. Entrevistas
+En esta sección se documenta el proceso de entrevistas realizadas con representantes de los dos segmentos objetivo: productores ganaderos y veterinarios especializados. El objetivo fue comprender sus necesidades, rutinas de trabajo, puntos de dolor y expectativas frente a una solución digital de gestión ganadera. Los hallazgos obtenidos son la base del proceso de Needfinding desarrollado en la sección siguiente.
 ### 2.2.1. Diseño de entrevistas
 
 ### Segmento #1: Productores Ganaderos (Independientes y Empresariales)
@@ -304,15 +307,19 @@ En la entrevista, Ricardo Salazar, veterinario con 5 años de experiencia, descr
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
+En esta sección se consolida el análisis de las necesidades de los usuarios a partir de la información recopilada en las entrevistas. Se presentan los User Personas, el User Task Matrix, el User Journey Mapping, el Empathy Mapping, el Big Picture EventStorming y el Ubiquitous Language del dominio, herramientas que permiten construir una comprensión profunda del contexto y las motivaciones de los usuarios de Bovix.
 ### 2.3.1. User Personas 
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
 - Productores Ganaderos
+
 <img src="..\Assets\User Persona 1.png">
 
-<div style="page-break-after: always;">
+<div style="page-break-after: always;"/>
+
 
 - Veterinarios Especializados
+
 <img src="..\Assets\User Persona 2.png">
 
 ### 2.3.2. User Task Matrix
@@ -439,21 +446,26 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
 En esta sección se presentan los User Journey Mapping de los segmentos objetivos, que realizamos con el fin de dar a entender cómo se siente nuestro usuario en este momento, detallando cada paso que realiza y las emociones que experimenta.
 
 - Productores Ganaderos
+
 <img src="..\Assets\Customer journey map 1.png">
 
 - Veterinarios Especializados
+
 <img src="..\Assets\Customer journey map 2.png">
 
 ### 2.3.4. Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
 - Productores Ganaderos
+
 <img src="..\Assets\Empathy map 1.png">
 
 - Veterinarios Especializados
+
 <img src="..\Assets\Empathy map 2.png">
 
 ### 2.3.5. Big Picture EventStorming
+A continuación se presenta el Big Picture EventStorming del dominio de Bovix, elaborado con el fin de modelar de forma colaborativa los principales eventos de negocio que ocurren en el sistema. Este artefacto permitió al equipo identificar los flujos clave de la gestión ganadera y veterinaria, así como detectar los límites naturales entre los diferentes contextos del dominio, sentando las bases para la definición de los Bounded Contexts.
 
 <img src="..\Assets\Big Picture Eventstorming.jpg">
 
@@ -494,6 +506,7 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 -**Weight Gain (Ganancia de peso)** Incremento del peso corporal del animal en un periodo determinado, indicador clave de su crecimiento y alimentación.
 
 ## 2.4. Requirements specification
+En esta sección se formaliza la especificación de requerimientos del sistema Bovix. Se definen las User Stories organizadas por épicas, el Impact Mapping de los principales objetivos de negocio, y el Product Backlog priorizado. Estos artefactos constituyen la guía para el desarrollo iterativo e incremental del producto.
 ### 2.4.1. User Stories
 Los User Stories representan una herramienta fundamental dentro de las metodologías ágiles para capturar los
 requerimientos funcionales desde la perspectiva del usuario. Cada historia describe una necesidad concreta, quién la
@@ -1923,13 +1936,13 @@ En este contexto, Bovix busca investigar soluciones tecnológicas que permitan i
 
 ### 2.4.2. Impact Mapping
 
-A continuación presentaremos 2 Business Goals que consideramos importantes en nuestro proyecto:
+A continuación se presentan los dos Impact Maps elaborados para los principales objetivos de negocio de Bovix. Esta técnica permite visualizar la relación entre los goals del negocio, los actores involucrados, los impactos esperados en su comportamiento y las funcionalidades del producto necesarias para alcanzarlos. Los mapas guiaron la priorización del Product Backlog y aseguraron que cada funcionalidad responda a un objetivo de valor concreto.
 
 #### Impact Map 1
-![Impact Map 1](/Assets/impact-map-1.png)
+![Impact Map 1](../Assets/impact-map-1.png)
 
 #### Impact Map 2
-![Impact Map 2](/Assets/Impact-map-2.png)
+![Impact Map 2](../Assets/Impact-map-2.png)
 
 
 ### 2.4.3. Product Backlog
@@ -1968,6 +1981,7 @@ está enfocado en generar valor para el usuario final y facilitar una entrega in
 Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c2876f1a867d9e4232056eedadE5E6036F/product-backlog
 
 ## 2.5. Strategic-Level Domain-Driven Design
+En esta sección se aplica el enfoque de Diseño Orientado al Dominio (DDD) a nivel estratégico para definir la arquitectura de Bovix. Se utiliza la técnica de EventStorming para modelar el dominio del problema, identificar los Bounded Contexts candidatos y establecer las relaciones entre ellos mediante el Context Mapping. Finalmente, se presentan los diagramas de arquitectura de software a nivel de contexto, contenedor y despliegue.
 ### 2.5.1. EventStorming
 
 Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio y definir las interacciones principales entre los actores, comandos y políticas del sistema.
@@ -2000,52 +2014,52 @@ Pasos del proceso:
 
 ### 2.5.1.1. Candidate Context Discovery
 
-Para poder identificar los bounded contexts se tuvo que modificar la línea de tiempo del modelado del dominio que se hizo a partir del EventStorming, se organizaron los conceptos que tenían relación.
+A partir del EventStorming realizado, se reorganizó la línea de tiempo del modelado del dominio agrupando los eventos, comandos y políticas que presentaban mayor cohesión conceptual. Este proceso permitió identificar los siguientes Bounded Contexts candidatos, cada uno con una responsabilidad claramente delimitada dentro del sistema:
 
 **Bounded Context Identity and Access Management**
 
 Se encarga de la seguridad y el control de acceso. Gestiona el registro de nuevos usuarios, la verificación de correos, el inicio de sesión (incluyendo integraciones con proveedores de OAuth) y el mantenimiento de sesiones activas tanto para ganaderos como para veterinarios
 
-![Iam Context](<../Assets/Iam Management.png>)
+![Iam Context](../Assets/Iam Management.png)
 
 **Bounded Context Profile Management**
 
 Su objetivo es la personalización de la experiencia del usuario. Permite actualizar el perfil, subir fotos, modificar preferencias y asegurar que los datos del usuario estén validados para mostrar una vista de perfil completo
 .
 
-![Profile Context](<../Assets/Profile Context.png>)
+![Profile Context](../Assets/Profile Context.png)
 
 **Bounded Context Livestock Management**
 
 Se centra en el control del inventario animal. Permite formar lotes de ganado, registrar animales individualmente y gestionar sus traslados. Además, es responsable de asignar y actualizar planes alimentarios para generar la ración diaria recomendada
 .
 
-![Livestock Context](<../Assets/Livestock Context.png>)
+![Livestock Context](../Assets/Livestock Context.png)
 
 **Bounded Context Veterinary and Health**
 
 Es el núcleo clínico de la aplicación. Gestiona todo el proceso de salud animal, desde generar citas y programar visitas técnicas, hasta la emisión de diagnósticos, tratamientos y vacunas, culminando en la generación de certificados de trazabilidad
 .
 
-![Veterinary Context](<../Assets/Veterinary Context.png>)
+![Veterinary Context](../Assets/Veterinary Context.png)
 
 **Bounded Context Payments**
 
 Administra la parte financiera de los servicios. Maneja el flujo de inicio y confirmación de pagos a través de pasarelas, gestiona el historial de transacciones, valida suscripciones y permite la descarga de comprobantes y reportes mensuales
 .
 
-![Payment Context](<../Assets/Payments Context.png>)
+![Payment Context](../Assets/Payments Context.png)
 
 **Bounded Context Notifications**
 
 Actúa como el canal de comunicación directa con el usuario. Su función es programar y enviar notificaciones push basadas en eventos del sistema, como citas programadas o cambios en el estado de las mismas, manteniendo un historial para consulta del usuario
 .
 
-![Notification Context](<../Assets/Notification Context.png>)
+![Notification Context](../Assets/Notification Context.png)
 
 ### 2.5.1.2. Domain Message Flows Modeling
 
-En esta sección se muestran los principales flujos identificados donde existe colaboración entre los diferentes bounded context identificador. Para una mayor comprensión se utiliza la técnica de visualización Domain Storytelling.
+A continuación se presentan los principales flujos de mensajes entre los Bounded Contexts identificados, modelados mediante la técnica de Domain Storytelling. Estos diagramas muestran cómo los contextos colaboran e intercambian información ante los escenarios más relevantes del sistema, permitiendo validar las relaciones definidas en el Context Mapping y detectar posibles inconsistencias en el diseño arquitectónico.
 
 **Nuevo registro de usuario y configuracion inicial del perfil**
 
@@ -2065,33 +2079,33 @@ Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de l
 
 **Bounded Context Identity and Access Management**
 
-![IamCanvas](<../Assets/IAM canvas.png>)
+![IamCanvas](../Assets/IAM canvas.png)
 
 **Bounded Context Profile Management**
 
-![ProfileCanvas](<../Assets/Profile canvas.png>)
+![ProfileCanvas](../Assets/Profile canvas.png)
 
 **Bounded Context Livestock Management**
 
-![LiveCanvas](<../Assets/Livestock canvas.png>)
+![LiveCanvas](../Assets/Livestock canvas.png)
 
 **Bounded Context Veterinary and Health**
 
-![VetCanvas](<../Assets/Veterinary Canvas.png>)
+![VetCanvas](../Assets/Veterinary Canvas.png)
 
 **Bounded Context Payments**
 
-![PayCanvas](<../Assets/Payments canvas.png>)
+![PayCanvas](../Assets/Payments canvas.png)
 
 **Bounded Context Notifications**
 
-![NotiCanvas](<../Assets/Notification canvas.png>)
+![NotiCanvas](../Assets/Notification canvas.png)
 
 ### 2.5.2. Context Mapping
 
-En el context mapping podemos definir las relaciones entre los bounded context.
+A continuación se presenta el mapa de contexto de Bovix, que define las relaciones de colaboración e integración entre los Bounded Contexts identificados. Cada relación está caracterizada según los patrones de Context Mapping del DDD (Upstream/Downstream, Shared Kernel, Customer-Supplier, Open Host Service), permitiendo comprender las dependencias del sistema y los flujos de información entre contextos.
 
-![ContextMap](<../Assets/Context Map.png>)
+![ContextMap](../Assets/Context Map.png)
 
 El mapa de contexto se articula mediante IAM Management
 , que actúa como Upstream al emitir el evento de registro necesario para que Profile Management
@@ -2106,7 +2120,7 @@ El mapa de contexto se articula mediante IAM Management
 
 En el software architecture context diagram se puede apreciar los componentes mas importantes que componen el sistema,asi como los usuarios y las principales funciones.
 
-![ContextDiagram](<../Assets/Context Diagram.png>)
+![ContextDiagram](../Assets/Context Diagram.png)
 
 
 
@@ -2114,15 +2128,16 @@ En el software architecture context diagram se puede apreciar los componentes ma
 
 En el software architecture container diagram se puede apreciar la forma de más alto nivel de la arquitectura del software y como se distribuyen las responsabilidades en ella.También muestra las principales opciones tecnológicas y cómo los contenedores se comunican entre sí.
 
-![ContainerDiagram](<../Assets/Container Diagram.png>)
+![ContainerDiagram](../Assets/Container Diagram.png)
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
 
 Este diagrama sirve para mapear la arquitectura física del sistema, visualizando cómo se distribuyen los artefactos de software en los nodos de hardware y sus rutas de comunicación.
 
-![Deployment](<../Assets/Deployment Diagram.png>)
+![Deployment](../Assets/Deployment Diagram.png)
 
 ## 2.6. Tactical-Level Domain-Driven Design
+En esta sección se desarrolla el diseño táctico de cada Bounded Context identificado en la etapa estratégica. Para cada contexto se documenta el Domain Layer (entidades, value objects, enumeraciones, servicios de dominio e interfaces de repositorio), la Interface Layer, la Application Layer, la Infrastructure Layer, y los diagramas de arquitectura a nivel de componentes, clases y base de datos.
 ## 2.6.1. Bounded Context: Identity and Access Management
 ### 2.6.1.1. Domain Layer
 Este bounded context gestiona el ciclo de vida de la identidad del usuario: registro, verificación, autenticación y cierre de sesión. Los actores son Ganadero y Veterinario.
