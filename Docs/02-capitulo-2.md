@@ -3390,7 +3390,7 @@ El siguiente diagrama expone los componentes del contexto de salud veterinaria, 
 ### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
 Este diagrama ilustra el modelo de clases que soporta la lógica central del contexto veterinario.
-<img width="725" height="618" alt="image" src="https://github.com/user-attachments/assets/4cf858bb-2fb0-4780-ab88-fcd0bfa3eb27" />
+![Class-veterinary](../Assets/veterinary-class.png)
 
 ### 2.6.4.6.2. Bounded Context Database Design Diagram
 ![Database-veterinary](../Assets/veterinary-database.png)
@@ -3487,7 +3487,7 @@ El siguiente diagrama muestra el flujo de las APIs de pago, desde la creación d
 
 ### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
-<img width="463" height="348" alt="image" src="https://github.com/user-attachments/assets/4b8290ac-c921-4cd9-98ea-0d1cc49932a7" />
+![Class-payment](../Assets/payment-class.png)
 
 ### 2.6.5.6.2. Bounded Context Database Design Diagram
 ![Database-payment](../Assets/payment-database.png)
@@ -3596,8 +3596,7 @@ Gestiona la programación, envío y seguimiento de notificaciones push generadas
 
 ### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
 ### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
-
-<img width="371" height="547" alt="image" src="https://github.com/user-attachments/assets/75524a1c-e8d6-4349-9b6f-7c4e376a86e3" />
+![Class-notification](../Assets/notification-class.png)
 
 ### 2.6.6.6.2. Bounded Context Database Design Diagram
 
