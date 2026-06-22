@@ -1802,7 +1802,7 @@ alineado con las expectativas del usuario final.
   </tr>
 
   <tr>
-    <td colspan="4">Monitoreo de Salud Animal</td>
+    <td colspan="4">Monitoreo y Consulta de Historial Sanitario</td>
   </tr>
 
   <tr>
@@ -1811,7 +1811,7 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      Como ganadero, quiero monitorear el estado de salud de mis animales para detectar enfermedades y mantener actualizado su historial sanitario.
+      Como ganadero, quiero visualizar el estado sanitario e historial de salud de mis animales para supervisar su evolución general y revisar las indicaciones o diagnósticos previos del veterinario.
     </td>
   </tr>
 
@@ -1822,15 +1822,15 @@ alineado con las expectativas del usuario final.
   <tr>
     <td colspan="4">
       <b>E01: Consulta de estado sanitario</b><br>
-      Dado que existen registros médicos del animal.<br>
-      Cuando el ganadero consulta la información sanitaria.<br>
-      Entonces el sistema muestra el historial y estado de salud actualizado.<br><br>
+      Dado que existen registros médicos o notas preventivas del animal.<br>
+      Cuando el ganadero consulta la información sanitaria corporativa.<br>
+      Entonces el sistema muestra el historial cronológico y el estado de salud actualizado.<br><br>
 
   <b>E02: Historial no disponible</b><br>
-      Dado que el animal no tiene registros sanitarios.<br>
+      Dado que el animal no tiene registros sanitarios asociados.<br>
       Cuando el usuario consulta la información.<br>
       Entonces el sistema informa que no existen datos registrados.
-  </td>
+    </td>
   </tr>
 </table>
 
@@ -1860,7 +1860,7 @@ alineado con las expectativas del usuario final.
   </tr>
 
   <tr>
-    <td colspan="4">Registro de Vacunas</td>
+    <td colspan="4">Registro de Vacunas y Controles Preventivos</td>
   </tr>
 
   <tr>
@@ -1869,8 +1869,7 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      Como ganadero, quiero registrar las vacunas aplicadas a mis animales
-      para mantener actualizado su historial sanitario y controlar próximas dosis.
+      Como ganadero, quiero registrar las vacunas de calendario rutinario aplicadas a mis animales para mantener actualizado su historial sanitario y asegurar la prevención en el hato.
     </td>
   </tr>
 
@@ -1880,10 +1879,9 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-
-  <b>E01: Registro exitoso de vacuna</b><br>
-      Dado que el ganadero accede al módulo sanitario.<br>
-      Cuando registra correctamente la información de la vacuna aplicada.<br>
+      <b>E01: Registro exitoso de vacuna</b><br>
+      Dado que el ganadero accede al módulo sanitario de control preventivo.<br>
+      When registra correctamente la información de la vacuna aplicada.<br>
       Entonces el sistema almacena el registro y actualiza el historial del animal.<br><br>
 
   <b>E02: Validación de datos obligatorios</b><br>
@@ -1895,8 +1893,7 @@ alineado con las expectativas del usuario final.
       Dado que existen vacunas registradas.<br>
       Cuando el usuario consulta el historial sanitario.<br>
       Entonces el sistema muestra las vacunas aplicadas al animal.
-
-   </td>
+    </td>
   </tr>
 </table>
 
@@ -1926,7 +1923,7 @@ alineado con las expectativas del usuario final.
   </tr>
 
   <tr>
-    <td colspan="4">Generación de Alertas Sanitarias</td>
+    <td colspan="4">Procesamiento de Eventos y Alertas Sanitarias</td>
   </tr>
 
   <tr>
@@ -1935,7 +1932,7 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      Como ganadero, quiero recibir alertas sanitarias para actuar rápidamente ante riesgos de salud o vacunaciones pendientes.
+      Como ganadero, quiero que el sistema procese automáticamente las condiciones médicas y plazos preventivos para identificar oportunamente riesgos de salud o vacunaciones pendientes.
     </td>
   </tr>
 
@@ -1945,21 +1942,20 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td colspan="4">
-      <b>E01: Generación automática de alertas</b><br>
-      Dado que existe una condición sanitaria importante.<br>
-      Cuando el sistema detecta un riesgo o evento próximo.<br>
-      Entonces el sistema genera una alerta para el usuario.<br><br>
+      <b>E01: Evaluación automática de eventos sanitarios</b><br>
+      Dado que el backend procesa las reglas de negocio del hato.<br>
+      Cuando el sistema detecta de forma interna un riesgo médico latente o evento próximo.<br>
+      Entonces el sistema registra y dispara la regla de alerta sanitaria correspondiente.<br><br>
 
-  <b>E02: Notificación de vacunación pendiente</b><br>
-      Dado que existe una vacuna próxima a vencer.<br>
-      Cuando la fecha programada se aproxima.<br>
-      Entonces el sistema envía una notificación al ganadero.
-  </td>
+  <b>E02: Procesamiento de vacunación pendiente</b><br>
+      Dado que existe una vacuna próxima a cumplir su plazo de vigencia.<br>
+      Cuando el motor del sistema evalúa la fecha programada frente al calendario actual.<br>
+      Entonces el sistema marca internamente el evento pendiente para ser visualizado en los paneles de notificación.
+    </td>
   </tr>
 </table>
 
 <br><br>
-
 
 <!-- ======================= EP005 ======================= -->
 
@@ -2543,8 +2539,7 @@ alineado con las expectativas del usuario final.
 
 <!-- ======================= EP007 ======================= -->
 
-
-<h2>EP007 — Investigación y Validación Técnica</h2>
+<h2>EP007 — Atención Veterinaria Especializada</h2>
 
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
   <tr>
@@ -2555,6 +2550,276 @@ alineado con las expectativas del usuario final.
 
   <tr>
     <td>EP007</td>
+    <td>Atención Veterinaria Especializada</td>
+    <td>
+      Como Médico Veterinario Especializado, deseo registrar visitas técnicas, emitir diagnósticos y 
+      prescribir tratamientos para el ganado, con el fin de automatizar el control sanitario avanzado.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ======================= US018 ======================= -->
+
+<h3>US018</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>US018</td>
+    <td>Médico Veterinario</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+  <tr>
+    <td colspan="4">Registro de Visita Técnica y Diagnósticos en Campo</td>
+  </tr>
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td colspan="4">
+      Como médico veterinario, quiero registrar los detalles de mi visita técnica y los diagnósticos clínicos encontrados para formalizar la atención médica del animal, incluso si me encuentro en zonas rurales sin conectividad.
+    </td>
+  </tr>
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>E01: Registro de visita con conectividad</b><br>
+      Dado que el veterinario cuenta con acceso a internet.<br>
+      Cuando finaliza la revisión y guarda el diagnóstico con su nivel de severidad (LOW, MEDIUM, HIGH, CRITICAL).<br>
+      Entonces el sistema envía los datos directamente al backend y confirma el guardado exitoso.<br><br>
+      <b>E02: Control de tiempos de la visita</b><br>
+      Dado que el veterinario inicia una atención médica en la app.<br>
+      Cuando marca el inicio y el fin de la consulta.<br>
+      Entonces el sistema calcula y registra la duración exacta de la visita técnica.<br><br>
+      <b>E03: Validación de campos obligatorios</b><br>
+      Dado que se está registrando un diagnóstico clínico.<br>
+      Cuando el veterinario no especifica la severidad o la descripción del cuadro clínico.<br>
+      Entonces el sistema bloquea la acción y solicita completar la información requerida.<br><br>
+      <b>E04: Registro en modo Offline (Sin Conectividad)</b><br>
+      Dado que el veterinario se encuentra en una zona rural sin acceso a internet.<br>
+      Cuando confirma el registro del diagnóstico en la aplicación móvil.<br>
+      Entonces el sistema almacena la información de manera local y segura en el dispositivo, cambia el estado del registro a "Pendiente de sincronización" y muestra una notificación visual de éxito en diferido.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- ======================= US019 ======================= -->
+
+<h3>US019</h3>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>US019</td>
+    <td>Médico Veterinario</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Administración y Control de Tratamientos Médicos</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como Médico Veterinario Especializado, quiero prescribir y asociar tratamientos específicos a un diagnóstico emitido, 
+      detallando dosis y duración, para asegurar la correcta recuperación sanitaria del animal.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>Escenario 01: Asociación de tratamiento a diagnóstico</b><br>
+      Dado que existe un diagnóstico médico registrado previamente en el sistema,<br>
+      Cuando el veterinario especifica el tipo de tratamiento, la dosificación exacta y la duración en días,<br>
+      Entonces el sistema anexa de forma exitosa el tratamiento al historial médico del animal.<br><br>
+
+  <b>Escenario 02: Validación de datos de dosificación obligatorios</b><br>
+      Dado que el veterinario intenta guardar un tratamiento médico,<br>
+      Cuando el usuario omite la dosificación o registra una duración menor o igual a cero días,<br>
+      Entonces el sistema rechaza el almacenamiento de la información y genera una alerta de validación de datos.
+
+  </td>
+  </tr>
+
+</table>
+
+<br><br>
+
+<!-- ======================= TS013 ======================= -->
+
+<h2>TS013 — Implementación de RESTful API para Gestión de Visitas y Diagnósticos</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>TS013</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Implementación de RESTful API para Gestión de Visitas y Diagnósticos</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como Developer, necesito exponer los endpoints RESTful para la creación de visitas y emisión de diagnósticos en el 
+      Bounded Context de Veterinary and Health, permitiendo la comunicación del cliente móvil con el backend corporativo.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>Escenario 01: Procesamiento exitoso de creación de visita técnica (Request/Response)</b><br>
+      Dado que la API recibe una petición HTTP de creación de visita con un JSON válido que contiene el identificador del ganadero, el identificador del veterinario y la fecha programada,<br>
+      Cuando el servicio procesa la solicitud mediante el componente "ScheduleVisitCommandHandler",<br>
+      Entonces el sistema retorna un código de estado HTTP 201 Created junto con un JSON que incluye el identificador único de la visita y el estado inicial SCHEDULED.<br><br>
+
+  <b>Escenario 02: Validación de seguridad por Token JWT y Roles</b><br>
+      Dado que se envía una petición HTTP para registrar un diagnóstico médico asociado a una visita técnica,<br>
+      Cuando el interceptor de seguridad decodifica el token JWT en el header de autorización y detecta que el rol de usuario no corresponde a VETERINARIO,<br>
+      Entonces la API interrumpe el flujo de ejecución y responde con un código de estado HTTP 403 Forbidden.<br><br>
+
+  <b>Escenario 03: Control de excepciones por llaves referenciales inexistentes</b><br>
+      Dado que el backend procesa un request para registrar un diagnóstico clínico,<br>
+      Cuando el identificador de la visita provisto en la solicitud no existe en la base de datos relacional a través de "IVeterinaryVisitRepository",<br>
+      Entonces el sistema captura la excepción y retorna un código de estado HTTP 404 Not Found.
+
+  </td>
+  </tr>
+
+</table>
+
+<br>
+
+<!-- ======================= TS014 ======================= -->
+
+<h2>TS014 — Implementación de mecanismo de Sincronización Local Diferida (Offline Support)</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+
+  <tr>
+    <td>TS014</td>
+    <td>Developer</td>
+    <td>Alta</td>
+    <td>EP007</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Title</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">Implementación de mecanismo de Sincronización Local Diferida (Offline Support)</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Description</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+      Como Developer, necesito estructurar el motor de persistencia local en la aplicación móvil y diseñar el flujo de sincronización 
+      por lotes (Bulk Sync) para salvaguardar los datos clínicos recolectados sin conectividad.
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Acceptance Criteria</th>
+  </tr>
+
+  <tr>
+    <td colspan="4">
+
+  <b>Escenario 01: Sincronización automática de datos pendientes al recuperar conectividad</b><br>
+      Dado que el dispositivo móvil restablece una conexión a internet estable y cuenta con registros clínicos marcados con la bandera `is_synced = false`,<br>
+      Cuando el componente de segundo plano (Background Worker) se activa automáticamente y envía los datos mediante un HTTP POST masivo a la API remota,<br>
+      Entonces el backend procesa el lote, responde con un código HTTP 200 OK y el cliente móvil actualiza los registros locales a `is_synced = true`.
+
+  </td>
+  </tr>
+
+</table>
+
+
+
+<!-- ======================= EP008 ======================= -->
+
+
+<h2>EP008 — Investigación y Validación Técnica</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
+  <tr>
+    <th>Epic ID</th>
+    <th>Título</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td>EP008</td>
     <td>Investigación y Validación Técnica</td>
     <td>
       Como developer, deseo investigar soluciones tecnológicas que permitan garantizar el funcionamiento eficiente de Bovix en entornos rurales y de baja conectividad.
@@ -2580,7 +2845,7 @@ alineado con las expectativas del usuario final.
     <td>SP001</td>
     <td>Developer</td>
     <td>Alta</td>
-    <td>EP007</td>
+    <td>EP008</td>
   </tr>
 
   <tr>
@@ -2720,8 +2985,8 @@ necesidades identificadas en las entrevistas, el To-Be Scenario Mapping y las Us
 planificar el trabajo del equipo de forma estructurada y alineada con los objetivos del proyecto. Cada ítem del backlog
 está enfocado en generar valor para el usuario final y facilitar una entrega incremental y efectiva de la solución.
 
-| Orden | User Story ID | Título | Story Points |
-|--------|----------------|---------|---------------|
+| Orden | User Story ID / Technical Story ID | Título | Story Points |
+| :--- | :--- | :--- | :---: |
 | 1 | US001 | Explorar Landing Page | 2 |
 | 2 | US002 | Visualización de Funcionalidades y Servicios | 2 |
 | 3 | US003 | Contacto con Bovix | 1 |
@@ -2733,25 +2998,29 @@ está enfocado en generar valor para el usuario final y facilitar una entrega in
 | 9 | US009 | Actualización de Información del Ganado | 3 |
 | 10 | US010 | Gestión de Lotes de Ganado | 3 |
 | 11 | US011 | Registro de Alimentación | 3 |
-| 12 | US012 | Monitoreo de Salud Animal | 5 |
-| 13 | US013 | Registro de Vacunas | 5 |
-| 14 | US014 | Generación de Alertas Sanitarias | 5 |
+| 12 | US012 | Monitoreo y Consulta de Historial Sanitario | 5 |
+| 13 | US013 | Registro de Vacunas y Controles Preventivos | 5 |
+| 14 | US014 | Procesamiento de Eventos y Alertas Sanitarias | 5 |
 | 15 | US015 | Visualización de Reportes Productivos | 2 |
 | 16 | US016 | Consulta de Historial Sanitario | 3 |
 | 17 | US017 | Visualización de Alertas y Estadísticas Sanitarias | 2 |
-| 18 | TS001 | Desarrollo de Landing Page Responsiva | 3 |
-| 19 | TS002 | Desarrollo de Formulario de Contacto | 2 |
-| 20 | TS003 | API de Registro de Usuarios | 5 |
-| 21 | TS004 | Sistema de Autenticación JWT | 5 |
-| 22 | TS005 | Implementación de Endpoint para Registro de Ganado | 5 |
-| 23 | TS006 | Implementación de Endpoints de Consulta y Edición | 5 |
-| 24 | TS007 | Implementación de Gestión de Lotes | 3 |
-| 25 | TS008 | Implementación de Autenticación JWT y Control de Sesiones | 5 |
-| 26 | TS009 | Implementación de Endpoints REST para Gestión de Ganado | 5 |
-| 27 | TS010 | Implementación de Gestión de Lotes y Relaciones entre Animales | 3 |
-| 28 | TS011 | Implementación de Endpoints para Gestión Sanitaria y Vacunas | 5 |
-| 29 | TS012 | Implementación de Generación de Reportes y Estadísticas | 3 |
-| 30 | SP001 | Investigación sobre Arquitectura Offline, Sincronización y Alertas en Bovix | 5 |
+| 18 | US018 | Registro de Visita Técnica y Diagnósticos en Campo | 5 |
+| 19 | US019 | Prescripción de Tratamientos y Recetas Médicas | 3 |
+| 20 | TS001 | Desarrollo de Landing Page Responsiva | 3 |
+| 21 | TS002 | Desarrollo de Formulario de Contacto | 2 |
+| 22 | TS003 | API de Registro de Usuarios | 5 |
+| 23 | TS004 | Sistema de Autenticación JWT | 5 |
+| 24 | TS005 | Implementación de Endpoint para Registro de Ganado | 5 |
+| 25 | TS006 | Implementación de Endpoints de Consulta y Edición | 5 |
+| 26 | TS007 | Implementación de Gestión de Lotes | 3 |
+| 27 | TS008 | Implementación de Autenticación JWT y Control de Sesiones | 5 |
+| 28 | TS009 | Implementación de Endpoints REST para Gestión de Ganado | 5 |
+| 29 | TS010 | Implementación de Gestión de Lotes y Relaciones entre Animales | 3 |
+| 30 | TS011 | Implementación de Endpoints para Gestión Sanitaria y Vacunas | 5 |
+| 31 | TS012 | Implementación de Generación de Reportes y Estadísticas | 3 |
+| 32 | TS013 | Implementación de RESTful API para Gestión de Visitas y Diagnósticos | 5 |
+| 33 | TS014 | Implementación de Sincronización Offline y Manejo de Conflictos | 5 |
+| 34 | SP001 | Investigación sobre Arquitectura Offline, Sincronización y Alertas en Bovix | 5 |
 
 Referencia Url: https://trello.com/invite/b/69eb18faf9cfe282325fc7cf/ATTI73c118c2876f1a867d9e4232056eedadE5E6036F/bovix-product-backlog
 
