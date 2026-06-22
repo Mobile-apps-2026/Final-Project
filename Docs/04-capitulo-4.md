@@ -153,6 +153,60 @@ El enlace de la aplicación en Google Play Store será proporcionado una vez com
 ## 4.2. Landing Page & Mobile Application Implementation
 ### 4.2.1. Sprint 1
 ### 4.2.1.1. Sprint Planning 1
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 1</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-05-05</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 0 Review Summary</strong></td>
+    <td>No aplica. Corresponde al primer Sprint del proyecto, por lo que no existe un sprint anterior del cual reportar resultados.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 0 Retrospective Summary</strong></td>
+    <td>No aplica. Al ser el Sprint inicial, el equipo realizó una reunión de kickoff donde se definieron los acuerdos de trabajo, herramientas de comunicación, convenciones de código y la distribución inicial de responsabilidades entre los integrantes.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 1 Goal</strong></td>
+    <td>Implementar la landing page completa y responsiva de Bovix, el flujo de registro e inicio de sesión de usuarios con autenticación JWT, y el módulo de registro de vacunas en la aplicación móvil Android.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 1 Velocity</strong></td>
+    <td>32 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>32</td>
+  </tr>
+</table>
+
 ### 4.2.1.2. Sprint Backlog 1
 
 En esta primera iteración, el objetivo planteado fue implementar la landing page de
@@ -357,6 +411,60 @@ se aplicó la convención de Conventional Commits en los mensajes
 
 ### 4.2.2. Sprint 2
 ### 4.2.2.1. Sprint Planning 2
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-06-01</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 1 Review Summary</strong></td>
+    <td>Durante el Sprint 1 se implementó satisfactoriamente la landing page completa de Bovix, el flujo de registro de usuarios, el inicio de sesión con autenticación JWT y el módulo de registro de vacunas en la aplicación móvil Android. Todas las funcionalidades planificadas fueron entregadas y verificadas correctamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 1 Retrospective Summary</strong></td>
+    <td>El equipo destacó la buena coordinación mediante Discord y la distribución clara de tareas entre los integrantes. Se identificó la necesidad de mejorar la velocidad de integración entre frontend y backend, y de documentar los endpoints desde el inicio del desarrollo para facilitar su consumo desde la aplicación móvil.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Goal</strong></td>
+    <td>Implementar e integrar el frontend Android con el backend .NET, desarrollar los módulos esenciales de gestión ganadera (bovinos, establos, alimentación y salud), desplegar el sistema completo con aislamiento de datos por usuario autenticado, e iniciar las vistas Flutter para el segmento veterinario.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Velocity</strong></td>
+    <td>68 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>68</td>
+  </tr>
+</table>
+
 ### 4.2.2.2. Sprint Backlog 2
 
 En esta segunda iteración, el objetivo planteado fue implementar e integrar tanto la parte del frontend y el backend con las funcionalidades describidas en este trabajo. Las secciones
@@ -501,13 +609,23 @@ funcionalidades:
 
 Se implementó el flujo completo de autenticación en la aplicación móvil Android. El ganadero puede ingresar sus credenciales desde la pantalla de login; ante datos incorrectos el sistema muestra un mensaje de error sin permitir el acceso. Tras un login exitoso se genera y almacena el token JWT localmente, manteniendo la sesión activa durante la navegación. El ganadero también puede cerrar sesión desde el menú principal, lo que elimina el token local y redirige a la pantalla de inicio de sesión.
 
+<p align="center"><img src="../Assets/Images-kotlin/LoginKotlin.png" alt="login-kotlin" width="35%"></p>
+
+<p align="center"><img src="../Assets/Images-kotlin/RegistroKotlin.png" alt="registro-kotlin" width="35%"></p>
+
 **Dashboard principal con estadísticas y actividad reciente (US015 – US016 – US017)**
 
 Se desarrolló la pantalla principal (Home) con un panel de estadísticas reactivas que muestra en tiempo real: total de animales registrados, lotes activos, citas veterinarias programadas para el día y alertas pendientes. Adicionalmente, se implementó la sección de actividad reciente que presenta los últimos bovinos y planes de alimentación registrados por el usuario. Todos los contadores se actualizan automáticamente al crear o modificar registros, sin necesidad de recargar la pantalla.
 
+<p align="center"><img src="../Assets/Images-kotlin/DashboardKotlin.png" alt="dashboard-kotlin" width="35%"></p>
+
 **Registro y gestión de ganado (US007 – US008 – US009)**
 
 Se implementó el módulo completo de gestión de bovinos. El ganadero puede registrar nuevos animales completando campos como nombre, género, raza, peso, estado e imagen. La lista de animales se sincroniza con el backend mostrando únicamente los registros del usuario autenticado. Desde el listado es posible acceder al detalle de cada animal para editar su información, con validaciones que rechazan datos incorrectos e informan al usuario mediante mensajes de error.
+
+<p align="center"><img src="../Assets/Images-kotlin/GanadoKotlin.png" alt="ganado-kotlin" width="35%"></p>
+
+<p align="center"><img src="../Assets/Images-kotlin/RegistrarAnimalKotlin.png" alt="registrar-animal-kotlin" width="35%"></p>
 
 **Gestión de establos y lotes (US010)**
 
@@ -517,9 +635,15 @@ Se desarrolló la pantalla de establos que permite al ganadero organizar su gana
 
 Se implementó el módulo de alimentación, donde el ganadero puede registrar planes con sus componentes, porcentajes y raciones diarias en kilogramos. El sistema valida que los campos obligatorios estén completos antes de guardar, y muestra la lista de planes activos sincronizada con el backend.
 
+<p align="center"><img src="../Assets/Images-kotlin/PlanAlimentarioKotlin.png" alt="plan-alimentario-kotlin" width="35%"></p>
+
+<p align="center"><img src="../Assets/Images-kotlin/EditarPlan.png" alt="editar-plan-kotlin" width="35%"></p>
+
 **Citas veterinarias y control sanitario (US012 – US013)**
 
 Se desarrolló el módulo de salud animal con la pantalla de citas veterinarias. El ganadero puede registrar nuevas citas indicando el animal, tipo de atención, motivo, fecha programada y estado. El sistema muestra el listado de citas ordenadas por fecha, con la próxima cita destacada en el panel superior. Los registros se almacenan en la base de datos local (Room) y se sincronizan con el backend.
+
+<p align="center"><img src="../Assets/Images-kotlin/AgendarCitaKotlin.png" alt="agendar-cita-kotlin" width="35%"></p>
 
 **Integración frontend-backend**
 
@@ -536,15 +660,17 @@ Como parte del Sprint 2 se inició el desarrollo de la aplicación Flutter orien
 Durante el Sprint 2 se documentaron de forma completa los servicios de backend
 según la arquitectura definida en el Capítulo II.
 
-**Plataforma de despliegue planificada:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
+**Plataforma de despliegue:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
 
-<td><p align="center"><img src="../Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p></td>
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p>
 
-<td><p align="center"><img src="../Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p></td>
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p>
 
-**Tabla de Endpoints de la API de Bovix:** 
+**Documentación de Endpoints — Swagger:**
 
+Se implementó la documentación interactiva de la API mediante Swagger UI, accesible desde el entorno de producción desplegado en Render. La documentación expone todos los endpoints REST del backend organizados por controlador: autenticación, bovinos, establos, planes de alimentación, citas veterinarias y resumen del dashboard.
 
+<p align="center"><img src="../Assets/Images-kotlin/SwaggerRender.png" alt="swagger-backend" width="80%"></p>
 
 > **Enlace a documentación Swagger:** [BackEnd](https://bovix-backend.onrender.com/swagger/index.html)
 
@@ -553,17 +679,40 @@ según la arquitectura definida en el Capítulo II.
 
 ### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 2 se realizó el despliegue del bakcend de Bovix como
-segundo entregable público de la plataforma.
+Durante el Sprint 2 se realizaron dos despliegues públicos de la plataforma Bovix: el backend en Render y la aplicación móvil Android mediante Firebase App Distribution y Appetize.io.
 
-**Plataforma utilizada:** Render
+**Backend — Render**
 
+El backend desarrollado en .NET fue contenerizado con Docker y desplegado en Render como Web Service. La base de datos MySQL 8.4.8 se aloja en Aiven. El despliegue se realizó conectando el repositorio de GitHub con Render, que detecta automáticamente los cambios en la rama principal y redespliega el servicio.
 
+**Pasos realizados para el despliegue:**
 
-**Pasos realizados para el despliegue:** 
+1. Se generó el `Dockerfile` en la raíz del proyecto backend.
+2. Se configuró el Web Service en Render apuntando al repositorio `Bovix-Backend`.
+3. Se añadieron las variables de entorno de conexión a la base de datos Aiven.
+4. Render construyó la imagen Docker y publicó el servicio automáticamente.
 
+> **URL del backend:** [https://bovix-backend.onrender.com](https://bovix-backend.onrender.com/swagger/index.html)
 
-**URL del backend:** [Backend]()
+**Aplicación móvil Android — Firebase App Distribution**
+
+La aplicación Android fue distribuida mediante Firebase App Distribution, permitiendo instalar la APK directamente en dispositivos Android sin necesidad de publicarla en Google Play Store.
+
+**Pasos realizados para el despliegue:**
+
+1. Se generó el APK desde Android Studio: Build → Build APK(s).
+2. Se creó el proyecto en Firebase Console y se registró la app con el package `pe.edu.upc.bovix`.
+3. Se subió el APK a Firebase App Distribution y se generó un enlace de distribución.
+
+<p align="center"><img src="../Assets/Images-kotlin/FirebaseDeploy.png" alt="firebase-deploy" width="70%"></p>
+
+**Aplicación móvil Android — Appetize.io**
+
+Como complemento para la presentación en vivo, la APK fue cargada en Appetize.io, una plataforma que permite ejecutar aplicaciones Android directamente desde el navegador sin necesidad de instalar ningún software adicional.
+
+<p align="center"><img src="../Assets/Images-kotlin/AppetizeDeploy.png" alt="appetize-deploy" width="70%"></p>
+
+> **URL de la aplicación en Appetize.io:** [Bovix Android](https://appetize.io/app/b_opecsvwkpyvdg5ycxmr7a7g36m)
 
 ---
 
