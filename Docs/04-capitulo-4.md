@@ -748,5 +748,37 @@ se aplicó la convención de Conventional Commits en los mensajes
 
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
+
+Objetivo: observar tareas críticas en la app real: login, registrar bovino, registrar vacuna, ver dashboard. La app usa JWT, Retrofit y sincronización con Room.   
+Duración: 10-15 minutos.
+Estructura: introducción; 3 tareas; post-test SUS.
+
+Tareas y métricas
+
+Iniciar sesión
+Tarea: iniciar sesión con credenciales de prueba.
+Métrica: tiempo a login; errores; mensajes de error.
+
+Pregunta post tarea: “¿Qué te pareció el proceso de acceso?”
+
+Registrar un bovino
+Tarea: crear un bovino con nombre, raza, peso y establo.
+Métrica: tasa de éxito; campos confusos; tiempo.
+
+Pregunta post tarea: “¿Faltó algún dato que sueles registrar?”
+
+Registrar vacuna
+Tarea: registrar vacuna para el bovino creado.
+Métrica: errores de asociación animal; confirmación de guardado.
+
+Pregunta post tarea: “¿Te quedó claro que la vacuna se guardó y se sincronizó?”
+
+Ver dashboard
+Tarea: localizar cuántas citas hay hoy y ver actividad reciente.
+Métrica: precisión de información; comprensión de indicadores.
+
+Pregunta post tarea: “¿Qué información te gustaría ver aquí que no está?”
+
 ### 4.3.2. Registro de Entrevistas
+
 ### 4.3.3. Evaluaciones según heurísticas
