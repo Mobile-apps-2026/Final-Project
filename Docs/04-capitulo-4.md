@@ -939,6 +939,8 @@ se aplicó la convención de Conventional Commits en los mensajes
 | Meza Tataje, David |  |
 
 ## 4.3. Validation Interviews
+En esta sección se documenta el proceso de entrevistas de validación realizadas con representantes de los dos segmentos objetivo: productores ganaderos y veterinarios especializados. El objetivo fue validar el uso de la última iteración de la app.
+
 ### 4.3.1. Diseño de Entrevistas
 
 Objetivo
