@@ -749,9 +749,49 @@ se aplicó la convención de Conventional Commits en los mensajes
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 
-Objetivo: observar tareas críticas en la app real: login, registrar bovino, registrar vacuna, ver dashboard. La app usa JWT, Retrofit y sincronización con Room.   
+Landing page:
+
+Preguntas de comprensión del mensaje
+“En una frase, ¿qué crees que hace esta página / producto?”
+
+“¿Cuál es el beneficio más claro que viste?”
+
+“¿Qué parte del título o subtítulo te llamó más la atención?”  
+Objetivo: comprobar si el propuesta de valor se entiende sin explicación adicional.
+
+Preguntas sobre valor y relevancia
+“¿Cómo encaja esto con lo que haces hoy para registrar vacunas y tratamientos?”
+
+“¿Qué problema resuelve primero para ti?”
+
+Preguntas de diseño y copy
+“¿Qué palabra o frase cambiarías en el título para que sea más claro?”
+
+“¿El video/gif te ayudó a entender el flujo de registro?”
+
+“¿Qué elemento visual te generó dudas?”  
+
+App movil:
+
+Objetivo general: observar tareas críticas en la app real: login, registrar bovino, registrar vacuna, ver dashboard. La app usa JWT, Retrofit y sincronización con Room.   
 Duración: 10-15 minutos.
 Estructura: introducción; 3 tareas; post-test SUS.
+
+- Pequeños ganaderos
+Objetivo de la sesión: confirmar que el problema existe, que la solución es comprensible y que el flujo básico (crear bovino + registrar vacuna) es usable offline.
+
+User flows a validar
+Flujo A Registrar bovino
+Abrir app → Login rápido (credenciales de prueba).
+
+Ir a “Bovinos” → “Agregar nuevo” → completar nombre, raza, establo → Guardar.
+Criterio éxito: bovino aparece en lista en < 90 s sin ayuda.
+
+Flujo B Registrar vacuna offline
+Seleccionar bovino → “Registrar vacuna” → elegir vacuna → fecha → guardar offline.
+
+Reconectar → verificar sincronización.
+Criterio éxito: vacuna visible en historial y sin conflictos.
 
 Tareas y métricas
 
@@ -778,6 +818,24 @@ Tarea: localizar cuántas citas hay hoy y ver actividad reciente.
 Métrica: precisión de información; comprensión de indicadores.
 
 Pregunta post tarea: “¿Qué información te gustaría ver aquí que no está?”
+
+- Técnicos veterinarios
+Objetivo de la sesión: validar que la app mejora su trabajo en campo, facilita trazabilidad y permite compartir registros con productores.
+
+User flows a validar
+Flujo A Visita y registro clínico
+Crear visita → seleccionar bovinos atendidos → registrar tratamientos y observaciones → adjuntar foto.
+Criterio éxito: técnico completa visita y genera resumen en < 5 min.
+
+Flujo B Compartir informe
+Generar PDF o enlace del historial → enviar al productor.
+Criterio éxito: técnico confirma que el formato es útil y legible.
+
+Tareas concretas
+Simular una visita completa con 2 bovinos.
+
+Probar compartir informe y pedir feedback sobre campos obligatorios.
+
 
 ### 4.3.2. Registro de Entrevistas
 
