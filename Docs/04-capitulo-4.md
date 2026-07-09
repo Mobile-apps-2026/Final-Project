@@ -1023,4 +1023,19 @@ Preguntas:
 
 ### 4.3.2. Registro de Entrevistas
 
+### Entrevista 1
+**Entrevistado:** 
+
+**Edad:** 
+
+**Distrito:** 
+
+<img src="" alt="entrevista-ganadero1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista]()
+
+**Resumen de la entrevista:**
+
 ### 4.3.3. Evaluaciones según heurísticas
