@@ -782,6 +782,8 @@ Preguntas
 Validación de la Aplicación
 User Flows
 
+Sector Ganadero:
+
 Flujo 1
 Iniciar sesión → Registrar bovino → Consultar información.
 
@@ -795,6 +797,29 @@ Consultar la información del bovino.
 Registrar una alimentación.
 Consultar el historial sanitario.
 Visualizar los reportes productivos.
+
+Preguntas:
+¿Qué tarea te resultó más sencilla?
+¿Cuál fue la más complicada?
+¿Hubo alguna pantalla que no entendieras?
+¿La navegación te pareció intuitiva?
+¿Utilizarías Bovix en tu trabajo?
+¿Qué mejorarías de la aplicación?
+
+Sector Veterinario:
+
+Flujo 1
+Crear visita → seleccionar bovinos atendidos → registrar tratamientos y observaciones → adjuntar foto.
+
+Flujo 2
+Generar PDF o enlace del historial → enviar al productor.
+
+Tareas:
+Iniciar sesión.
+Registrar un nuevo bovino.
+Simular una visita completa con 2 bovinos.
+Probar compartir informe y pedir feedback sobre campos obligatorios.
+Consultar el historial sanitario.
 
 Preguntas:
 ¿Qué tarea te resultó más sencilla?
