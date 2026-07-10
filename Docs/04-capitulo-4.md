@@ -939,6 +939,8 @@ se aplicó la convención de Conventional Commits en los mensajes
 | Meza Tataje, David |  |
 
 ## 4.3. Validation Interviews
+En esta sección se documenta el proceso de entrevistas de validación realizadas con representantes de los dos segmentos objetivo: productores ganaderos y veterinarios especializados. El objetivo fue validar el uso de la última iteración de la app.
+
 ### 4.3.1. Diseño de Entrevistas
 
 Objetivo
@@ -1025,11 +1027,9 @@ Preguntas:
 
 ### Segmento 1: Productores Ganaderos
 
-#### Entrevista 1
 
-**Nombre:** Rosa Elena 
-
-**Apellidos:** Huaman Quispe
+### Entrevista 1
+**Entrevistado:** Rosa Elena Huaman Quispe
 
 **Edad:** 42 años
 
@@ -1037,17 +1037,15 @@ Preguntas:
 
 **Ocupación:** Productora ganadera
 
-**Screenshot de la entrevista:**
-
 <img src="../Assets/entrevista-ganadero-Rosa.png" alt="entrevista-ganadero-Rosa" width="50%">
 
 **Minuto de inicio:** 00:00
 
 **Duración:** 13 minutos
 
-**Enlace del video:** [Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQDy6uAt7DDPQ72YdzLGS1MnAd3hddSgN8TXJtCkQkvJmdw?e=dcH2VA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQDy6uAt7DDPQ72YdzLGS1MnAd3hddSgN8TXJtCkQkvJmdw?e=dcH2VA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-##### Resumen de la entrevista
+**Resumen de la entrevista:**
 
 Durante la sesión de validación, Rosa Elena Huamán Quispe exploró inicialmente la Landing Page de Bobix. Indicó que comprendió rápidamente que la plataforma está orientada a facilitar la gestión del ganado mediante el registro de información sobre salud y alimentación. Comentó que la información presentada fue clara y que el diseño le permitió identificar fácilmente las principales funcionalidades de la aplicación.
 
@@ -1055,6 +1053,143 @@ Posteriormente, utilizó la aplicación móvil realizando las tareas propuestas:
 
 Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de los animales más grandes y realistas dentro de los registros, así como que las funciones para tomar fotos con anotaciones para cada animal serían beneficiosas. Finalmente, calificó positivamente la experiencia de uso y señaló que utilizaría Bobix para gestionar la información de su ganado debido a la organización y rapidez que ofrece.
 
----
+### Entrevista 2
+**Entrevistado:** 
+
+**Edad:** 
+
+**Distrito:** 
+
+<img src="" alt="entrevista-ganadero1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista]()
+
+**Resumen de la entrevista:**
+
+### Entrevista 3
+**Entrevistado:** 
+
+**Edad:** 
+
+**Distrito:** 
+
+<img src="" alt="entrevista-ganadero1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista]()
+
+**Resumen de la entrevista:**
+
+### Segmento 2  
+
+### Entrevista 1
+**Entrevistado:** Johan Bottger
+
+**Edad:** 23
+
+**Distrito:** San Borja
+
+<img src="..\Assets\Captura de pantalla de entrevista validación 1 vet.png" alt="entrevista-veterinario1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista](https://goo.su/xHpzB00)
+
+**Resumen de la entrevista:**
+
+El entrevistado considera que tanto la landing page como la aplicación móvil cumplen con las expectativas. Aún así encuentra problemas menores en la usabilidad de la app, destacando que encuentra algunas patallas confusas a primera vista, más que podría acostumbrarse con el tiempo al usar la app.
+
+### Entrevista 2
+**Entrevistado:** 
+
+**Edad:** 
+
+**Distrito:** 
+
+<img src="" alt="entrevista-veterinario2" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista]()
+
+**Resumen de la entrevista:**
+
+### Entrevista 3
+**Entrevistado:** 
+
+**Edad:** 
+
+**Distrito:** 
+
+<img src="" alt="entrevista-veterinario3" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista]()
+
+**Resumen de la entrevista:**
+
 
 ### 4.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** CC238  
+**SECCIÓN:** 3646 
+**PROFESORES:** Jorge Luis Mayta Guillermo
+**AUDITOR:** Equipo
+**CLIENTE(S):** Equipo
+
+---
+
+**SITE o APP A EVALUAR:**  
+**Bovix – Landing Page, Aplicación Kotlin y Aplicación Flutter**
+
+---
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Landing Page:
+- Visualización de la información en el landing page  
+
+Aplicación Kotlin:
+- Visualización del ganado
+- Gestión de Ganado
+- Gestión de alimentos
+- Visualización Citas veterinarias
+
+Aplicación Flutter:
+- Visualización y filtrado bovinos
+- Gestión de Citas veterinarias
+- Gestión de Informes médicos
+
+---
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial, fácilmente superado y poco frecuente. |
+| **2** | Problema menor, ocurre un poco más frecuentemente o genera leve fricción. |
+| **3** | Problema mayor, ocurre frecuentemente o impide que algunos usuarios lo resuelvan. Requiere corrección prioritaria. |
+| **4** | Problema muy grave, bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+**TABLA RESUMEN**
+
+| # | Problema | Severidad | Heurística violada |
+|---|-----------|-----------|---------------------|
+| **1** |  | **2** |  |
+| **2** |  | **2** |  |
+| **2** |  | **3** |  |
+
+---
