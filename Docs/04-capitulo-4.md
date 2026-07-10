@@ -1146,7 +1146,7 @@ El entrevistado considera que tanto la landing page como la aplicación móvil c
 
 **Resumen de la entrevista:**
 
-El entrevistado muestra buenas impresiones del landing page y la app móvil. 
+El entrevistado muestra buenas impresiones del landing page y la app móvil. Destaca que una sección del landing page tiene algunas inconsistencias estilísticas menores, aparte de eso todo se ve en orden. Considera de gran utilidad el uso de la app móvil, encuentra una pantalla complicada pero dice que con el tiempo podría acostumbrarse.
 
 ### Entrevista 3
 **Entrevistado:** 
@@ -1219,8 +1219,28 @@ Aplicación Flutter:
 
 | # | Problema | Severidad | Heurística violada |
 |---|-----------|-----------|---------------------|
-| **1** |  | **2** |  |
-| **2** |  | **2** |  |
-| **2** |  | **3** |  |
+| **1** | Sección de simulación resulta complicada | **2** | Information Architecture: Is it usable? – Organización visual  |
+
 
 ---
+
+**PROBLEMA #1: Vista de  visualmente sobrecargada**
+
+**Usuario:** Johan Bottger
+**Severidad:** 2  
+**Heurística violada:** Information Architecture – *Is it usable?*
+
+**Problema:**  
+Johan señala que una pantalla, la de registro, parece un poco díficil de entender a primera vista, más la app es usable.
+
+Este problema afecta la arquitectura de la información y puede generar confusión en usuarios menos familiarizados con apps.
+
+**Recomendación:**  
+Simplificar la vista del registro mediante:
+
+- Mayor separación entre elementos  
+- Jerarquías visuales más claras  
+- Reducción del contenido mostrado por tarjeta (mostrar solo lo esencial)  
+- Uso más consistente de colores y tamaños  
+
+Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
