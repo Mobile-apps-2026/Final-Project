@@ -746,6 +746,228 @@ se aplicó la convención de Conventional Commits en los mensajes
 | Meza Tataje, David | Frontend Android: módulos de ganado (CRUD), establos y citas veterinarias |
 
 
+### 4.2.3. Sprint 3
+### 4.2.3.1. Sprint Planning 3
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 3</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-07-01</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Review Summary</strong></td>
+    <td>Durante el Sprint 2 se completó la integración entre el frontend Android y el backend .NET, se desplegó el sistema completo en Render y Firebase App Distribution, y se inició el desarrollo de las vistas Flutter para el segmento veterinario. Las funcionalidades de gestión de bovinos, establos, alimentación, citas y dashboard quedaron operativas y sincronizadas con el backend.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Retrospective Summary</strong></td>
+    <td>El equipo destacó la correcta integración Retrofit–Room como punto fuerte del Sprint 2. Se identificó la necesidad de completar y pulir las vistas Flutter del segmento veterinario ganadero, que habían quedado en estado In-Process, y de conectarlas con el backend en esta iteración final.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Goal</strong></td>
+    <td>Completar e integrar las vistas Flutter del segmento de veterinario ganadero, cubriendo los flujos de registro de visita técnica, diagnóstico clínico y control sanitario, con conexión al backend y validación de experiencia de usuario.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Velocity</strong></td>
+    <td>24 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>24</td>
+  </tr>
+</table>
+
+### 4.2.3.2. Sprint Backlog 3
+
+En esta tercera iteración, el objetivo fue finalizar e integrar las vistas Flutter del módulo veterinario ganadero. Las pantallas deben permitir al profesional veterinario registrar visitas técnicas, ingresar diagnósticos clínicos y gestionar controles sanitarios de los animales, con conexión al backend desplegado.
+
+| id | Title | Id | Title | Description | Estimations (Hours) | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---|---|
+| US018 | Registro de Visita Técnica y Diagnósticos en Campo | CC31 | Pantalla de registro de visita técnica (Flutter) | Desarrollo de la vista Flutter que permite al veterinario registrar una nueva visita técnica indicando el animal, fecha, motivo y observaciones de campo. | 5 | Done |
+| US018 | Registro de Visita Técnica y Diagnósticos en Campo | CC32 | Pantalla de diagnóstico clínico (Flutter) | Desarrollo de la vista Flutter para el ingreso del diagnóstico clínico: síntomas, diagnóstico, tratamiento prescrito y medicamentos. | 5 | Done |
+| US019 | Control Sanitario Veterinario | CC33 | Pantalla de control sanitario (Flutter) | Desarrollo de la vista Flutter de control sanitario que lista los controles pendientes y completados del animal, con opción de marcar como atendido. | 5 | Done |
+| US019 | Control Sanitario Veterinario | CC34 | Integración Flutter con backend | Conexión de las vistas Flutter al backend mediante el cliente HTTP de Dart (http/Dio), consumiendo los endpoints REST de visitas, diagnósticos y controles sanitarios con autenticación JWT. | 5 | Done |
+| TS013 | Endpoints para Módulo Veterinario | CC35 | Endpoints REST para visitas y diagnósticos (backend) | Implementación de los endpoints POST y GET para el módulo veterinario: visitas técnicas, diagnósticos clínicos y controles sanitarios, con filtrado por usuario autenticado. | 4 | Done |
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+Durante el Sprint 3 se completaron e integraron las vistas Flutter del segmento veterinario ganadero, junto con los endpoints REST correspondientes en el backend.
+
+**Software Development:**
+
+- **GitHub:** Plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Se utiliza para alojar, revisar y colaborar en los repositorios del proyecto, facilitando el trabajo en equipo.
+
+- **Visual Studio Code:** Editor de código utilizado para el desarrollo de las vistas Flutter e integración con el backend.
+
+- **Android Studio / Flutter SDK:** Entorno de desarrollo y SDK utilizados para compilar y ejecutar la aplicación Flutter en emuladores y dispositivos físicos.
+
+**Source Code Management:**
+
+Utilizamos GitHub para llevar el control de versiones y trabajar de forma colaborativa. Hemos creado una organización con los repositorios correspondientes:
+
+- Repositorio de la Landing Page: https://github.com/Mobile-apps-2026/Landing-Page-Bovix
+- Repositorio de la aplicación móvil (kotlin): https://github.com/Mobile-apps-2026/Bovix-Android
+- Repositorio del backend: https://github.com/Mobile-apps-2026/Bovix-Backend
+- Repositorio de la aplicación móvil (flutter): https://github.com/Mobile-apps-2026/Bovix-Flutter
+
+**Mobile Application — Flutter (Dart):**
+
+Para el desarrollo de las vistas Flutter nos guiamos por la guía de estilo oficial de Dart y las convenciones de Flutter:
+
+- **Nombres de clases y widgets:** Se escriben en PascalCase (`VetVisitScreen`, `DiagnosisFormScreen`, `SanitaryControlScreen`).
+- **Nombres de variables y funciones:** Se escriben en camelCase (`vetVisitList`, `submitDiagnosis()`).
+- **Nombres de archivos:** Se escriben en snake_case (`vet_visit_screen.dart`, `diagnosis_form_screen.dart`).
+- **Widgets de estado:** Se utilizan `StatefulWidget` para los formularios con validación y `StatelessWidget` para las vistas de solo presentación.
+- **Gestión de estado:** Se empleó `setState` para el manejo local y `FutureBuilder` para la carga de datos asíncronos desde el backend.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+Para el Sprint 3 se elaboraron pruebas de aceptación basadas en los criterios Gherkin definidos en las User Stories priorizadas. Se verificaron todos los escenarios de cada historia de usuario.
+
+**Lenguaje Gherkin:**
+
+El lenguaje Gherkin es un lenguaje de dominio específico utilizado para escribir pruebas de aceptación en formato legible por el equipo. Se utilizaron las siguientes palabras clave: `Feature`, `Scenario`, `Given`, `When`, `Then` y `And`.
+
+| User Story | Escenario | Criterio verificado | Estado |
+|---|---|---|---|
+| US018 – Registro de Visita Técnica | E01 | El sistema almacena correctamente una nueva visita técnica con datos válidos | Done |
+| US018 – Registro de Visita Técnica | E02 | El sistema muestra validación al omitir campos obligatorios en el formulario de visita | Done |
+| US018 – Registro de Visita Técnica | E03 | El sistema muestra el diagnóstico clínico vinculado a la visita registrada | Done |
+| US019 – Control Sanitario Veterinario | E01 | El sistema lista correctamente los controles sanitarios pendientes y completados del animal | Done |
+| US019 – Control Sanitario Veterinario | E02 | El sistema actualiza el estado del control sanitario al marcarlo como atendido | Done |
+| US019 – Control Sanitario Veterinario | E03 | El sistema informa que no existen controles pendientes cuando el animal está al día | Done |
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y ejecutaron satisfactoriamente las siguientes funcionalidades en la aplicación Flutter orientada al segmento veterinario ganadero:
+
+**Pantalla de registro de visita técnica (US018)**
+
+Se desarrolló la vista Flutter que permite al profesional veterinario registrar una nueva visita técnica al campo. El formulario incluye campos para seleccionar el animal, ingresar la fecha de la visita, el motivo de la consulta y las observaciones relevantes. El sistema valida que todos los campos obligatorios estén completos antes de enviar los datos al backend, mostrando mensajes de error descriptivos en caso contrario.
+
+*(Insertar captura de pantalla — Vista de registro de visita técnica Flutter)*
+
+---
+
+**Pantalla de diagnóstico clínico (US018)**
+
+Se implementó la vista Flutter para el ingreso del diagnóstico clínico asociado a una visita técnica. El veterinario puede registrar los síntomas observados, el diagnóstico definitivo, el tratamiento prescrito y los medicamentos indicados. La pantalla consume el endpoint REST del backend y confirma el guardado con un mensaje de éxito.
+
+*(Insertar captura de pantalla — Vista de diagnóstico clínico Flutter)*
+
+---
+
+**Pantalla de control sanitario (US019)**
+
+Se desarrolló la vista Flutter de control sanitario que presenta al veterinario el listado de controles pendientes y completados de cada animal. Desde esta pantalla el profesional puede marcar un control como atendido, actualizando el estado en el backend en tiempo real. El sistema diferencia visualmente entre controles pendientes y completados mediante indicadores de color.
+
+*(Insertar captura de pantalla — Vista de control sanitario Flutter)*
+
+---
+
+**Integración Flutter con el backend**
+
+Se configuró el cliente HTTP en Dart utilizando el paquete `http` para consumir los endpoints REST del backend desplegado en Render. Cada solicitud incluye el token JWT almacenado localmente, garantizando que el veterinario solo acceda a los registros asociados a su cuenta. Los datos se cargan de forma asíncrona mediante `FutureBuilder`, mostrando indicadores de carga mientras se obtiene la respuesta del servidor.
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se amplió la documentación Swagger del backend con los nuevos endpoints del módulo veterinario.
+
+**Plataforma de despliegue:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
+
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p>
+
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p>
+
+**Documentación de Endpoints — Swagger:**
+
+Se actualizó la documentación interactiva de la API en Swagger UI con los nuevos controladores del módulo veterinario: visitas técnicas, diagnósticos clínicos y controles sanitarios. Todos los endpoints aplican filtrado por usuario autenticado mediante el token JWT.
+
+> **Enlace a documentación Swagger:** [BackEnd](https://bovix-backend.onrender.com/swagger/index.html)
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se realizó el despliegue actualizado del backend en Render con los nuevos endpoints del módulo veterinario, y se distribuyó la aplicación Flutter mediante Firebase App Distribution.
+
+**Backend — Render**
+
+Se desplegó la versión actualizada del backend que incluye los endpoints REST del módulo veterinario. Render detectó automáticamente los cambios en la rama principal del repositorio `Bovix-Backend` y reconstruyó la imagen Docker.
+
+> **URL del backend:** [https://bovix-backend.onrender.com](https://bovix-backend.onrender.com/swagger/index.html)
+
+**Aplicación Flutter — Firebase App Distribution**
+
+La aplicación Flutter fue compilada en modo release y distribuida mediante Firebase App Distribution para su validación en dispositivos físicos.
+
+**Pasos realizados para el despliegue:**
+
+1. Se ejecutó `flutter build apk --release` para generar el APK de distribución.
+2. Se accedió a la consola de Firebase y se seleccionó el proyecto Bovix.
+3. Se subió el APK a Firebase App Distribution con las notas de la versión correspondientes al Sprint 3.
+4. Se distribuyó el enlace de instalación a los testers del equipo.
+
+**URL de la Landing Page:** [Landing page](https://mobile-apps-2026.github.io/Landing-Page-Bovix/)
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 el equipo mantuvo comunicación activa y colaboración organizada mediante las siguientes herramientas:
+
+**Project Management:**
+
+- **Discord:** Canal principal de comunicación para reuniones de planificación, daily check-ins y resolución de dudas técnicas en tiempo real.
+- **Google Meet:** Plataforma de videoconferencias utilizada para reuniones de revisión y retrospectiva del sprint.
+
+**Source Code Management:**
+
+Utilizamos GitHub para el control de versiones y el trabajo colaborativo. Se siguió el modelo GitFlow con ramas `feature/` para cada funcionalidad y se aplicó la convención de Conventional Commits en los mensajes (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
+
+**Distribución del trabajo por integrante:**
+
+| Integrante | Tareas principales en Sprint 3 |
+|---|---|
+| Flores Manrique, Sebastian Enrique | Implementación de los endpoints REST del módulo veterinario en el backend: visitas técnicas, diagnósticos y controles sanitarios |
+| De las Casas Latour, Sebastián | Desarrollo de la pantalla de diagnóstico clínico Flutter e integración con el backend |
+| Esquirva León, Miguel Juan Diego | Desarrollo de la pantalla de control sanitario Flutter e integración con el backend |
+| Inga Hernández, Ayrton Damian | Desarrollo de la pantalla de registro de visita técnica Flutter e integración con el backend |
+| Meza Tataje, David | Configuración del cliente HTTP en Dart, manejo de autenticación JWT en Flutter y pruebas de integración |
+
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 ### 4.3.2. Registro de Entrevistas
