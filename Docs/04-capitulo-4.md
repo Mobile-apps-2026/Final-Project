@@ -1057,19 +1057,30 @@ Preguntas:
 ### Segmento 1  
 
 ### Entrevista 1
-**Entrevistado:** 
+**Entrevistado:** Rosa Elena Huaman Quispe
 
-**Edad:** 
+**Edad:** 42 años
 
-**Distrito:** 
+**Distrito:** Cañete
 
-<img src="" alt="entrevista-ganadero1" width="50%">
+**Ocupación:** Productora ganadera
 
-**Minuto de inicio:** 00:01
+<img src="../Assets/entrevista-ganadero-Rosa.png" alt="entrevista-ganadero-Rosa" width="50%">
 
-**Link de la entrevista:**  [Entrevista]()
+**Minuto de inicio:** 00:00
+
+**Duración:** 13 minutos
+
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQDy6uAt7DDPQ72YdzLGS1MnAd3hddSgN8TXJtCkQkvJmdw?e=dcH2VA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Resumen de la entrevista:**
+
+Durante la sesión de validación, Rosa Elena Huamán Quispe exploró inicialmente la Landing Page de Bobix. Indicó que comprendió rápidamente que la plataforma está orientada a facilitar la gestión del ganado mediante el registro de información sobre salud y alimentación. Comentó que la información presentada fue clara y que el diseño le permitió identificar fácilmente las principales funcionalidades de la aplicación.
+
+Posteriormente, utilizó la aplicación móvil realizando las tareas propuestas: registrarse como nueva usuaria, registrar un nuevo bovino, consultar la información del animal, registrar la alimentación, revisar el historial sanitario y visualizar los reportes productivos. La entrevistada logró completar todas las tareas sin recibir asistencia, indicando que la navegación resultó intuitiva y que los formularios eran fáciles de comprender.
+
+Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de los animales más grandes y realistas dentro de los registros, así como que las funciones para tomar fotos con anotaciones para cada animal serían beneficiosas. Finalmente, calificó positivamente la experiencia de uso y señaló que utilizaría Bobix para gestionar la información de su ganado debido a la organización y rapidez que ofrece.
+
 
 ### Entrevista 2
 **Entrevistado:** 
