@@ -1083,19 +1083,19 @@ Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de lo
 
 
 ### Entrevista 2
-**Entrevistado:** 
+**Entrevistado:** Joaquin Caballero Morelo
 
-**Edad:** 
+**Edad:** 32
 
-**Distrito:** 
+**Distrito:** Santiago de Surco
 
 <img src="" alt="entrevista-ganadero1" width="50%">
 
 **Minuto de inicio:** 00:01
 
-**Link de la entrevista:**  [Entrevista]()
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310837_upc_edu_pe/IQBiiOB1FVYqQbbzLra_-dtbAYQ_7kjAkh_K6uoEVIskWzU?e=fXZw0S&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-**Resumen de la entrevista:**
+**Resumen de la entrevista:** Se realizó una entrevista de validacion a un ganadero para evaluar la usabilidad de la Landing Page y la aplicacion movil Bovix. El entrevistado comprendió el proposito de la plataforma, completó las tareas propuestas sin mayores dificultades y consideró que la aplicación es facil de usar.
 
 ### Entrevista 3
 **Entrevistado:** 
