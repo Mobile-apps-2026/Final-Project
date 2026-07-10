@@ -1123,3 +1123,62 @@ El entrevistado considera que tanto la landing page como la aplicación móvil c
 
 
 ### 4.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** CC238  
+**SECCIÓN:** 3646 
+**PROFESORES:** Jorge Luis Mayta Guillermo
+**AUDITOR:** Equipo
+**CLIENTE(S):** Equipo
+
+---
+
+**SITE o APP A EVALUAR:**  
+**Bovix – Landing Page, Aplicación Kotlin y Aplicación Flutter**
+
+---
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Landing Page:
+- Visualización de la información en el landing page  
+
+Aplicación Kotlin:
+- Visualización del ganado
+- Gestión de Ganado
+- Gestión de alimentos
+- Visualización Citas veterinarias
+
+Aplicación Flutter:
+- Visualización y filtrado bovinos
+- Gestión de Citas veterinarias
+- Gestión de Informes médicos
+
+---
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial, fácilmente superado y poco frecuente. |
+| **2** | Problema menor, ocurre un poco más frecuentemente o genera leve fricción. |
+| **3** | Problema mayor, ocurre frecuentemente o impide que algunos usuarios lo resuelvan. Requiere corrección prioritaria. |
+| **4** | Problema muy grave, bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+**TABLA RESUMEN**
+
+| # | Problema | Severidad | Heurística violada |
+|---|-----------|-----------|---------------------|
+| **1** |  | **2** |  |
+| **2** |  | **2** |  |
+| **2** |  | **3** |  |
+
+---
