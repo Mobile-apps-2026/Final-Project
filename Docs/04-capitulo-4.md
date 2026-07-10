@@ -1081,11 +1081,11 @@ Preguntas:
 
 **Distrito:** San Borja
 
-<img src="Assets\Captura de pantalla de entrevista validación 1 vet.png" alt="entrevista-veterinario1" width="50%">
+<img src="..\Assets\Captura de pantalla de entrevista validación 1 vet.png" alt="entrevista-veterinario1" width="50%">
 
 **Minuto de inicio:** 00:01
 
-**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213553_upc_edu_pe/IQAbJBGR5yIYRYiY7n_7X_wwAR6IwrvznIeR4bIjdhxrjFE? nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WtvP2k)
+**Link de la entrevista:**  [Entrevista](https://goo.su/xHpzB00)
 
 **Resumen de la entrevista:**
 
