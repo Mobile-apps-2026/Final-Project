@@ -875,7 +875,7 @@ Durante el Sprint 3 se implementaron y ejecutaron satisfactoriamente las siguien
 
 Se desarrolló la vista Flutter que permite al profesional veterinario registrar una nueva visita técnica al campo. El formulario incluye campos para seleccionar el animal, ingresar la fecha de la visita, el motivo de la consulta y las observaciones relevantes. El sistema valida que todos los campos obligatorios estén completos antes de enviar los datos al backend, mostrando mensajes de error descriptivos en caso contrario.
 
-*(Insertar captura de pantalla — Vista de registro de visita técnica Flutter)*
+<p align="center"><img src="../Assets/Images-kotlin/imagen-visita-tecnica.png" alt="visita-tecnica-Flutter" width="35%"></p>
 
 ---
 
@@ -883,7 +883,7 @@ Se desarrolló la vista Flutter que permite al profesional veterinario registrar
 
 Se implementó la vista Flutter para el ingreso del diagnóstico clínico asociado a una visita técnica. El veterinario puede registrar los síntomas observados, el diagnóstico definitivo, el tratamiento prescrito y los medicamentos indicados. La pantalla consume el endpoint REST del backend y confirma el guardado con un mensaje de éxito.
 
-*(Insertar captura de pantalla — Vista de diagnóstico clínico Flutter)*
+<p align="center"><img src="../Assets/Images-kotlin/imagen-diagnostico-clinico.png" alt="diagnostico-clinico-Flutter" width="35%"></p>
 
 ---
 
@@ -891,7 +891,7 @@ Se implementó la vista Flutter para el ingreso del diagnóstico clínico asocia
 
 Se desarrolló la vista Flutter de control sanitario que presenta al veterinario el listado de controles pendientes y completados de cada animal. Desde esta pantalla el profesional puede marcar un control como atendido, actualizando el estado en el backend en tiempo real. El sistema diferencia visualmente entre controles pendientes y completados mediante indicadores de color.
 
-*(Insertar captura de pantalla — Vista de control sanitario Flutter)*
+<p align="center"><img src="../Assets/Images-kotlin/imagen-control-sanitario.png" alt="control-sanitario-Flutter" width="35%"></p>
 
 ---
 
