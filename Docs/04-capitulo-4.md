@@ -1097,20 +1097,6 @@ Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de lo
 
 **Resumen de la entrevista:** Se realizó una entrevista de validacion a un ganadero para evaluar la usabilidad de la Landing Page y la aplicacion movil Bovix. El entrevistado comprendió el proposito de la plataforma, completó las tareas propuestas sin mayores dificultades y consideró que la aplicación es facil de usar.
 
-### Entrevista 3
-**Entrevistado:** 
-
-**Edad:** 
-
-**Distrito:** 
-
-<img src="" alt="entrevista-ganadero1" width="50%">
-
-**Minuto de inicio:** 00:01
-
-**Link de la entrevista:**  [Entrevista]()
-
-**Resumen de la entrevista:**
 
 ### Segmento 2  
 
@@ -1147,21 +1133,6 @@ El entrevistado considera que tanto la landing page como la aplicación móvil c
 **Resumen de la entrevista:**
 
 El entrevistado muestra buenas impresiones del landing page y la app móvil. Destaca que una sección del landing page tiene algunas inconsistencias estilísticas menores, aparte de eso todo se ve en orden. Considera de gran utilidad el uso de la app móvil, encuentra una pantalla complicada pero dice que con el tiempo podría acostumbrarse.
-
-### Entrevista 3
-**Entrevistado:** 
-
-**Edad:** 
-
-**Distrito:** 
-
-<img src="" alt="entrevista-veterinario3" width="50%">
-
-**Minuto de inicio:** 00:01
-
-**Link de la entrevista:**  [Entrevista]()
-
-**Resumen de la entrevista:**
 
 
 ### 4.3.3. Evaluaciones según heurísticas
