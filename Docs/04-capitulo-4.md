@@ -745,8 +745,671 @@ se aplicó la convención de Conventional Commits en los mensajes
 | Inga Hernández, Ayrton Damian | Frontend Android: dashboard reactivo con estadísticas, sección de actividad reciente e integración Retrofit con interceptor JWT |
 | Meza Tataje, David | Frontend Android: módulos de ganado (CRUD), establos y citas veterinarias |
 
+### 4.2.3. Sprint 3
+### 4.2.3.1. Sprint Planning 3
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 3</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-07-01</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Review Summary</strong></td>
+    <td>Durante el Sprint 2 se completó la integración entre el frontend Android y el backend .NET, se desplegó el sistema completo en Render y Firebase App Distribution, y se inició el desarrollo de las vistas Flutter para el segmento veterinario. Las funcionalidades de gestión de bovinos, establos, alimentación, citas y dashboard quedaron operativas y sincronizadas con el backend.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Retrospective Summary</strong></td>
+    <td>El equipo destacó la correcta integración Retrofit–Room como punto fuerte del Sprint 2. Se identificó la necesidad de completar y pulir las vistas Flutter del segmento veterinario ganadero, que habían quedado en estado In-Process, y de conectarlas con el backend en esta iteración final.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Goal</strong></td>
+    <td>Completar e integrar las vistas Flutter del segmento de veterinario ganadero, cubriendo los flujos de registro de visita técnica, diagnóstico clínico y control sanitario, con conexión al backend y validación de experiencia de usuario.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Velocity</strong></td>
+    <td>24 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>24</td>
+  </tr>
+</table>
+
+### 4.2.3.2. Sprint Backlog 3
+
+En esta tercera iteración, el objetivo fue finalizar e integrar las vistas Flutter del módulo veterinario ganadero. Las pantallas deben permitir al profesional veterinario registrar visitas técnicas, ingresar diagnósticos clínicos y gestionar controles sanitarios de los animales, con conexión al backend desplegado.
+
+| id | Title | Id | Title | Description | Estimations (Hours) | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---|---|
+| US018 | Registro de Visita Técnica y Diagnósticos en Campo | CC31 | Pantalla de registro de visita técnica (Flutter) | Desarrollo de la vista Flutter que permite al veterinario registrar una nueva visita técnica indicando el animal, fecha, motivo y observaciones de campo. | 5 | Done |
+| US018 | Registro de Visita Técnica y Diagnósticos en Campo | CC32 | Pantalla de diagnóstico clínico (Flutter) | Desarrollo de la vista Flutter para el ingreso del diagnóstico clínico: síntomas, diagnóstico, tratamiento prescrito y medicamentos. | 5 | Done |
+| US019 | Control Sanitario Veterinario | CC33 | Pantalla de control sanitario (Flutter) | Desarrollo de la vista Flutter de control sanitario que lista los controles pendientes y completados del animal, con opción de marcar como atendido. | 5 | Done |
+| US019 | Control Sanitario Veterinario | CC34 | Integración Flutter con backend | Conexión de las vistas Flutter al backend mediante el cliente HTTP de Dart (http/Dio), consumiendo los endpoints REST de visitas, diagnósticos y controles sanitarios con autenticación JWT. | 5 | Done |
+| TS013 | Endpoints para Módulo Veterinario | CC35 | Endpoints REST para visitas y diagnósticos (backend) | Implementación de los endpoints POST y GET para el módulo veterinario: visitas técnicas, diagnósticos clínicos y controles sanitarios, con filtrado por usuario autenticado. | 4 | Done |
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+Durante el Sprint 3 se completaron e integraron las vistas Flutter del segmento veterinario ganadero, junto con los endpoints REST correspondientes en el backend.
+
+**Software Development:**
+
+- **GitHub:** Plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Se utiliza para alojar, revisar y colaborar en los repositorios del proyecto, facilitando el trabajo en equipo.
+
+- **Visual Studio Code:** Editor de código utilizado para el desarrollo de las vistas Flutter e integración con el backend.
+
+- **Android Studio / Flutter SDK:** Entorno de desarrollo y SDK utilizados para compilar y ejecutar la aplicación Flutter en emuladores y dispositivos físicos.
+
+**Source Code Management:**
+
+Utilizamos GitHub para llevar el control de versiones y trabajar de forma colaborativa. Hemos creado una organización con los repositorios correspondientes:
+
+- Repositorio de la Landing Page: https://github.com/Mobile-apps-2026/Landing-Page-Bovix
+- Repositorio de la aplicación móvil (kotlin): https://github.com/Mobile-apps-2026/Bovix-Android
+- Repositorio del backend: https://github.com/Mobile-apps-2026/Bovix-Backend
+- Repositorio de la aplicación móvil (flutter): https://github.com/Mobile-apps-2026/Bovix-Flutter
+
+**Mobile Application — Flutter (Dart):**
+
+Para el desarrollo de las vistas Flutter nos guiamos por la guía de estilo oficial de Dart y las convenciones de Flutter:
+
+- **Nombres de clases y widgets:** Se escriben en PascalCase (`VetVisitScreen`, `DiagnosisFormScreen`, `SanitaryControlScreen`).
+- **Nombres de variables y funciones:** Se escriben en camelCase (`vetVisitList`, `submitDiagnosis()`).
+- **Nombres de archivos:** Se escriben en snake_case (`vet_visit_screen.dart`, `diagnosis_form_screen.dart`).
+- **Widgets de estado:** Se utilizan `StatefulWidget` para los formularios con validación y `StatelessWidget` para las vistas de solo presentación.
+- **Gestión de estado:** Se empleó `setState` para el manejo local y `FutureBuilder` para la carga de datos asíncronos desde el backend.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+Para el Sprint 3 se elaboraron pruebas de aceptación basadas en los criterios Gherkin definidos en las User Stories priorizadas. Se verificaron todos los escenarios de cada historia de usuario.
+
+**Lenguaje Gherkin:**
+
+El lenguaje Gherkin es un lenguaje de dominio específico utilizado para escribir pruebas de aceptación en formato legible por el equipo. Se utilizaron las siguientes palabras clave: `Feature`, `Scenario`, `Given`, `When`, `Then` y `And`.
+
+| User Story | Escenario | Criterio verificado | Estado |
+|---|---|---|---|
+| US018 – Registro de Visita Técnica | E01 | El sistema almacena correctamente una nueva visita técnica con datos válidos | Done |
+| US018 – Registro de Visita Técnica | E02 | El sistema muestra validación al omitir campos obligatorios en el formulario de visita | Done |
+| US018 – Registro de Visita Técnica | E03 | El sistema muestra el diagnóstico clínico vinculado a la visita registrada | Done |
+| US019 – Control Sanitario Veterinario | E01 | El sistema lista correctamente los controles sanitarios pendientes y completados del animal | Done |
+| US019 – Control Sanitario Veterinario | E02 | El sistema actualiza el estado del control sanitario al marcarlo como atendido | Done |
+| US019 – Control Sanitario Veterinario | E03 | El sistema informa que no existen controles pendientes cuando el animal está al día | Done |
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y ejecutaron satisfactoriamente las siguientes funcionalidades en la aplicación Flutter orientada al segmento veterinario ganadero:
+
+**Pantalla de registro de visita técnica (US018)**
+
+Se desarrolló la vista Flutter que permite al profesional veterinario registrar una nueva visita técnica al campo. El formulario incluye campos para seleccionar el animal, ingresar la fecha de la visita, el motivo de la consulta y las observaciones relevantes. El sistema valida que todos los campos obligatorios estén completos antes de enviar los datos al backend, mostrando mensajes de error descriptivos en caso contrario.
+
+<p align="center"><img src="../Assets/Images-kotlin/imagen-visita-tecnica.png" alt="visita-tecnica-Flutter" width="35%"></p>
+
+---
+
+**Pantalla de diagnóstico clínico (US018)**
+
+Se implementó la vista Flutter para el ingreso del diagnóstico clínico asociado a una visita técnica. El veterinario puede registrar los síntomas observados, el diagnóstico definitivo, el tratamiento prescrito y los medicamentos indicados. La pantalla consume el endpoint REST del backend y confirma el guardado con un mensaje de éxito.
+
+<p align="center"><img src="../Assets/Images-kotlin/imagen-diagnostico-clinico.png" alt="diagnostico-clinico-Flutter" width="35%"></p>
+
+---
+
+**Pantalla de control sanitario (US019)**
+
+Se desarrolló la vista Flutter de control sanitario que presenta al veterinario el listado de controles pendientes y completados de cada animal. Desde esta pantalla el profesional puede marcar un control como atendido, actualizando el estado en el backend en tiempo real. El sistema diferencia visualmente entre controles pendientes y completados mediante indicadores de color.
+
+<p align="center"><img src="../Assets/Images-kotlin/imagen-control-sanitario.png" alt="control-sanitario-Flutter" width="35%"></p>
+
+---
+
+**Integración Flutter con el backend**
+
+Se configuró el cliente HTTP en Dart utilizando el paquete `http` para consumir los endpoints REST del backend desplegado en Render. Cada solicitud incluye el token JWT almacenado localmente, garantizando que el veterinario solo acceda a los registros asociados a su cuenta. Los datos se cargan de forma asíncrona mediante `FutureBuilder`, mostrando indicadores de carga mientras se obtiene la respuesta del servidor.
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se amplió la documentación Swagger del backend con los nuevos endpoints del módulo veterinario.
+
+**Plataforma de despliegue:** Render (Web Service con Docker) + Aiven (Base de datos MySQL 8.4.8)
+
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-database.jpg" alt="deploy-database" width="70%"></p>
+
+<p align="center"><img src="../Assets/Images-deplyoment/deployment-backend.jpg" alt="deploy-backend" width="70%"></p>
+
+**Documentación de Endpoints — Swagger:**
+
+Se actualizó la documentación interactiva de la API en Swagger UI con los nuevos controladores del módulo veterinario: visitas técnicas, diagnósticos clínicos y controles sanitarios. Todos los endpoints aplican filtrado por usuario autenticado mediante el token JWT.
+
+> **Enlace a documentación Swagger:** [BackEnd](https://bovix-backend.onrender.com/swagger/index.html)
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se realizó el despliegue actualizado del backend en Render con los nuevos endpoints del módulo veterinario, y se distribuyó la aplicación Flutter mediante Firebase App Distribution.
+
+**Backend — Render**
+
+Se desplegó la versión actualizada del backend que incluye los endpoints REST del módulo veterinario. Render detectó automáticamente los cambios en la rama principal del repositorio `Bovix-Backend` y reconstruyó la imagen Docker.
+
+> **URL del backend:** [https://bovix-backend.onrender.com](https://bovix-backend.onrender.com/swagger/index.html)
+
+**Aplicación Flutter — Firebase App Distribution**
+
+La aplicación Flutter fue compilada en modo release y distribuida mediante Firebase App Distribution para su validación en dispositivos físicos.
+
+**Pasos realizados para el despliegue:**
+
+1. Se ejecutó `flutter build apk --release` para generar el APK de distribución.
+2. Se accedió a la consola de Firebase y se seleccionó el proyecto Bovix.
+3. Se subió el APK a Firebase App Distribution con las notas de la versión correspondientes al Sprint 3.
+4. Se distribuyó el enlace de instalación a los testers del equipo.
+
+**URL de la Landing Page:** [Landing page](https://mobile-apps-2026.github.io/Landing-Page-Bovix/)
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 el equipo mantuvo comunicación activa y colaboración organizada mediante las siguientes herramientas:
+
+**Project Management:**
+
+- **Discord:** Canal principal de comunicación para reuniones de planificación, daily check-ins y resolución de dudas técnicas en tiempo real.
+- **Google Meet:** Plataforma de videoconferencias utilizada para reuniones de revisión y retrospectiva del sprint.
+
+**Source Code Management:**
+
+Utilizamos GitHub para el control de versiones y el trabajo colaborativo. Se siguió el modelo GitFlow con ramas `feature/` para cada funcionalidad y se aplicó la convención de Conventional Commits en los mensajes (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
+
+**Distribución del trabajo por integrante:**
+
+| Integrante | Tareas principales en Sprint 3 |
+|---|---|
+| Flores Manrique, Sebastian Enrique | Implementación de los endpoints REST del módulo veterinario en el backend: visitas técnicas, diagnósticos y controles sanitarios |
+| De las Casas Latour, Sebastián | Desarrollo de la pantalla de diagnóstico clínico Flutter e integración con el backend |
+| Esquirva León, Miguel Juan Diego | Desarrollo de la pantalla de control sanitario Flutter e integración con el backend |
+| Inga Hernández, Ayrton Damian | Desarrollo de la pantalla de registro de visita técnica Flutter e integración con el backend |
+| Meza Tataje, David | Configuración del cliente HTTP en Dart, manejo de autenticación JWT en Flutter y pruebas de integración |
+
+### 4.2.3 Sprint 3
+### 4.2.3.1 Sprint Planning 3
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-07-02</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Review Summary</strong></td>
+    <td>Durante el Sprint 2 se implementó satisfactoriamente la landing page completa de Bovix, el flujo de registro de usuarios, el inicio de sesión con autenticación JWT y el módulo de registro de vacunas en la aplicación móvil Android. Todas las funcionalidades planificadas fueron entregadas y verificadas correctamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Retrospective Summary</strong></td>
+    <td>El equipo destacó la buena coordinación mediante Discord y la distribución clara de tareas entre los integrantes. Se identificó la necesidad de mejorar la velocidad de integración entre frontend y backend, y de documentar los endpoints desde el inicio del desarrollo para facilitar su consumo desde la aplicación móvil.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Goal</strong></td>
+    <td>Implementar e integrar el frontend Android con el backend .NET, desarrollar los módulos esenciales de gestión ganadera (bovinos, establos, alimentación y salud), desplegar el sistema completo con aislamiento de datos por usuario autenticado, e iniciar las vistas Flutter para el segmento veterinario.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Velocity</strong></td>
+    <td>68 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>68</td>
+  </tr>
+</table>
+
+### 4.2.3.2. Sprint Backlog 3
+
+En esta tercera iteración, el objetivo planteado fue implementar e integrar tanto la parte del frontend y el backend con las funcionalidades describidas en este trabajo. Las secciones deben estar correctamente implementadas al finalizar el Sprint: backend, frontend, inicio de sesión, registro de vacunas, cruds esenciales, integracion con base de datos y features explicados.
+
+| id | Title | Id | Title | Description | Estimations (Hours) | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---|---|
+
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+Durante el Sprint 3 se completaron las funcionalidades faltantes de la plataforma Bovix.
+Se desarrolló lel frontend kotlin, el backend, la integracion y vistas de frontend flutter.
+
+**Software Development:**
+
+- **GitHub:** Plataforma de desarrollo colaborativo que utiliza el sistema de control
+  de versiones Git. Se utiliza para alojar, revisar y colaborar en los repositorios
+  del proyecto, facilitando el trabajo en equipo.
+
+- **Android Studio:** Entorno de desarrollo integrado (IDE) creado por Google para
+  el desarrollo de aplicaciones Android. Permite escribir, depurar y empaquetar la
+  aplicación móvil de Bovix.
+
+- **Visual Studio Code:** Editor de código utilizado para el desarrollo de las
+  vistas en flutter y servicios complementarios del proyecto.
+
+**Source Code Management:**
+
+Utilizamos GitHub para llevar el control de versiones y trabajar de forma colaborativa.
+Hemos creado una organización con los repositorios correspondientes:
+
+- Repositorio de la Landing Page: https://github.com/Mobile-apps-2026/Landing-Page-Bovix
+- Repositorio de la aplicación móvil (kotlin): https://github.com/Mobile-apps-2026/Bovix-Android
+- Repositorio del backend: https://github.com/Mobile-apps-2026/Bovix-Backend
+- Repositorio de la aplicacion movil (flutter): https://github.com/Mobile-apps-2026/Bovix-Flutter
+
+**Mobile Application — Kotlin:**
+
+Para el desarrollo móvil nos guiamos por la "Guía de Estilo de Kotlin" de Android Developers:
+
+- **Nombres de clases:** Se escriben en formato PascalCase y son sustantivos o frases nominales.
+- **Nombres de funciones:** Se escriben en camelCase y suelen ser verbos o frases verbales.
+- **Sangría:** Cada bloque nuevo aumenta la sangría en 4 espacios.
+- **Constantes:** Se escriben en UPPER_SNAKE_CASE con palabras separadas por guiones bajos.
+- **No constantes:** Se escriben en camelCase para propiedades de instancia y parámetros.
+
+**Backend — C#:**
+
+Para el desarrollo del backend nos guiamos por las convenciones oficiales de Microsoft para C# y ASP.NET Core:
+
+- **Nombres de clases e interfaces:** Se escriben en PascalCase (`BovineRepository`, `IBovineRepository`).
+- **Nombres de métodos y propiedades:** Se escriben en PascalCase siguiendo las convenciones de .NET (`FindByUserIdAsync`, `CurrentUserId`).
+- **Variables y parámetros locales:** Se escriben en camelCase (`userId`, `bovineCommand`).
+- **Interfaces:** Se prefijan con la letra `I` seguida del nombre en PascalCase (`IAppointmentRepository`).
+- **Records y DTOs:** Se definen como `record` de C# con parámetros en PascalCase (`CreateBovineCommand`, `BovineResource`).
+- **Arquitectura:** Se aplicó Clean Architecture con DDD, separando el proyecto en capas: Domain, Application, Infrastructure e Interfaces.
+
+**Mobile Application — Flutter (Dart):**
+
+Para el desarrollo de las vistas Flutter nos guiamos por la guía de estilo oficial de Dart y las convenciones de Flutter:
+
+- **Nombres de clases y widgets:** Se escriben en PascalCase (`VetVisitScreen`, `DiagnosisCard`).
+- **Nombres de variables y funciones:** Se escriben en camelCase (`vetVisitList`, `buildDiagnosisCard()`).
+- **Nombres de archivos:** Se escriben en snake_case (`vet_visit_screen.dart`, `diagnosis_card.dart`).
+- **Constantes:** Se escriben en lowerCamelCase dentro de la clase o en SCREAMING_SNAKE_CASE si son globales.
+- **Widgets:** Se priorizan widgets sin estado (`StatelessWidget`) para las vistas de solo presentación implementadas en este Sprint.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+Para el Sprint 3 se elaboraron pruebas de aceptación basadas en los criterios
+Gherkin definidos en las User Stories priorizadas. Se verificaron todos los
+escenarios (E01, E02, E03) de cada historia de usuario.
+
+**Lenguaje Gherkin:**
+
+El lenguaje Gherkin es un lenguaje de dominio específico utilizado para escribir
+pruebas de aceptación en formato legible por el equipo. Se utilizaron las siguientes
+palabras clave: `Feature`, `Scenario`, `Given`, `When`, `Then` y `And`.
+
+| User Story | Escenario | Criterio verificado | Estado |
+|---|---|---|---|
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y ejecutaron satisfactoriamente las siguientes
+funcionalidades:
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron de forma completa los servicios de backend
+según la arquitectura definida en el Capítulo II.
+
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 el equipo mantuvo comunicación activa y colaboración organizada
+mediante las siguientes herramientas:
+
+**Project Management:**
+
+- **Discord:** Canal principal de comunicación para reuniones de planificación,
+  daily check-ins y resolución de dudas técnicas en tiempo real.
+- **Google Meet:** Plataforma de videoconferencias utilizada para reuniones de
+  revisión y retrospectiva del sprint.
+
+**Source Code Management:**
+
+Utilizamos GitHub para el control de versiones y el trabajo colaborativo.
+Se siguió el modelo GitFlow con ramas `feature/` para cada funcionalidad y
+se aplicó la convención de Conventional Commits en los mensajes
+(`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
+
+**Distribución del trabajo por integrante:**
+
+| Integrante | Tareas principales en Sprint 3 |
+|---|---|
+| Flores Manrique, Sebastian Enrique |  |
+| De las Casas Latour, Sebastián |  |
+| Esquirva León, Miguel Juan Diego |  |
+| Inga Hernández, Ayrton Damian |  |
+| Meza Tataje, David |  |
 
 ## 4.3. Validation Interviews
+En esta sección se documenta el proceso de entrevistas de validación realizadas con representantes de los dos segmentos objetivo: productores ganaderos y veterinarios especializados. El objetivo fue validar el uso de la última iteración de la app.
+
 ### 4.3.1. Diseño de Entrevistas
+
+Objetivo
+Validar si los ganaderos comprenden la propuesta de valor de Bovix y pueden utilizar la Landing Page y la aplicación móvil de forma intuitiva para gestionar la información de su ganado.
+
+Público objetivo
+Pequeños y medianos ganaderos.
+Experiencia en actividades ganaderas.
+Conocimientos básicos del uso de smartphones.
+
+Duración
+15 a 20 minutos.
+
+Materiales
+Landing Page de Bovix.
+Aplicación móvil.
+Dispositivo móvil Android.
+
+Escenario
+El participante explorará primero la Landing Page para conocer Bovix y posteriormente realizará un conjunto de tareas dentro de la aplicación móvil, mientras el entrevistador observa el proceso y registra comentarios, dificultades y sugerencias.
+
+Validación de la Landing Page
+Objetivo
+Evaluar si la propuesta de valor y la información presentada son claras y comprensibles para el usuario.
+
+Preguntas
+¿Qué entiendes que hace Bovix?
+¿Cuál consideras que es el principal beneficio?
+¿Qué sección llamó más tu atención?
+¿La información fue clara?
+¿Qué mejorarías de la página?
+
+Validación de la Aplicación
+User Flows
+
+Sector Ganadero:
+
+Flujo 1
+Iniciar sesión → Registrar bovino → Consultar información.
+
+Flujo 2
+Registrar alimentación → Consultar historial sanitario → Visualizar reportes.
+
+Tareas:
+Iniciar sesión.
+Registrar un nuevo bovino.
+Consultar la información del bovino.
+Registrar una alimentación.
+Consultar el historial sanitario.
+Visualizar los reportes productivos.
+
+Preguntas:
+¿Qué tarea te resultó más sencilla?
+¿Cuál fue la más complicada?
+¿Hubo alguna pantalla que no entendieras?
+¿La navegación te pareció intuitiva?
+¿Utilizarías Bovix en tu trabajo?
+¿Qué mejorarías de la aplicación?
+
+Sector Veterinario:
+
+Flujo 1
+Crear visita → seleccionar bovinos atendidos → registrar tratamientos y observaciones → adjuntar foto.
+
+Flujo 2
+Generar PDF o enlace del historial → enviar al productor.
+
+Tareas:
+Iniciar sesión.
+Registrar un nuevo bovino.
+Simular una visita completa con 2 bovinos.
+Probar compartir informe y pedir feedback sobre campos obligatorios.
+Consultar el historial sanitario.
+
+Preguntas:
+¿Qué tarea te resultó más sencilla?
+¿Cuál fue la más complicada?
+¿Hubo alguna pantalla que no entendieras?
+¿La navegación te pareció intuitiva?
+¿Utilizarías Bovix en tu trabajo?
+¿Qué mejorarías de la aplicación?
+
 ### 4.3.2. Registro de Entrevistas
+
+### Segmento 1  
+
+
+### Entrevista 1
+**Entrevistado:** Rosa Elena Huaman Quispe
+
+**Edad:** 42 años
+
+**Distrito:** Cañete
+
+**Ocupación:** Productora ganadera
+
+<img src="../Assets/entrevista-ganadero-Rosa.png" alt="entrevista-ganadero-Rosa" width="50%">
+
+**Minuto de inicio:** 00:00
+
+**Duración:** 13 minutos
+
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202516291_upc_edu_pe/IQDy6uAt7DDPQ72YdzLGS1MnAd3hddSgN8TXJtCkQkvJmdw?e=dcH2VA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+**Resumen de la entrevista:**
+
+Durante la sesión de validación, Rosa Elena Huamán Quispe exploró inicialmente la Landing Page de Bobix. Indicó que comprendió rápidamente que la plataforma está orientada a facilitar la gestión del ganado mediante el registro de información sobre salud y alimentación. Comentó que la información presentada fue clara y que el diseño le permitió identificar fácilmente las principales funcionalidades de la aplicación.
+
+Posteriormente, utilizó la aplicación móvil realizando las tareas propuestas: registrarse como nueva usuaria, registrar un nuevo bovino, consultar la información del animal, registrar la alimentación, revisar el historial sanitario y visualizar los reportes productivos. La entrevistada logró completar todas las tareas sin recibir asistencia, indicando que la navegación resultó intuitiva y que los formularios eran fáciles de comprender.
+
+Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de los animales más grandes y realistas dentro de los registros, así como que las funciones para tomar fotos con anotaciones para cada animal serían beneficiosas. Finalmente, calificó positivamente la experiencia de uso y señaló que utilizaría Bobix para gestionar la información de su ganado debido a la organización y rapidez que ofrece.
+
+
+### Entrevista 2
+**Entrevistado:** Joaquin Caballero Morelo
+
+**Edad:** 32
+
+**Distrito:** Santiago de Surco
+
+
+<img src="" alt="entrevista-ganadero1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+
+**Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310837_upc_edu_pe/IQBiiOB1FVYqQbbzLra_-dtbAYQ_7kjAkh_K6uoEVIskWzU?e=fXZw0S&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+**Resumen de la entrevista:** Se realizó una entrevista de validacion a un ganadero para evaluar la usabilidad de la Landing Page y la aplicacion movil Bovix. El entrevistado comprendió el proposito de la plataforma, completó las tareas propuestas sin mayores dificultades y consideró que la aplicación es facil de usar.
+
+
+### Segmento 2  
+
+### Entrevista 1
+**Entrevistado:** Johan Bottger
+
+**Edad:** 23
+
+**Distrito:** San Borja
+
+<img src="..\Assets\Captura de pantalla de entrevista validación 1 vet.png" alt="entrevista-veterinario1" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista](https://goo.su/xHpzB00)
+
+**Resumen de la entrevista:**
+
+El entrevistado considera que tanto la landing page como la aplicación móvil cumplen con las expectativas. Aún así encuentra problemas menores en la usabilidad de la app, destacando que encuentra algunas patallas confusas a primera vista, más que podría acostumbrarse con el tiempo al usar la app.
+
+### Entrevista 2
+
+**Entrevistado:** Diego Cacho
+
+**Edad:** 21
+
+**Distrito:** Surco
+
+<img src="..\Assets\Captura de pantalla entrevista validación 2 vet.png" alt="entrevista-veterinario2" width="50%">
+
+**Minuto de inicio:** 00:01
+
+**Link de la entrevista:**  [Entrevista](https://goo.su/o10mQ5q)
+
+**Resumen de la entrevista:**
+
+El entrevistado muestra buenas impresiones del landing page y la app móvil. Destaca que una sección del landing page tiene algunas inconsistencias estilísticas menores, aparte de eso todo se ve en orden. Considera de gran utilidad el uso de la app móvil, encuentra una pantalla complicada pero dice que con el tiempo podría acostumbrarse.
+
+
+
 ### 4.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** CC238  
+**SECCIÓN:** 3646 
+**PROFESORES:** Jorge Luis Mayta Guillermo
+**AUDITOR:** Equipo
+**CLIENTE(S):** Equipo
+
+---
+
+**SITE o APP A EVALUAR:**  
+**Bovix – Landing Page, Aplicación Kotlin y Aplicación Flutter**
+
+---
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Landing Page:
+- Visualización de la información en el landing page  
+
+Aplicación Kotlin:
+- Visualización del ganado
+- Gestión de Ganado
+- Gestión de alimentos
+- Visualización Citas veterinarias
+
+Aplicación Flutter:
+- Visualización y filtrado bovinos
+- Gestión de Citas veterinarias
+- Gestión de Informes médicos
+
+---
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial, fácilmente superado y poco frecuente. |
+| **2** | Problema menor, ocurre un poco más frecuentemente o genera leve fricción. |
+| **3** | Problema mayor, ocurre frecuentemente o impide que algunos usuarios lo resuelvan. Requiere corrección prioritaria. |
+| **4** | Problema muy grave, bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+**TABLA RESUMEN**
+
+| # | Problema | Severidad | Heurística violada |
+|---|-----------|-----------|---------------------|
+| **1** | Sección de simulación resulta complicada | **2** | Information Architecture: Is it usable? – Organización visual  |
+
+
+---
+
+**PROBLEMA #1: Vista de  visualmente sobrecargada**
+
+**Usuario:** Johan Bottger
+**Severidad:** 2  
+**Heurística violada:** Information Architecture – *Is it usable?*
+
+**Problema:**  
+Johan señala que una pantalla, la de registro, parece un poco díficil de entender a primera vista, más la app es usable.
+
+Este problema afecta la arquitectura de la información y puede generar confusión en usuarios menos familiarizados con apps.
+
+**Recomendación:**  
+Simplificar la vista del registro mediante:
+
+- Mayor separación entre elementos  
+- Jerarquías visuales más claras  
+- Reducción del contenido mostrado por tarjeta (mostrar solo lo esencial)  
+- Uso más consistente de colores y tamaños  
+
+Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
+
