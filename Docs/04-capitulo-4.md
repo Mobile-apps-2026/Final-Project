@@ -967,6 +967,198 @@ Utilizamos GitHub para el control de versiones y el trabajo colaborativo. Se sig
 | Inga Hernández, Ayrton Damian | Desarrollo de la pantalla de registro de visita técnica Flutter e integración con el backend |
 | Meza Tataje, David | Configuración del cliente HTTP en Dart, manejo de autenticación JWT en Flutter y pruebas de integración |
 
+### 4.2.3 Sprint 3
+### 4.2.3.1 Sprint Planning 3
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; width:100%;">
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Planning Background</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td>2026-07-02</td>
+  </tr>
+  <tr>
+    <td><strong>Time</strong></td>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td>Reunión virtual mediante Discord</td>
+  </tr>
+  <tr>
+    <td><strong>Prepared By</strong></td>
+    <td>Inga Hernández, Ayrton Damian</td>
+  </tr>
+  <tr>
+    <td><strong>Attendees (to planning meeting)</strong></td>
+    <td>Flores Manrique, Sebastian Enrique / De las Casas Latour, Sebastián / Esquirva León, Miguel Juan Diego / Inga Hernández, Ayrton Damian / Meza Tataje, David</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Review Summary</strong></td>
+    <td>Durante el Sprint 2 se implementó satisfactoriamente la landing page completa de Bovix, el flujo de registro de usuarios, el inicio de sesión con autenticación JWT y el módulo de registro de vacunas en la aplicación móvil Android. Todas las funcionalidades planificadas fueron entregadas y verificadas correctamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 2 Retrospective Summary</strong></td>
+    <td>El equipo destacó la buena coordinación mediante Discord y la distribución clara de tareas entre los integrantes. Se identificó la necesidad de mejorar la velocidad de integración entre frontend y backend, y de documentar los endpoints desde el inicio del desarrollo para facilitar su consumo desde la aplicación móvil.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Goal</strong></td>
+    <td>Implementar e integrar el frontend Android con el backend .NET, desarrollar los módulos esenciales de gestión ganadera (bovinos, establos, alimentación y salud), desplegar el sistema completo con aislamiento de datos por usuario autenticado, e iniciar las vistas Flutter para el segmento veterinario.</td>
+  </tr>
+  <tr>
+    <td><strong>Sprint 3 Velocity</strong></td>
+    <td>68 Story Points</td>
+  </tr>
+  <tr>
+    <td><strong>Sum of Story Points</strong></td>
+    <td>68</td>
+  </tr>
+</table>
+
+### 4.2.3.2. Sprint Backlog 3
+
+En esta tercera iteración, el objetivo planteado fue implementar e integrar tanto la parte del frontend y el backend con las funcionalidades describidas en este trabajo. Las secciones deben estar correctamente implementadas al finalizar el Sprint: backend, frontend, inicio de sesión, registro de vacunas, cruds esenciales, integracion con base de datos y features explicados.
+
+| id | Title | Id | Title | Description | Estimations (Hours) | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---|---|
+
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+Durante el Sprint 3 se completaron las funcionalidades faltantes de la plataforma Bovix.
+Se desarrolló lel frontend kotlin, el backend, la integracion y vistas de frontend flutter.
+
+**Software Development:**
+
+- **GitHub:** Plataforma de desarrollo colaborativo que utiliza el sistema de control
+  de versiones Git. Se utiliza para alojar, revisar y colaborar en los repositorios
+  del proyecto, facilitando el trabajo en equipo.
+
+- **Android Studio:** Entorno de desarrollo integrado (IDE) creado por Google para
+  el desarrollo de aplicaciones Android. Permite escribir, depurar y empaquetar la
+  aplicación móvil de Bovix.
+
+- **Visual Studio Code:** Editor de código utilizado para el desarrollo de las
+  vistas en flutter y servicios complementarios del proyecto.
+
+**Source Code Management:**
+
+Utilizamos GitHub para llevar el control de versiones y trabajar de forma colaborativa.
+Hemos creado una organización con los repositorios correspondientes:
+
+- Repositorio de la Landing Page: https://github.com/Mobile-apps-2026/Landing-Page-Bovix
+- Repositorio de la aplicación móvil (kotlin): https://github.com/Mobile-apps-2026/Bovix-Android
+- Repositorio del backend: https://github.com/Mobile-apps-2026/Bovix-Backend
+- Repositorio de la aplicacion movil (flutter): https://github.com/Mobile-apps-2026/Bovix-Flutter
+
+**Mobile Application — Kotlin:**
+
+Para el desarrollo móvil nos guiamos por la "Guía de Estilo de Kotlin" de Android Developers:
+
+- **Nombres de clases:** Se escriben en formato PascalCase y son sustantivos o frases nominales.
+- **Nombres de funciones:** Se escriben en camelCase y suelen ser verbos o frases verbales.
+- **Sangría:** Cada bloque nuevo aumenta la sangría en 4 espacios.
+- **Constantes:** Se escriben en UPPER_SNAKE_CASE con palabras separadas por guiones bajos.
+- **No constantes:** Se escriben en camelCase para propiedades de instancia y parámetros.
+
+**Backend — C#:**
+
+Para el desarrollo del backend nos guiamos por las convenciones oficiales de Microsoft para C# y ASP.NET Core:
+
+- **Nombres de clases e interfaces:** Se escriben en PascalCase (`BovineRepository`, `IBovineRepository`).
+- **Nombres de métodos y propiedades:** Se escriben en PascalCase siguiendo las convenciones de .NET (`FindByUserIdAsync`, `CurrentUserId`).
+- **Variables y parámetros locales:** Se escriben en camelCase (`userId`, `bovineCommand`).
+- **Interfaces:** Se prefijan con la letra `I` seguida del nombre en PascalCase (`IAppointmentRepository`).
+- **Records y DTOs:** Se definen como `record` de C# con parámetros en PascalCase (`CreateBovineCommand`, `BovineResource`).
+- **Arquitectura:** Se aplicó Clean Architecture con DDD, separando el proyecto en capas: Domain, Application, Infrastructure e Interfaces.
+
+**Mobile Application — Flutter (Dart):**
+
+Para el desarrollo de las vistas Flutter nos guiamos por la guía de estilo oficial de Dart y las convenciones de Flutter:
+
+- **Nombres de clases y widgets:** Se escriben en PascalCase (`VetVisitScreen`, `DiagnosisCard`).
+- **Nombres de variables y funciones:** Se escriben en camelCase (`vetVisitList`, `buildDiagnosisCard()`).
+- **Nombres de archivos:** Se escriben en snake_case (`vet_visit_screen.dart`, `diagnosis_card.dart`).
+- **Constantes:** Se escriben en lowerCamelCase dentro de la clase o en SCREAMING_SNAKE_CASE si son globales.
+- **Widgets:** Se priorizan widgets sin estado (`StatelessWidget`) para las vistas de solo presentación implementadas en este Sprint.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+Para el Sprint 3 se elaboraron pruebas de aceptación basadas en los criterios
+Gherkin definidos en las User Stories priorizadas. Se verificaron todos los
+escenarios (E01, E02, E03) de cada historia de usuario.
+
+**Lenguaje Gherkin:**
+
+El lenguaje Gherkin es un lenguaje de dominio específico utilizado para escribir
+pruebas de aceptación en formato legible por el equipo. Se utilizaron las siguientes
+palabras clave: `Feature`, `Scenario`, `Given`, `When`, `Then` y `And`.
+
+| User Story | Escenario | Criterio verificado | Estado |
+|---|---|---|---|
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y ejecutaron satisfactoriamente las siguientes
+funcionalidades:
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron de forma completa los servicios de backend
+según la arquitectura definida en el Capítulo II.
+
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 el equipo mantuvo comunicación activa y colaboración organizada
+mediante las siguientes herramientas:
+
+**Project Management:**
+
+- **Discord:** Canal principal de comunicación para reuniones de planificación,
+  daily check-ins y resolución de dudas técnicas en tiempo real.
+- **Google Meet:** Plataforma de videoconferencias utilizada para reuniones de
+  revisión y retrospectiva del sprint.
+
+**Source Code Management:**
+
+Utilizamos GitHub para el control de versiones y el trabajo colaborativo.
+Se siguió el modelo GitFlow con ramas `feature/` para cada funcionalidad y
+se aplicó la convención de Conventional Commits en los mensajes
+(`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
+
+**Distribución del trabajo por integrante:**
+
+| Integrante | Tareas principales en Sprint 3 |
+|---|---|
+| Flores Manrique, Sebastian Enrique |  |
+| De las Casas Latour, Sebastián |  |
+| Esquirva León, Miguel Juan Diego |  |
+| Inga Hernández, Ayrton Damian |  |
+| Meza Tataje, David |  |
+
 ## 4.3. Validation Interviews
 En esta sección se documenta el proceso de entrevistas de validación realizadas con representantes de los dos segmentos objetivo: productores ganaderos y veterinarios especializados. El objetivo fue validar el uso de la última iteración de la app.
 
@@ -1056,6 +1248,7 @@ Preguntas:
 
 ### Segmento 1  
 
+
 ### Entrevista 1
 **Entrevistado:** Rosa Elena Huaman Quispe
 
@@ -1089,9 +1282,11 @@ Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de lo
 
 **Distrito:** Santiago de Surco
 
+
 <img src="" alt="entrevista-ganadero1" width="50%">
 
 **Minuto de inicio:** 00:01
+
 
 **Link de la entrevista:**  [Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310837_upc_edu_pe/IQBiiOB1FVYqQbbzLra_-dtbAYQ_7kjAkh_K6uoEVIskWzU?e=fXZw0S&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
@@ -1118,6 +1313,7 @@ Como sugerencia de mejora, mencionó que sería útil incorporar imágenes de lo
 El entrevistado considera que tanto la landing page como la aplicación móvil cumplen con las expectativas. Aún así encuentra problemas menores en la usabilidad de la app, destacando que encuentra algunas patallas confusas a primera vista, más que podría acostumbrarse con el tiempo al usar la app.
 
 ### Entrevista 2
+
 **Entrevistado:** Diego Cacho
 
 **Edad:** 21
@@ -1133,6 +1329,7 @@ El entrevistado considera que tanto la landing page como la aplicación móvil c
 **Resumen de la entrevista:**
 
 El entrevistado muestra buenas impresiones del landing page y la app móvil. Destaca que una sección del landing page tiene algunas inconsistencias estilísticas menores, aparte de eso todo se ve en orden. Considera de gran utilidad el uso de la app móvil, encuentra una pantalla complicada pero dice que con el tiempo podría acostumbrarse.
+
 
 
 ### 4.3.3. Evaluaciones según heurísticas
@@ -1215,3 +1412,4 @@ Simplificar la vista del registro mediante:
 - Uso más consistente de colores y tamaños  
 
 Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
+
