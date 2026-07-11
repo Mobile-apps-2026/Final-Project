@@ -34,28 +34,31 @@
 
 # Registo de Versiones del Informe
 
-| Versión | Fecha    | Autor                              | Descrición Modificada               |
-|---------|----------|------------------------------------|-------------------------------------|
-| 0.1     | 12/04/26 | Flores Manrique, Sebastian Enrique | Creación del documento              |
-| 0.2     | 14/04/26 | Flores Manrique, Sebastian Enrique | Capitulo 1 añadido                  | 
-| 0.3     | 15/04/26 | De las Casas Latour, Sebastián     | capítulo 2, punto 2.1 y 2.3 añadido |
-| 0.4     | 16/04/26 | Meza Tataje, David                 | capítulo 2, punto 2.4 añadido       |
-| 0.5     | 18/04/26 | Inga Hernández, Ayrton Damian      | capítulo 2, puntoo 2.5 añadido      |
-| 0.6     | 19/04/26 | Flores Manrique, Sebastian Enrique | capítulo 2, punto 2.2 y 2.6 añadido |   
-| 0.7     | 20/04/26 | Esquirva León, Miguel Juan Diego   | capítulo 2, punto 2.6 añadido       | 
-| 0.8     | 27/04/26 | Meza Tataje, David                 | capitulo 3, style guidelines        |
-| 0.9     | 28/07/26 | Flores Manrique, Sebastian Enrique | capítulo 3, wireframes y mockups    | 
-| 1.0     | 30/27/26 | De las Casas Latour, Sebastián     | capítulo 3, wireframes y mockups    |
-| 1.1     | 02/05/26 | Inga Hernández, Ayrton Damian      | capítulo 4, sprint planning 1       |
-| 1.2     | 04/05/26 | Esquirva León, Miguel Juan Diego   | capítulo 4, sprint backlog 1        |
-
+| Versión | Fecha    | Autor                              | Descrición Modificada                        |
+|---------|----------|------------------------------------|----------------------------------------------|
+| 0.1     | 12/04/26 | Flores Manrique, Sebastian Enrique | Creación del documento                       |
+| 0.2     | 14/04/26 | Flores Manrique, Sebastian Enrique | Capitulo 1 añadido                           | 
+| 0.3     | 15/04/26 | De las Casas Latour, Sebastián     | capítulo 2, punto 2.1 y 2.3 añadido          |
+| 0.4     | 16/04/26 | Meza Tataje, David                 | capítulo 2, punto 2.4 añadido                |
+| 0.5     | 18/04/26 | Inga Hernández, Ayrton Damian      | capítulo 2, puntoo 2.5 añadido               |
+| 0.6     | 19/04/26 | Flores Manrique, Sebastian Enrique | capítulo 2, punto 2.2 y 2.6 añadido          |   
+| 0.7     | 20/04/26 | Esquirva León, Miguel Juan Diego   | capítulo 2, punto 2.6 añadido                | 
+| 0.8     | 27/04/26 | Meza Tataje, David                 | capitulo 3, style guidelines                 |
+| 0.9     | 28/07/26 | Flores Manrique, Sebastian Enrique | capítulo 3, wireframes y mockups             | 
+| 1.0     | 30/27/26 | De las Casas Latour, Sebastián     | capítulo 3, wireframes y mockups             |
+| 1.0     | 02/05/26 | Inga Hernández, Ayrton Damian      | capítulo 4, sprint planning 1                |
+| 1.0     | 04/05/26 | Esquirva León, Miguel Juan Diego   | capítulo 4, sprint backlog 1                 |
+| 1.0     | 10/07/26 | Flores Manrique, Sebastian Enrique | Desarrollo de aplicación flutter             |
+| 1.0     | 10/07/26 | De las Casas Latour, Sebastián     | Despliegue de la aplicación flutter          |
+| 1.0     | 10/07/26 | Inga Hernández, Ayrton Damian      | Desarrollo del video de evidence application |
 
 # Project Report Collaboration Insights
 
 - Link del repositorio del informe: [https://github.com/Mobile-apps-2026/Final-Project](https://github.com/Mobile-apps-2026/Final-Project)
 - Link del repositorio de la Landing Page: [https://github.com/Mobile-apps-2026/Landing-Page-Bovix.git](https://github.com/Mobile-apps-2026/Landing-Page-Bovix.git)
 - Link del repositorio del BackEnd: [https://github.com/Mobile-apps-2026/Bovix-Backend.git](https://github.com/Mobile-apps-2026/Bovix-Backend.git)
-- Link del repostorio de la aplicación Móvil: [https://github.com/Mobile-apps-2026/Bovix-Android.git](https://github.com/Mobile-apps-2026/Bovix-Android.git)
+- Link del repositorio de la aplicación Móvil Android: [https://github.com/Mobile-apps-2026/Bovix-Android.git](https://github.com/Mobile-apps-2026/Bovix-Android.git)
+- Link del repositorio de la aplicaión Móvil Flutter : [https://github.com/Mobile-apps-2026/bovix_flutter]()
 
 A lo largo del proyecto, el equipo ha estado comprometido en la creación del informe en diferentes fases. Las tareas principales que se han abarcado
 - La realización de una investigación del negocio y la problemática a resolver, recopilando información relevante de fuentes confiables que nos permitieron comprender mejor el sector y las necesidades de los usuarios.
@@ -67,6 +70,10 @@ Para la TB1, el equipo ha estado comprometido en la creación del informe en dif
 - La realización del capítulo 3 y 4, que abarca los estilos básico, wireframes, mockups tanto para el landing page como para el móvil, sprint planning y backlog
 - La primera versión del backend y landing page ya desplegadas
 - Las primeras vistas de la aplición par dispositivos móviles
+
+Para la TB2, el quiepo ha esta comprometido en la actualización del informe. Las tareas principales que se han abarcado:
+- La versión finalizada del backend y landing page ya desplegadas
+- La versión final de la aplicación móvil android y flutter ya desplegadas
 
 # Contenido
 
