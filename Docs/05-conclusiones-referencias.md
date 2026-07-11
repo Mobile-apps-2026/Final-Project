@@ -61,3 +61,11 @@ CEPAL. (2021). Digitalización y cambio tecnológico en las mipymes agrícolas y
 OSIPTEL. (2024). Encuesta Residencial de Servicios de Telecomunicaciones – Erestel 2024. Organismo Supervisor de Inversión Privada en Telecomunicaciones. Recuperado de https://www.osiptel.gob.pe
 
 OSIPTEL. (2025). Checa tu señal: cobertura móvil garantizada en el Perú. Recuperado de https://www.osiptel.gob.pe/portal-del-usuario/noticias/checa-tu-senal-asi-puedes-verificar-la-cobertura-movil-en-tu-distrito/
+
+# Anexos
+
+- Link del Landing page: [https://mobile-apps-2026.github.io/Landing-Page-Bovix/]()
+- Link del Backend: [https://bovix-backend.onrender.com/swagger/index.html]()
+- Link de la carpeta About the team y About the product: [https://upcedupe-my.sharepoint.com/:f:/g/personal/u201611430_upc_edu_pe/IgBIEG_3s2r7Q7rUYN1pXOb1AfGSgInb6N8M3uERl0Mm3QE?e=0q9eir]()
+- Link del app Móvil Android: [https://appetize.io/app/b_ochbjhrquhwjorg6wsdckc7rta]()
+- Link del app Movil Flutter: [https://appetize.io/app/b_czbpw27q5uo6re3bs5ii7l3hba]()
